@@ -1,0 +1,8 @@
+
+-main Main
+-lib extendscript
+-cp src
+
+-js build/script.jsx
+
+
