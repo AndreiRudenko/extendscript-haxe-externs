@@ -50,7 +50,7 @@ package extendscript.photoshop;
 	var fullName:File; 
 
 	/* The height of the document. */
-	var height:UnitValue; 
+	var height:UnitValue; // int ?
 
 	/* If true, the document is a workgroup document. */
 	var managed:Bool; 
@@ -74,7 +74,7 @@ package extendscript.photoshop;
 	var selection:Selection; 
 
 	/* The width of the document. */
-	var width:UnitValue; 
+	var width:UnitValue; // int ?
 
 	/* A histogram showing the number of pixels at each color intensity level for the composite channel. */
 	var histogram:Int; 

@@ -6,6 +6,12 @@ almost same as SlavaRa [haxelib-extendscript](https://github.com/SlavaRa/haxelib
 
 ## example  
 
+See test/Main.hx  
+
+Be sure to read the ExtendScript documentation  
+http://www.adobe.com/devnet/scripting.html  
+http://yearbook.github.io/esdocs  
+
 ```haxe 
         
 import extendscript.photoshop.BridgeTalk;
