@@ -1,6 +1,6 @@
 package extendscript.photoshop;
 
-abstract Point(Array<Float>) {
+abstract Point(Array<Float>) from Array<Float> to Array<Float> {
 
 	public inline function new(x:Float = 0, y:Float = 0):Void {
 		this = [x,y];
