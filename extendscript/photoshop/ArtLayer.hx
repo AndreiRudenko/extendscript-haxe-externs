@@ -3,12 +3,6 @@ package extendscript.photoshop;
 
 /* An object within a document that contains the visual elements of the image (equivalent to a layer in the Adobe Photoshop application). */
 @:native("ArtLayer") extern class ArtLayer extends Layer {
-	
-	/* The object's container. */
-	// var parent:Dynamic; 
-
-	/* The class name of the object. */
-	// var typename:String; 
 
 	/* The interior opacity of the layer. Range: 0.0 to 100.0. */
 	var fillOpacity:Float; 
@@ -51,6 +45,9 @@ package extendscript.photoshop;
 
 	/* The text that is associated with the layer. Valid only when 'kind' is text layer. */
 	var textItem:TextItem; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Adds an element.
@@ -499,6 +496,5 @@ package extendscript.photoshop;
 	 */
 	function shadowHighlight(?shadowAmount:Int, ?shadowWidth:Int, ?shadowRaduis:Int, ?highlightAmount:Int, ?highlightWidth:Int, ?highlightRaduis:Int, ?colorCorrection:Int, ?midtoneContrast:Int, ?blackClip:Float, ?whiteClip:Float):Void;
 
-	public function new():Void;
 
 }

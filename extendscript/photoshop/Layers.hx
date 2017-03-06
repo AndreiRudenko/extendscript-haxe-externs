@@ -12,11 +12,9 @@ package extendscript.photoshop;
 
 	/* Number of elements in the collection. */
 	var length:Int; 
+	
 
-	/*
-	 * Deletes all elements.
-	 */
-	function removeAll():Void;
+	public function new():Void;
 
 	/*
 	 * Get the first element in the collection with the provided name.
@@ -24,6 +22,10 @@ package extendscript.photoshop;
 	 */
 	function getByName(name:String):Layer;
 
-	public function new():Void;
+	/*
+	 * Deletes all elements.
+	 */
+	function removeAll():Void;
+
 
 }

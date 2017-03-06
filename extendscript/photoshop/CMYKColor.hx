@@ -16,6 +16,8 @@ package extendscript.photoshop;
 	/* The black color value. Range: 0.0 to 100.0. */
 	var black:Float; 
 
+
 	public function new():Void;
+	
 
 }

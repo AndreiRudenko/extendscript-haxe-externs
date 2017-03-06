@@ -3,12 +3,6 @@ package extendscript;
 
 /* Wraps XML into an object. */
 @:native("XML") extern class XML {
-	
-	/*
-	 * Parses an XML string. Throws an error if the XML is incorrect.
-	 * @param {String} [text] The text to parse.
-	 */
-	public function new(text:String);
 
 	/* Controls whether XML comments should be parsed (false) or ignored (true). */
 	var ignoreComments:Bool; 
@@ -25,6 +19,12 @@ package extendscript;
 	/* The number of spaces used to indent pretty-printed XML. */
 	var prettyIndent:Float; 
 
+	/*
+	 * Parses an XML string. Throws an error if the XML is incorrect.
+	 * @param {String} [text] The text to parse.
+	 */
+	public function new(text:String);
+	
 	/*
 	 * Returns an object containing the current parsing and print settings for XML.
 	 */

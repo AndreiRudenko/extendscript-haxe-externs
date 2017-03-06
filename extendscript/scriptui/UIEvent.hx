@@ -3,16 +3,6 @@ package extendscript.scriptui;
 
 /* Encapsulates input event information for an event that propagates through a container and control hierarchy. */
 @:native("UIEvent") extern class UIEvent {
-	
-	/*
-	 * Creates an event.
-	 * @param {String} [type] { text => The event type. See  property., a => { text => UIEvent.type, href => /UIEvent/type } }
-	 * @param {Bool} [captures] Set to true if this event can be captured.
-	 * @param {Bool} [bubbles] Set to true if the event bubbles.
-	 * @param {Dynamic} [view] The ScriptUI element that this event relates to.
-	 * @param {Float} [detail] The click count for a mouse-click event.
-	 */
-	public function new(type:String, captures:Bool, bubbles:Bool, ?view:Dynamic, ?detail:Float);
 
 	/* True if this event can be captured. */
 	var captures:Bool; 
@@ -43,6 +33,16 @@ package extendscript.scriptui;
 
 	/* The click count for a mouse-click event. */
 	var detail:Any; 
+	
+	/*
+	 * Creates an event.
+	 * @param {String} [type] { text => The event type. See  property., a => { text => UIEvent.type, href => /UIEvent/type } }
+	 * @param {Bool} [captures] Set to true if this event can be captured.
+	 * @param {Bool} [bubbles] Set to true if the event bubbles.
+	 * @param {Dynamic} [view] The ScriptUI element that this event relates to.
+	 * @param {Float} [detail] The click count for a mouse-click event.
+	 */
+	public function new(type:String, captures:Bool, bubbles:Bool, ?view:Dynamic, ?detail:Float);
 
 	/*
 	 * Prevents the default action associated with this event from being called.

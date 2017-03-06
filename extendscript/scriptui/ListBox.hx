@@ -76,6 +76,9 @@ package extendscript.scriptui;
 	/* The element type; "listbox". */
 	var type:String; 
 
+
+	public function new():Void;
+	
 	/*
 	 * Adds an item to the choices in this list.
 	 * @param {String} [type] The type of the child element, the string "item".
@@ -167,6 +170,5 @@ package extendscript.scriptui;
 	 */
 	function onDraw():Void;
 
-	public function new():Void;
 
 }

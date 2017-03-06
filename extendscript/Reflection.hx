@@ -31,6 +31,8 @@ package extendscript;
 	/* A file containing sample code. May be null. */
 	var sampleFile:File; 
 
+	public function new():Void;
+
 	/*
 	 * Finds an element description by name.
 	 * @param {String} [name] The name of the element to find.
@@ -41,8 +43,6 @@ package extendscript;
 	 * Returns this class information as XML in OMV format.
 	 */
 	function toXML():XML;
-
-	public function new():Void;
 
 
 }

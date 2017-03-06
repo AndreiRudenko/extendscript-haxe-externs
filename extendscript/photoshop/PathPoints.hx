@@ -12,6 +12,8 @@ package extendscript.photoshop;
 
 	/* Number of elements in the collection. */
 	var length:Int; 
+	
+	public function new():Void;
 
 	/*
 	 * Get the first element in the collection with the provided name.
@@ -19,6 +21,5 @@ package extendscript.photoshop;
 	 */
 	function getByName(name:String):PathPoint;
 
-	public function new():Void;
 
 }

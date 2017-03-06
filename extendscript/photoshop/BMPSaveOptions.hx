@@ -19,6 +19,8 @@ package extendscript.photoshop;
 	/* If true, the image is written from bottom to top. */
 	var flipRowOrder:Bool; 
 
+
 	public function new():Void;
+	
 
 }

@@ -72,6 +72,9 @@ package extendscript.scriptui;
 
 	/* The element type, "treeview". */
 	var type:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Adds an item to the top-level choices in this list.
@@ -171,6 +174,5 @@ package extendscript.scriptui;
 	 */
 	function onShortcutKey():Void;
 
-	public function new():Void;
 
 }

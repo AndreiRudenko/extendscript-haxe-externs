@@ -54,6 +54,9 @@ package extendscript.scriptui;
 
 	/* The element type, "flashplayer". */
 	var type:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Invokes an ActionScript function defined in the Flash application.
@@ -121,6 +124,5 @@ package extendscript.scriptui;
 	 */
 	function callback():Void;
 
-	public function new():Void;
 
 }

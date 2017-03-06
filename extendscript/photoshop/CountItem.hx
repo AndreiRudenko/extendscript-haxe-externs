@@ -13,6 +13,9 @@ package extendscript.photoshop;
 	/* The position of count item in the document. */
 	var position:Point; 
 
+
+	public function new():Void;
+
 	/*
 	 * Adds an element.
 	 */
@@ -28,6 +31,5 @@ package extendscript.photoshop;
 	 */
 	function removeAll():Void;
 
-	public function new():Void;
 
 }

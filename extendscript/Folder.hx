@@ -4,12 +4,6 @@ package extendscript;
 /* Represents a file-system folder or directory in a platform-independent manner. */
 @:native("Folder") extern class Folder {
 	
-	/*
-	 * Creates and returns a new Folder object referring to a given file-system location.
-	 * @param {String} [path] The absolute or relative path to the folder associated with this object, specified in URI format.
-	 */
-	public function new(?path:String);
-
 	/* The name of the current file system. */
 	var fs:String; 
 
@@ -46,6 +40,12 @@ package extendscript;
 
 	/* A Folder object for the folder that contains the user’s desktop. */
 	var desktop:Folder; 
+
+	/*
+	 * Creates and returns a new Folder object referring to a given file-system location.
+	 * @param {String} [path] The absolute or relative path to the folder associated with this object, specified in URI format.
+	 */
+	public function new(?path:String);
 
 	/*
 	 * Encodes a string as required by RFC 2396, and returns the encoded string.

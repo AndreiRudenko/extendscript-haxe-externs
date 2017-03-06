@@ -13,6 +13,9 @@ package extendscript.photoshop;
 	/* Number of elements in the collection. */
 	var length:Int; 
 
+
+	public function new():Void;
+
 	/*
 	 * Adds an element.
 	 */
@@ -29,6 +32,5 @@ package extendscript.photoshop;
 	 */
 	function getByName(name:String):LayerSet;
 
-	public function new():Void;
-
+	
 }

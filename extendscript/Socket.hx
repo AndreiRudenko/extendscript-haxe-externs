@@ -3,11 +3,6 @@ package extendscript;
 
 /* Creates a TCP/IP connection, or establishes a TCP/IP server. */
 @:native("Socket") extern class Socket {
-	
-	/*
-	 * Creates a new Socket object.
-	 */
-	public function new();
 
 	/* The name of the remote computer when a connection is established. */
 	var host:String; 
@@ -26,6 +21,11 @@ package extendscript;
 
 	/* The timeout in seconds to be applied to read or write operations. */
 	var timeout:Float; 
+	
+	/*
+	 * Creates a new Socket object.
+	 */
+	public function new();
 
 	/*
 	 * Opens the connection for subsequent read/write operations.

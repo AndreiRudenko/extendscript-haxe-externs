@@ -30,6 +30,9 @@ package extendscript.scriptui;
 
 	/* The current position in the current drawing path. */
 	var currentPoint:Point; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Creates a new painting brush object.
@@ -144,6 +147,5 @@ package extendscript.scriptui;
 	 */
 	function measureString(text:String, ?font:ScriptUIFont, ?boundingWidth:Float):Dimension;
 
-	public function new():Void;
 
 }

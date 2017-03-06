@@ -4,6 +4,18 @@ package extendscript.photoshop;
 /* A collection of documents. */
 @:native("Documents") extern class Documents implements ArrayAccess<Document> {
 	
+	/* The object's container. */
+	var parent:Dynamic; 
+
+	/* The class name of the object. */
+	var typename:String; 
+
+	/* Number of elements in the collection. */
+	var length:Int; 
+
+
+	public function new():Void;
+
 	/*
 	 * A document.
 	 * @param {UnitValue} [width] The width of the document.
@@ -18,21 +30,11 @@ package extendscript.photoshop;
 	 */
 	function add(?width:UnitValue, ?height:UnitValue, ?resolution:Float, ?name:String, ?mode:NewDocumentMode, ?initialFill:DocumentFill, ?pixelAspectRatio:Float, ?bitsPerChannel:BitsPerChannelType, ?colorProfileName:String):Document;
 
-	/* The object's container. */
-	var parent:Dynamic; 
-
-	/* The class name of the object. */
-	var typename:String; 
-
-	/* Number of elements in the collection. */
-	var length:Int; 
-
 	/*
 	 * Get the first element in the collection with the provided name.
 	 * @param {String} [name] null
 	 */
 	function getByName(name:String):Document;
 
-	public function new():Void;
 
 }

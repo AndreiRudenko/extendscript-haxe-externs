@@ -27,6 +27,9 @@ package extendscript.photoshop;
 
 	/* If true, the layer comp is currently selected. */
 	var selected:Bool; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Adds an element.
@@ -58,6 +61,5 @@ package extendscript.photoshop;
 	 */
 	function resetFromComp():Void;
 
-	public function new():Void;
 
 }

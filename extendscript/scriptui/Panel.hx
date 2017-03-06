@@ -81,6 +81,9 @@ package extendscript.scriptui;
 
 	/* The element type; "panel". */
 	var type:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Shows this element.
@@ -133,6 +136,5 @@ package extendscript.scriptui;
 	 */
 	function onDraw():Void;
 
-	public function new():Void;
 
 }

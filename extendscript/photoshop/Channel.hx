@@ -27,6 +27,9 @@ package extendscript.photoshop;
 
 	/* The color of the channel. Not valid for component channels. */
 	var color:SolidColor; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Adds an element.
@@ -61,6 +64,5 @@ package extendscript.photoshop;
 	 */
 	// function duplicate(?targetDocument:Document):Channel;
 
-	public function new():Void;
 
 }

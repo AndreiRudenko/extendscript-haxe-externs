@@ -16,10 +16,19 @@ package extendscript.photoshop;
 	/* The color of the color sampler. */
 	var color:SolidColor; 
 
+
+	public function new():Void;
+
 	/*
 	 * Adds an element.
 	 */
 	function add():ColorSampler;
+
+	/*
+	 * Moves the color sampler to a new location.
+	 * @param {Point} [position] Position of destination (unit value)
+	 */
+	function move(position:Point):Void;
 
 	/*
 	 * Deletes this object.
@@ -30,13 +39,6 @@ package extendscript.photoshop;
 	 * Deletes all elements.
 	 */
 	function removeAll():Void;
-
-	/*
-	 * Moves the color sampler to a new location.
-	 * @param {Point} [position] Position of destination (unit value)
-	 */
-	function move(position:Point):Void;
-
-	public function new():Void;
+	
 
 }

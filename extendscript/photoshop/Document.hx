@@ -120,6 +120,9 @@ package extendscript.photoshop;
 
 	/* The current color samplers associated with the document. */
 	var colorSamplers:ColorSamplers; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Duplicate this object.
@@ -306,6 +309,5 @@ package extendscript.photoshop;
 	 */
 	function autoCount(channel:Channel, threshold:Int):Void;
 
-	public function new():Void;
 
 }

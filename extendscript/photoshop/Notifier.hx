@@ -18,6 +18,9 @@ package extendscript.photoshop;
 
 	/* The class ID associated with the event for the Notifier object, four characters or a unique string. */
 	var eventClass:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Deletes this object.
@@ -29,6 +32,5 @@ package extendscript.photoshop;
 	 */
 	function removeAll():Void;
 
-	public function new():Void;
 
 }

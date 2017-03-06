@@ -4,45 +4,6 @@ package extendscript;
 /* Represents a file in the local file system in a platform-independent manner. */
 @:native("File") extern class File {
 	
-	/*
-	 * Creates and returns a new File object referring to a given file system location.
-	 * @param {String} [path] The full or partial path name of the file,  in platform-specific or URI format.
-	 */
-	public function new(?path:String);
-
-	/*
-	 * Encodes a string as required by RFC 2396, and returns the encoded string.
-	 * @param {String} [name] The string to encode.
-	 */
-	function encode(name:String):String;
-
-	/*
-	 * Decodes a UTF-8 encoded string as required by RFC 2396, and returns the decoded string.
-	 * @param {String} [uri] The UTF-8 encoded string to decode.
-	 */
-	function decode(uri:String):String;
-
-	/*
-	 * Reports whether a given encoding is available.
-	 * @param {String} [name] The encoding name.
-	 */
-	function isEncodingAvailable(name:String):Bool;
-
-	/*
-	 * Opens a dialog so the user can select one or more files to open.
-	 * @param {String} [prompt] The prompt text, displayed if the dialog allows a prompt.
-	 * @param {Any} [filter] A filter that limits the types of files displayed in the dialog.
-	 * @param {Bool} [multiSelect] When true, the user can select multiple files and the return value is an array.
-	 */
-	function openDialog(prompt:String, ?filter:Any, ?multiSelect:Bool):File;
-
-	/*
-	 * Opens a dialog so the user can select a file name to save to.
-	 * @param {String} [prompt] The prompt text, displayed if the dialog allows a prompt.
-	 * @param {Any} [filter] In Windows only, a filter that limits the types of files displayed in the dialog.
-	 */
-	function saveDialog(prompt:String, ?filter:Any):File;
-
 	/* If true, the object refers to a file system alias or shortcut. */
 	var alias:Bool; 
 
@@ -105,6 +66,45 @@ package extendscript;
 
 	/* When true, a read attempt caused the current position to be at the end of the file, or the file is not open. */
 	var eof:Bool; 
+
+	/*
+	 * Creates and returns a new File object referring to a given file system location.
+	 * @param {String} [path] The full or partial path name of the file,  in platform-specific or URI format.
+	 */
+	public function new(?path:String);
+
+	/*
+	 * Encodes a string as required by RFC 2396, and returns the encoded string.
+	 * @param {String} [name] The string to encode.
+	 */
+	function encode(name:String):String;
+
+	/*
+	 * Decodes a UTF-8 encoded string as required by RFC 2396, and returns the decoded string.
+	 * @param {String} [uri] The UTF-8 encoded string to decode.
+	 */
+	function decode(uri:String):String;
+
+	/*
+	 * Reports whether a given encoding is available.
+	 * @param {String} [name] The encoding name.
+	 */
+	function isEncodingAvailable(name:String):Bool;
+
+	/*
+	 * Opens a dialog so the user can select one or more files to open.
+	 * @param {String} [prompt] The prompt text, displayed if the dialog allows a prompt.
+	 * @param {Any} [filter] A filter that limits the types of files displayed in the dialog.
+	 * @param {Bool} [multiSelect] When true, the user can select multiple files and the return value is an array.
+	 */
+	function openDialog(prompt:String, ?filter:Any, ?multiSelect:Bool):File;
+
+	/*
+	 * Opens a dialog so the user can select a file name to save to.
+	 * @param {String} [prompt] The prompt text, displayed if the dialog allows a prompt.
+	 * @param {Any} [filter] In Windows only, a filter that limits the types of files displayed in the dialog.
+	 */
+	function saveDialog(prompt:String, ?filter:Any):File;
 
 	/*
 	 * Attempts to resolve the file-system alias or shortcut that this object refers to.

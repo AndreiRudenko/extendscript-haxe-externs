@@ -16,6 +16,9 @@ package extendscript.photoshop;
 	/* Location of the guide from origin of image. */
 	var coordinate:UnitValue; 
 
+
+	public function new():Void;
+
 	/*
 	 * Deletes this object.
 	 */
@@ -26,6 +29,5 @@ package extendscript.photoshop;
 	 */
 	function removeAll():Void;
 
-	public function new():Void;
 
 }

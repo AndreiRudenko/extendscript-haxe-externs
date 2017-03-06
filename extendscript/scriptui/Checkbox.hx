@@ -76,6 +76,9 @@ package extendscript.scriptui;
 	/* The element type; "checkbox". */
 	var type:String; 
 
+	
+	public function new():Void;
+
 	/*
 	 * Sends a notification message, simulating the specified user interaction event.
 	 * @param {String} [eventName] The name of the control event handler to call.
@@ -138,6 +141,5 @@ package extendscript.scriptui;
 	 */
 	function onShortcutKey():Void;
 
-	public function new():Void;
 
 }

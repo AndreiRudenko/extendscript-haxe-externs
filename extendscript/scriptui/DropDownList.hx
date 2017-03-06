@@ -73,6 +73,9 @@ package extendscript.scriptui;
 	/* The element type; "dropdownlist". */
 	var type:String; 
 
+	
+	public function new():Void;
+
 	/*
 	 * Adds an item or separator to the choices in this list.
 	 * @param {String} [type] The type of the child element.
@@ -159,6 +162,5 @@ package extendscript.scriptui;
 	 */
 	function onDraw():Void;
 
-	public function new():Void;
 
 }

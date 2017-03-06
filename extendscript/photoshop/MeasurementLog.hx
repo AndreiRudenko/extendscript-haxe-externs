@@ -10,6 +10,9 @@ package extendscript.photoshop;
 	/* The class name of the object. */
 	var typename:String; 
 
+
+	public function new():Void;
+
 	/*
 	 * Exports the specified measurements.
 	 * @param {File} [file] The file to export to. If not specified, a 'file save' dialog is displayed.
@@ -24,6 +27,5 @@ package extendscript.photoshop;
 	 */
 	function deleteMeasurements(?range:MeasurementRange):Void;
 
-	public function new():Void;
-
+	
 }

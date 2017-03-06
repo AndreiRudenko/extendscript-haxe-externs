@@ -78,6 +78,9 @@ package extendscript.scriptui;
 
 	/* The element type, "scrollbar". */
 	var type:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Sends a notification message, simulating the specified user interaction event.
@@ -146,6 +149,5 @@ package extendscript.scriptui;
 	 */
 	function onShortcutKey():Void;
 
-	public function new():Void;
 
 }

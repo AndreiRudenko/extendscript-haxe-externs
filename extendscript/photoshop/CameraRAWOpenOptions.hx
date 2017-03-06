@@ -85,6 +85,8 @@ package extendscript.photoshop;
 	/* The blue saturation of the shot. Range: -100 to 100. */
 	var blueSaturation:Int; 
 
+
 	public function new():Void;
+	
 
 }

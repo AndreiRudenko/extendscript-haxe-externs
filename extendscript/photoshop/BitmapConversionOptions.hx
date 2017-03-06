@@ -21,7 +21,9 @@ package extendscript.photoshop;
 
 	/* The dot shape. Valid only when 'method' = halftone screen. */
 	var shape:BitmapHalfToneType; 
+	
 
 	public function new():Void;
+
 
 }

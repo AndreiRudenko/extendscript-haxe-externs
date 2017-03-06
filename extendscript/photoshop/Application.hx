@@ -91,6 +91,9 @@ package extendscript.photoshop;
 	/* Name of the current tool. */
 	var currentTool:String; 
 
+	
+	public function new():Void;
+
 	/*
 	 * Check if the specified tool supports brushes.
 	 * @param {String} [tool] The name of the tool to check.
@@ -368,6 +371,5 @@ package extendscript.photoshop;
 	 */
 	function showColorPicker(?pickForeground:Bool):Bool;
 
-	public function new():Void;
 
 }

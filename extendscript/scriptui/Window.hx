@@ -3,53 +3,13 @@ package extendscript.scriptui;
 
 /* The instance represents a top-level window or dialog box, which contains user-interface elements. */
 @:native("Window") extern class Window {
-	
-	/*
-	 * Creates a new window.
-	 * @param {String} [type] The window type.
-	 * @param {String} [title] The window title, a localizable string.
-	 * @param {Bounds} [bounds] The window's position and size.
-	 * @param {Dynamic} [properties] An object containing creation-only properties.
-	 */
-	public function new(type:String, ?title:String, ?bounds:Bounds, ?properties:Dynamic);
 
 	/* { text => Deprecated. Use  instead., a => { text => ScriptUI.frameworkName, href => /ScriptUI/class/frameworkName } } */
 	var frameworkName:String; 
 
 	/* { text => Deprecated. Use  instead., a => { text => ScriptUI.version, href => /ScriptUI/class/version } } */
 	var version:Any; 
-
-	/*
-	 * Use this method to find an existing window.
-	 * @param {String} [type] The name of a predefined resource available to JavaScript in the current application; or the window type.
-	 * @param {String} [title] The window title.
-	 */
-	function find(type:String, title:String):Window;
-
-	/*
-	 * Displays a platform-standard dialog containing a short message and an OK button.
-	 * @param {String} [message] TThe string for the displayed message.
-	 * @param {String} [title] A string to appear as the title of the dialog, if the platform supports a title.
-	 * @param {Bool} [errorIcon] When true, the platform-standard alert icon is replaced by the platform-standard error icon in the dialog.
-	 */
-	function alert(message:String, ?title:String, errorIcon:Bool):Void;
-
-	/*
-	 * Displays a platform-standard dialog containing a short message and two buttons labeled Yes and No.
-	 * @param {String} [message] The string for the displayed message.
-	 * @param {Bool} [noAsDefault] When true, the No button is the default choice, selected when the user types Enter.
-	 * @param {String} [title] A string to appear as the title of the dialog, if the platform supports a title.
-	 */
-	function confirm(message:String, noAsDefault:Bool, ?title:String):Bool;
-
-	/*
-	 * Displays a modal dialog that returns the user’s text input.
-	 * @param {String} [prompt] The string for the displayed message.
-	 * @param {String} [default] The initial value to be displayed in the text edit field.
-	 * @param {String} [title] A string to appear as the title of the dialog.
-	 */
-	function prompt(prompt:String, ?_default:String, ?title:String):String;
-
+	
 	/* { text => The graphics object that can be used to customize the window’s appearance, in response to the  event., i => onDraw } */
 	var graphics:ScriptUIGraphics; 
 
@@ -157,6 +117,46 @@ package extendscript.scriptui;
 
 	/* The opacity of the window, in the range [0..1]. */
 	var opacity:Float; 
+
+	/*
+	 * Creates a new window.
+	 * @param {String} [type] The window type.
+	 * @param {String} [title] The window title, a localizable string.
+	 * @param {Bounds} [bounds] The window's position and size.
+	 * @param {Dynamic} [properties] An object containing creation-only properties.
+	 */
+	public function new(type:String, ?title:String, ?bounds:Bounds, ?properties:Dynamic);
+
+	/*
+	 * Use this method to find an existing window.
+	 * @param {String} [type] The name of a predefined resource available to JavaScript in the current application; or the window type.
+	 * @param {String} [title] The window title.
+	 */
+	function find(type:String, title:String):Window;
+
+	/*
+	 * Displays a platform-standard dialog containing a short message and an OK button.
+	 * @param {String} [message] TThe string for the displayed message.
+	 * @param {String} [title] A string to appear as the title of the dialog, if the platform supports a title.
+	 * @param {Bool} [errorIcon] When true, the platform-standard alert icon is replaced by the platform-standard error icon in the dialog.
+	 */
+	function alert(message:String, ?title:String, errorIcon:Bool):Void;
+
+	/*
+	 * Displays a platform-standard dialog containing a short message and two buttons labeled Yes and No.
+	 * @param {String} [message] The string for the displayed message.
+	 * @param {Bool} [noAsDefault] When true, the No button is the default choice, selected when the user types Enter.
+	 * @param {String} [title] A string to appear as the title of the dialog, if the platform supports a title.
+	 */
+	function confirm(message:String, noAsDefault:Bool, ?title:String):Bool;
+
+	/*
+	 * Displays a modal dialog that returns the user’s text input.
+	 * @param {String} [prompt] The string for the displayed message.
+	 * @param {String} [default] The initial value to be displayed in the text edit field.
+	 * @param {String} [title] A string to appear as the title of the dialog.
+	 */
+	function prompt(prompt:String, ?_default:String, ?title:String):String;
 
 	/*
 	 * Makes this window visible.

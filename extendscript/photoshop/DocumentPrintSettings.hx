@@ -88,6 +88,9 @@ package extendscript.photoshop;
 	/* List of available printers. */
 	var printers:String; 
 
+
+	public function new():Void;
+
 	/*
 	 * Set the position of the image on the page.
 	 * @param {DocPositionStyle} [docPosition] Position of the image on page when printing. Can be centered, scale to fit, or user defined.
@@ -97,6 +100,5 @@ package extendscript.photoshop;
 	 */
 	function setPagePosition(docPosition:DocPositionStyle, ?posX:UnitValue, ?posY:UnitValue, ?scale:Float):Void;
 
-	public function new():Void;
 
 }

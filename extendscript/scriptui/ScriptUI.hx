@@ -5,37 +5,39 @@ package extendscript.scriptui;
 @:native("ScriptUI") extern class ScriptUI {
 	
 	/* The font constants defined by the host application. */
-	var applicationFonts:Dynamic; 
+	static var applicationFonts:Dynamic; 
 
 	/* An object whose properties are the names of compatability modes supported by the host application. */
-	var compatibility:Dynamic; 
+	static var compatibility:Dynamic; 
 
 	/* A string containing the internal version number of the ScriptUI module. */
-	var coreVersion:String; 
+	static var coreVersion:String; 
 
 	/* An object whose properties define attributes of the environment in which ScriptUI operates. */
-	var environment:Environment; 
+	static var environment:Environment; 
 
 	/* An object whose properties and methods provide access to objects used in the ScriptUI event system. */
-	var events:Events; 
+	static var events:Events; 
 
 	/* A string containing the name of the UI component framework with which this version of ScriptUI is compatible. */
-	var frameworkName:String; 
+	static var frameworkName:String; 
 
 	/* A string containing the version number of the ScriptUI component framework */
-	var version:Any; 
+	static var version:Any; 
 
 	/* { text => Collects the enumerated values that can be used in the  and  properties of controls and containers., i => [alignment,alignChildren] } */
-	var Alignment:String; 
+	static var Alignment:String; 
 
 	/* { text => Collects the enumerated values that can be used as the style argument to the  method., a => { text => ScriptUI.newFont(), href => /ScriptUI/newFont } } */
-	var FontStyle:Dynamic; 
+	static var FontStyle:Dynamic; 
 
 	/*
 	 * Finds and returns the resource for a given text string from the host application's resource data.
 	 * @param {String} [text] The text to match.
 	 */
-	function getResourceText(text:String):String;
+	static inline function getResourceText(text:String):String {
+		return untyped (__js__("ScriptUI.getResourceText"))(text);
+	}
 
 	/*
 	 * Loads a new image from resources or disk files into an image object.
@@ -44,7 +46,9 @@ package extendscript.scriptui;
 	 * @param {String} [pressed] The resource name, or the file-system path to the image used for the pressed state.
 	 * @param {String} [rollover] The resource name, or the file-system path to the image used for the rollover state.
 	 */
-	function newImage(normal:String, ?disabled:String, ?pressed:String, ?rollover:String):ScriptUIImage;
+	static inline function newImage(normal:String, ?disabled:String, ?pressed:String, ?rollover:String):ScriptUIImage {
+		return untyped (__js__("ScriptUI.newImage"))(normal, disabled, pressed, rollover);
+	}
 
 	/*
 	 * Creates a new font object for use in text controls and titles.
@@ -52,8 +56,9 @@ package extendscript.scriptui;
 	 * @param {String} [style] { text => The font style; can be string, or one of the values of ., a => { text => ScriptUI.FontStyle, href => /ScriptUI/class/FontStyle } }
 	 * @param {Float} [size] The font size in points.
 	 */
-	function newFont(name:String, style:String, size:Float):ScriptUIFont;
+	static inline function newFont(name:String, style:String, size:Float):ScriptUIFont {
+		return untyped (__js__("ScriptUI.newImage"))(name, style, size);
+	}
 
-	public function new():Void;
 
 }

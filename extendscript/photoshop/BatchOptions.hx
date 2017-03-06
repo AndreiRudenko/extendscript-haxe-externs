@@ -39,7 +39,9 @@ package extendscript.photoshop;
 
 	/* The file in which to log errors encountered. To display errors on the screen and stop batch processing when errors occur, leave blank. */
 	var errorFile:File; 
+	
 
 	public function new():Void;
+
 
 }

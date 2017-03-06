@@ -76,6 +76,9 @@ package extendscript.scriptui;
 	/* The element type; "edittext". */
 	var type:String; 
 
+	
+	public function new():Void;
+
 	/*
 	 * Shows this element.
 	 */
@@ -143,6 +146,5 @@ package extendscript.scriptui;
 	 */
 	function onShortcutKey():Void;
 
-	public function new():Void;
 
 }

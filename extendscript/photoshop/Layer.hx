@@ -43,23 +43,26 @@ package extendscript.photoshop;
 	/* XMP metadata associated with the Layer. */
 	var xmpMetadata:XMPMetadata; 
 
+
+	public function new():Void;
+
 	/*
 	 * Move the object.
-	 * @param {Dynamic} [relativeObject] null
-	 * @param {ElementPlacement} [insertionLocation] null
+	 * @param {Dynamic} [relativeObject]
+	 * @param {ElementPlacement} [insertionLocation]
 	 */
 	function move(relativeObject:Dynamic, insertionLocation:ElementPlacement):Layer;
 
 	/*
 	 * Duplicate this object.
-	 * @param {Dynamic} [relativeObject] null
-	 * @param {ElementPlacement} [insertionLocation] null
+	 * @param {Dynamic} [relativeObject]
+	 * @param {ElementPlacement} [insertionLocation]
 	 */
 	function duplicate(relativeObject:Dynamic, insertionLocation:ElementPlacement):Layer;
 
 	/*
 	 * ...
-	 * @param {LayerSet} [layerSet] null
+	 * @param {LayerSet} [layerSet]
 	 */
 	function moveToEnd(?layerSet:LayerSet):Void;
 
@@ -106,6 +109,5 @@ package extendscript.photoshop;
 	 */
 	function resize(?horizontal:Float, ?vertical:Float, ?anchor:AnchorPosition):Void;
 
-	public function new():Void;
 
 }

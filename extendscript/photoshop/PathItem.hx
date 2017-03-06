@@ -19,6 +19,9 @@ package extendscript.photoshop;
 	/* The type of path. */
 	var kind:PathKind; 
 
+	
+	public function new():Void;
+
 	/*
 	 * Adds an element.
 	 */
@@ -90,6 +93,5 @@ package extendscript.photoshop;
 	 */
 	function deselect():Void;
 
-	public function new():Void;
 
 }

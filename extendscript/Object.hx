@@ -3,18 +3,6 @@ package extendscript;
 
 /* The base class of all JavaScript objects. */
 @:native("Object") extern class Object {
-	
-	/*
-	 * Creates and returns a new object of a given type.
-	 * @param {Any} [what] The object type.
-	 */
-	public function new(what:Any);
-
-	/*
-	 * Reports whether an object is still valid.
-	 * @param {Dynamic} [what] The object to check.
-	 */
-	function isValid(what:Dynamic):Bool;
 
 	/* Points to the prototype object for this object. */
 	var prototype:Dynamic; 
@@ -26,9 +14,16 @@ package extendscript;
 	var reflect:Reflection; 
 
 	/*
-	 * Creates and returns a string representing this object.
+	 * Creates and returns a new object of a given type.
+	 * @param {Any} [what] The object type.
 	 */
-	function toString():String;
+	public function new(what:Any);
+
+	/*
+	 * Reports whether an object is still valid.
+	 * @param {Dynamic} [what] The object to check.
+	 */
+	function isValid(what:Dynamic):Bool;
 
 	/*
 	 * { text => Creates and returns a string representing this object, localized for the current locale. See ., a => { text => toString(), href => /Object/instance/toString } }
@@ -76,5 +71,10 @@ package extendscript;
 	 */
 	function watch(name:String, func:Function):Void;
 
+	/*
+	 * Creates and returns a string representing this object.
+	 */
+	function toString():String;
+	
 
 }

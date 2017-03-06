@@ -39,6 +39,9 @@ package extendscript.scriptui;
 
 	/* The name of the event that this object represents. */
 	var type:String; 
+	
+
+	public function new():Void;
 
 	/*
 	 * Prevents the default action associated with this event from being called.
@@ -50,6 +53,5 @@ package extendscript.scriptui;
 	 */
 	function stopPropagation():Void;
 
-	public function new():Void;
 
 }

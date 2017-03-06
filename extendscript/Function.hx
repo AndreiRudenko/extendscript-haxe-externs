@@ -4,13 +4,6 @@ package extendscript;
 /* Wraps a built-in or JavaScript function. */
 @:native("Function") extern class Function {
 	
-	/*
-	 * null
-	 * @param {String} [arguments] The list of formal arguments, separated by commas.
-	 * @param {String} [body] The body of the function to create.
-	 */
-	public function new(arguments:String, body:String);
-
 	/* The function arguments, packed into an array. */
 	var arguments:Dynamic; 
 
@@ -23,6 +16,13 @@ package extendscript;
 	/* The function name. */
 	var name:String; 
 
+	/*
+	 * null
+	 * @param {String} [arguments] The list of formal arguments, separated by commas.
+	 * @param {String} [body] The body of the function to create.
+	 */
+	public function new(arguments:String, body:String);
+	
 	/*
 	 * { text => Apply a  object and an argument list to a function., i => this }
 	 * @param {Dynamic} [thisObj] null

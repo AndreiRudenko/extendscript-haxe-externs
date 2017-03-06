@@ -13,12 +13,14 @@ package extendscript.photoshop;
 	/* Number of elements in the collection. */
 	var length:Int; 
 
+
+	public function new():Void;
+	
 	/*
 	 * Get the first element in the collection with the provided name.
 	 * @param {String} [name] null
 	 */
 	function getByName(name:String):HistoryState;
 
-	public function new():Void;
 
 }
