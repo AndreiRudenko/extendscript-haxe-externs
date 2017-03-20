@@ -11,25 +11,25 @@ package extendscript.photoshop;
 	function clear():Void;
 
 	/* Gets the value of a list element of type boolean. */
-	function getBoolea(index:Int):Bool;
+	function getBoolean(index:Int):Bool;
 
 	/* Gets the value of a list element of type class. */
-	function getClas(index:Int):Int;
+	function getClass(index:Int):Int;
 
 	/* Gets raw byte data as a string value. */
-	function getDat(index:Int):String;
+	function getData(index:Int):String;
 
 	/* Gets the value of a list element of type double. */
-	function getDoubl(index:Int):Int;
+	function getDouble(index:Int):Int;
 
 	/* Gets the enumeration type of a listelement. */
-	function getEnumerationTyp(index:Int):Int;
+	function getEnumerationType(index:Int):Int;
 
 	/* Gets the enumeration value of a list element. */
-	function getEnumerationValu(index:Int):Int;
+	function getEnumerationValue(index:Int):Int;
 
 	/* Gets the value of a list element of type integer. */
-	function getIntege(index:Int):Int;
+	function getInteger(index:Int):Int;
 
 	/* Gets the value of a list element of type large integer. */
 	function getLargeInteger(index:Int):Int;
