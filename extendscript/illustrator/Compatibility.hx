@@ -39,5 +39,8 @@ package extendscript.illustrator;
 	/* null */
 	ILLUSTRATOR17; 
 
+	/* null */
+	ILLUSTRATOR19; 
+
 
 }
