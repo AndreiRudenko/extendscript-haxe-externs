@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of custom spot colors. */
-@:native("Spots") extern class Spots {
+@:native("Spots") extern class Spots implements ArrayAccess<Spot> {
 	
 	/*
 	 * Create a spot color.

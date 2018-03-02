@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of Swatch groups. */
-@:native("SwatchGroups") extern class SwatchGroups {
+@:native("SwatchGroups") extern class SwatchGroups implements ArrayAccess<SwatchGroup> {
 	
 	/*
 	 * Create a Swatch group.

@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of group items. */
-@:native("GroupItems") extern class GroupItems {
+@:native("GroupItems") extern class GroupItems implements ArrayAccess<GroupItem> {
 	
 	/*
 	 * Create a group item.

@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of compound path items. */
-@:native("CompoundPathItems") extern class CompoundPathItems {
+@:native("CompoundPathItems") extern class CompoundPathItems implements ArrayAccess<CompoundPathItem> {
 	
 	/*
 	 * Create a compound path item.

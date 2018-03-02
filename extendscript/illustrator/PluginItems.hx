@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("PluginItems") extern class PluginItems {
+@:native("PluginItems") extern class PluginItems implements ArrayAccess<PluginItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

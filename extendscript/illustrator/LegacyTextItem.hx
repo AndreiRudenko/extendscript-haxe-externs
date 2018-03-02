@@ -1,6 +1,6 @@
 package extendscript.illustrator;
 
-import extendscript.photoshop.ElementPlacement;
+import extendscript.illustrator.ElementPlacement;
 
 
 /* Unconverted legacy text items from documents in pre-version 11 formats. */

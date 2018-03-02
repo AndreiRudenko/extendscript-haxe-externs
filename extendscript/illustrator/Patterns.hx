@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of patterns. */
-@:native("Patterns") extern class Patterns {
+@:native("Patterns") extern class Patterns implements ArrayAccess<Pattern> {
 	
 	/*
 	 * Create a pattern.

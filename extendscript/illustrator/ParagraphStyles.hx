@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of paragraph styles. */
-@:native("ParagraphStyles") extern class ParagraphStyles {
+@:native("ParagraphStyles") extern class ParagraphStyles implements ArrayAccess<ParagraphStyle> {
 	
 	/*
 	 * Create a named paragraph style.

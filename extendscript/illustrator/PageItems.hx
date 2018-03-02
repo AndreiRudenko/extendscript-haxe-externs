@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of page items. */
-@:native("PageItems") extern class PageItems {
+@:native("PageItems") extern class PageItems implements ArrayAccess<PageItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of character styles. */
-@:native("CharacterStyles") extern class CharacterStyles {
+@:native("CharacterStyles") extern class CharacterStyles implements ArrayAccess<CharacterStyle> {
 	
 	/*
 	 * Create a named character style.

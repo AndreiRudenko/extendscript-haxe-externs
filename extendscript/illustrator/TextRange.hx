@@ -1,6 +1,6 @@
 package extendscript.illustrator;
 
-import extendscript.photoshop.ElementPlacement;
+import extendscript.illustrator.ElementPlacement;
 
 /* A range of characters from a text item. */
 @:native("TextRange") extern class TextRange {

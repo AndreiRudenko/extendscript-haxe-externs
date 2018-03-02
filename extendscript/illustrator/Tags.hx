@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* The collection of tags associated with a page item. */
-@:native("Tags") extern class Tags {
+@:native("Tags") extern class Tags implements ArrayAccess<Tag> {
 	
 	/*
 	 * Create a tag.

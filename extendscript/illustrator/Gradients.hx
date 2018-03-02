@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of gradients. */
-@:native("Gradients") extern class Gradients {
+@:native("Gradients") extern class Gradients implements ArrayAccess<Gradient> {
 	
 	/*
 	 * Create a gradient.

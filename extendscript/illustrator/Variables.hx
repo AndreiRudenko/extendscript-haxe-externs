@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of variables. */
-@:native("Variables") extern class Variables {
+@:native("Variables") extern class Variables implements ArrayAccess<Variable> {
 	
 	/*
 	 * Create a variable.

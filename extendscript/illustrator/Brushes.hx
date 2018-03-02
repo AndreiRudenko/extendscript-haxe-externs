@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of brushes. */
-@:native("Brushes") extern class Brushes {
+@:native("Brushes") extern class Brushes implements ArrayAccess<Brush> {
 	
 	/*
 	 * Create a brush.

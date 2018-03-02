@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of datasets. */
-@:native("DataSets") extern class DataSets {
+@:native("DataSets") extern class DataSets implements ArrayAccess<DataSet> {
 	
 	/*
 	 * Create a data set.

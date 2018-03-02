@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of art styles. */
-@:native("ArtStyles") extern class ArtStyles {
+@:native("ArtStyles") extern class ArtStyles implements ArrayAccess<ArtStyle> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

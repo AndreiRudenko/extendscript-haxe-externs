@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of symbol items. */
-@:native("SymbolItems") extern class SymbolItems {
+@:native("SymbolItems") extern class SymbolItems implements ArrayAccess<SymbolItem> {
 	
 	/*
 	 * An instance of a symbol item.

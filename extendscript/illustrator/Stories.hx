@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of stories. */
-@:native("Stories") extern class Stories {
+@:native("Stories") extern class Stories implements ArrayAccess<Story> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

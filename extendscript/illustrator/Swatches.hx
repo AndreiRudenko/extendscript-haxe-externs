@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of swatches. */
-@:native("Swatches") extern class Swatches {
+@:native("Swatches") extern class Swatches implements ArrayAccess<Swatch> {
 	
 	/*
 	 * Create a swatch.

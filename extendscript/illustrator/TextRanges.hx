@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of text range items. */
-@:native("TextRanges") extern class TextRanges {
+@:native("TextRanges") extern class TextRanges implements ArrayAccess<TextRange> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

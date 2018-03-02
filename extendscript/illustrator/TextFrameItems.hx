@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of text frame items. */
-@:native("TextFrameItems") extern class TextFrameItems {
+@:native("TextFrameItems") extern class TextFrameItems implements ArrayAccess<TextFrameItem> {
 	
 	/*
 	 * Create a point text frame item.

@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of lines. */
-@:native("Lines") extern class Lines {
+@:native("Lines") extern class Lines implements ArrayAccess<TextRange> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

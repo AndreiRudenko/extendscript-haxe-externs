@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of characters. */
-@:native("Characters") extern class Characters {
+@:native("Characters") extern class Characters implements ArrayAccess<TextRange> {
 	
 	/*
 	 * Create a character.

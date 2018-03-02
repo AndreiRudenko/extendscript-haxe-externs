@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of path items. */
-@:native("PathItems") extern class PathItems {
+@:native("PathItems") extern class PathItems implements ArrayAccess<PathItem> {
 	
 	/*
 	 * Create a path.

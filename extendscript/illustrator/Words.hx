@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of words. */
-@:native("Words") extern class Words {
+@:native("Words") extern class Words implements ArrayAccess<TextRange> {
 	
 	/*
 	 * Create a word.

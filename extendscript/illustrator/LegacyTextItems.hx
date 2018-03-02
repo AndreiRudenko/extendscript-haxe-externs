@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of legacy text items. */
-@:native("LegacyTextItems") extern class LegacyTextItems {
+@:native("LegacyTextItems") extern class LegacyTextItems implements ArrayAccess<LegacyTextItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

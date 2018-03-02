@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of insertion points. */
-@:native("InsertionPoints") extern class InsertionPoints {
+@:native("InsertionPoints") extern class InsertionPoints implements ArrayAccess<InsertionPoint> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

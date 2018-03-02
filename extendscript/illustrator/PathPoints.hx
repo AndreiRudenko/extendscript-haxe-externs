@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of path points. */
-@:native("PathPoints") extern class PathPoints {
+@:native("PathPoints") extern class PathPoints implements ArrayAccess<PathPoint> {
 	
 	/*
 	 * Create a path point.

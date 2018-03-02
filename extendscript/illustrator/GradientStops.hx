@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of gradient stops. */
-@:native("GradientStops") extern class GradientStops {
+@:native("GradientStops") extern class GradientStops implements ArrayAccess<GradientStop> {
 	
 	/*
 	 * Create a gradient stop.

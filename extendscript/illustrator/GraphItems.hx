@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("GraphItems") extern class GraphItems {
+@:native("GraphItems") extern class GraphItems implements ArrayAccess<GraphItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

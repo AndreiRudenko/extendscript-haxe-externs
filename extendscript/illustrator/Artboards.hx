@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of artboards. */
-@:native("Artboards") extern class Artboards {
+@:native("Artboards") extern class Artboards implements ArrayAccess<Artboard> {
 	
 	/*
 	 * Add artboard object.

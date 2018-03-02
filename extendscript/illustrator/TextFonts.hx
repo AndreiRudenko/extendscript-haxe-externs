@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of fonts. */
-@:native("TextFonts") extern class TextFonts {
+@:native("TextFonts") extern class TextFonts implements ArrayAccess<TextFont> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

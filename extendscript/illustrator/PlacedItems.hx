@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("PlacedItems") extern class PlacedItems {
+@:native("PlacedItems") extern class PlacedItems implements ArrayAccess<PlacedItem> {
 	
 	/*
 	 * Create a placed item.

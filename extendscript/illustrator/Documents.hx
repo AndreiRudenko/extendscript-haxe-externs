@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of documents. */
-@:native("Documents") extern class Documents {
+@:native("Documents") extern class Documents implements ArrayAccess<Document> {
 	
 	/*
 	 * Create a new document from a preset.

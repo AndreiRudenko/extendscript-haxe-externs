@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("NonNativeItems") extern class NonNativeItems {
+@:native("NonNativeItems") extern class NonNativeItems implements ArrayAccess<NonNativeItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

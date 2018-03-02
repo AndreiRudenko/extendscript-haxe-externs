@@ -5,71 +5,71 @@ package extendscript;
 @:native("Folder") extern class Folder {
 	
 	/* The name of the current file system. */
-	var fs:String; 
+	static var fs:String; 
 
 	/* A Folder object for the current folder. */
-	var current:Folder; 
+	static var current:Folder; 
 
 	/* A Folder object for the folder containing the executable image of the running application. */
-	var startup:Folder; 
+	static var startup:Folder; 
 
 	/* In Mac OS, a Folder object for the folder containing the bundle of the running application. */
-	var appPackage:Folder; 
+	static var appPackage:Folder; 
 
 	/* A Folder object for the folder containing the operating system files. */
-	var system:Folder; 
+	static var system:Folder; 
 
 	/* A Folder object for the folder containing deleted items. On Windows, the trash folder is a virtual
 								   folder containing a database; therefore, the property value is null on Windows. */
-	var trash:Folder; 
+	static var trash:Folder; 
 
 	/* A Folder object for the default folder for temporary files. */
-	var temp:Folder; 
+	static var temp:Folder; 
 
 	/* A Folder object for the folder containing the user's application data. */
-	var userData:Folder; 
+	static var userData:Folder; 
 
 	/* The folder containing the application data for all users. */
-	var appData:Folder; 
+	static var appData:Folder; 
 
 	/* A Folder object for the folder containing common files for all programs installed by the user. */
-	var commonFiles:Folder; 
+	static var commonFiles:Folder; 
 
 	/* A folder pointing to the user's My Documents folder. */
-	var myDocuments:Folder; 
+	static var myDocuments:Folder; 
 
 	/* A Folder object for the folder that contains the user’s desktop. */
-	var desktop:Folder; 
+	static var desktop:Folder; 
 
 	/*
 	 * Creates and returns a new Folder object referring to a given file-system location.
 	 * @param {String} [path] The absolute or relative path to the folder associated with this object, specified in URI format.
 	 */
-	public function new(?path:String);
+	// public function new(?path:String);
 
 	/*
 	 * Encodes a string as required by RFC 2396, and returns the encoded string.
 	 * @param {String} [name] The string to encode.
 	 */
-	function encode(name:String):String;
+	static function encode(name:String):String;
 
 	/*
 	 * Decodes a UTF-8 encoded string as required by RFC 2396, and returns the decoded string.
 	 * @param {String} [uri] The UTF-8 string to decode.
 	 */
-	function decode(uri:String):String;
+	static function decode(uri:String):String;
 
 	/*
 	 * Reports whether a given encoding is available.
 	 * @param {String} [name] The encoding name.
 	 */
-	function isEncodingAvailable(name:String):Bool;
+	static function isEncodingAvailable(name:String):Bool;
 
 	/*
 	 * Opens the built-in platform-specific file-browsing dialog, and creates a new File or Folder object for the selected file or folder.
 	 * @param {String} [prompt] The prompt text, if the dialog allows a prompt.
 	 */
-	function selectDialog(prompt:String):Folder;
+	static function selectDialog(prompt:String):Folder;
 
 	/* When true, the object refers to a file system alias or shortcut. */
 	var alias:Bool; 

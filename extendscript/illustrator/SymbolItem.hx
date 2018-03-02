@@ -1,7 +1,7 @@
 package extendscript.illustrator;
 
 
-import extendscript.photoshop.ElementPlacement;
+import extendscript.illustrator.ElementPlacement;
 
 
 /* An instance of a Symbol. */

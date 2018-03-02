@@ -1,7 +1,7 @@
 package extendscript.illustrator;
 
 
-import extendscript.photoshop.ElementPlacement;
+import extendscript.illustrator.ElementPlacement;
 
 /* A symbol. */
 @:native("Symbol") extern class Symbol {

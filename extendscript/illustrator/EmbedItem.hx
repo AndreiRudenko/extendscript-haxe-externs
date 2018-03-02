@@ -1,6 +1,6 @@
 package extendscript.illustrator;
 
-import extendscript.photoshop.ElementPlacement;
+import extendscript.illustrator.ElementPlacement;
 
 
 /* Embedded artwork item. */

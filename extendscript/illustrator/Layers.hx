@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of layers. */
-@:native("Layers") extern class Layers {
+@:native("Layers") extern class Layers implements ArrayAccess<Layer> {
 	
 	/*
 	 * Create a layer.

@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of views. */
-@:native("Views") extern class Views {
+@:native("Views") extern class Views implements ArrayAccess<View> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

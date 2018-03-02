@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* A collection of Paragraphs. */
-@:native("Paragraphs") extern class Paragraphs {
+@:native("Paragraphs") extern class Paragraphs implements ArrayAccess<TextRange> {
 	
 	/*
 	 * Create a text art item.

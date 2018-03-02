@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("MeshItems") extern class MeshItems {
+@:native("MeshItems") extern class MeshItems implements ArrayAccess<MeshItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 

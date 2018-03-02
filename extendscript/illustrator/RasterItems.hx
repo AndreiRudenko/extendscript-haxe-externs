@@ -2,7 +2,7 @@ package extendscript.illustrator;
 
 
 /* null */
-@:native("RasterItems") extern class RasterItems {
+@:native("RasterItems") extern class RasterItems implements ArrayAccess<RasterItem> {
 	
 	/* The object's container. */
 	var parent:Dynamic; 
