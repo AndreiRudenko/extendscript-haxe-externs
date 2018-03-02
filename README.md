@@ -1,7 +1,6 @@
 ## ExtendScript  
 
-Haxe externs for the ExtendScript API  
-almost same as SlavaRa [haxelib-extendscript](https://github.com/SlavaRa/haxelib-extendscript) 
+Haxe externs for the ExtendScript API 
 
 
 ## example  
