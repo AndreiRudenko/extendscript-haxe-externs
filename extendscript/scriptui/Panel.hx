@@ -134,7 +134,7 @@ package extendscript.scriptui;
 	/*
 	 * An event-handler callback function, called when the panel is about to be drawn.
 	 */
-	function onDraw():Void;
+	var onDraw:Void->Void;
 
 
 }

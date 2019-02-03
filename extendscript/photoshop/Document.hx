@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("Document") extern class Document {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Application; 
 
 	/* The class name of the object. */
 	var typename:String; 

@@ -4,13 +4,13 @@ package extendscript.illustrator;
 @:native("DirOverrideType") extern enum DirOverrideType {
 	
 	/* null */
-	dirOverrideDefault; 
+	DEFAULT_DIRECTION; 
 
 	/* null */
-	dirOverrideLTR; 
+	LEFT_TO_RIGHT_DIRECTION; 
 
 	/* null */
-	dirOverrideRTL; 
+	RIGHT_TO_LEFT_DIRECTION; 
 
 
 }

@@ -7,7 +7,7 @@ package extendscript.illustrator;
 	latinCJKComposer; 
 
 	/* null */
-	pptycaComposer; 
+	optycaComposer; 
 
 	/* null */
 	adornment; 

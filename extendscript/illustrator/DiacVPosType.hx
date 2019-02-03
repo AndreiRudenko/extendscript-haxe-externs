@@ -4,19 +4,19 @@ package extendscript.illustrator;
 @:native("DiacVPosType") extern enum DiacVPosType {
 	
 	/* null */
-	diacVPosOff; 
+	DEFAULT_POSITION; 
 
 	/* null */
-	diacVPosLoose; 
+	LOOSE_POSITION; 
 
 	/* null */
-	diacVPosMedium; 
+	MEDIUM_POSITION; 
 
 	/* null */
-	diacVPosTight; 
+	TIGHT_POSITION; 
 
 	/* null */
-	diacVPosOpenType; 
+	OPENTYPE_POSITION; 
 
 
 }

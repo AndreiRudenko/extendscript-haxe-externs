@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("InsertionPoint") extern class InsertionPoint {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:TextRange; 
 
 	/* The class name of the object. */
 	var typename:String; 

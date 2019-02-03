@@ -19,6 +19,9 @@ package extendscript.illustrator;
 	/* The font's style name. */
 	var style:String; 
 
+	/* The font's Axis Vector. */
+	var axisVector:Float; 
+
 	public function new():Void;
 
 }

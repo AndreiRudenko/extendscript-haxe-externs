@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("ArtLayers") extern class ArtLayers implements ArrayAccess<ArtLayer> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

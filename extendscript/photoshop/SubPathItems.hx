@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("SubPathItems") extern class SubPathItems implements ArrayAccess<SubPathItem> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:PathItem; 
 
 	/* The class name of the object. */
 	var typename:String; 

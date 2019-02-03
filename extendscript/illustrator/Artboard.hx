@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("Artboard") extern class Artboard {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

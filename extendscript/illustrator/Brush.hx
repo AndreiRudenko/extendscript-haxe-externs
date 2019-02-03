@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("Brush") extern class Brush {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

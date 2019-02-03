@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("Guides") extern class Guides implements ArrayAccess<Guide> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

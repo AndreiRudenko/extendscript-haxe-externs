@@ -4,16 +4,16 @@ package extendscript.illustrator;
 @:native("DigitSetType") extern enum DigitSetType {
 	
 	/* null */
-	defaultDigits; 
+	DEFAULT_DIGITS; 
 
 	/* null */
-	arabicDigits; 
+	ARABIC_DIGITS; 
 
 	/* null */
-	hindiDigits; 
+	HINDI_DIGITS; 
 
 	/* null */
-	farsiDigits; 
+	FARSI_DIGITS; 
 
 
 }

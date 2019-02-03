@@ -7,7 +7,7 @@ package extendscript.illustrator;
 	/* Percentage level of tint to be applied to the spot color. */
 	var tint:Float; 
 
-	/* null */
+	/* A reference to the spot color object that defines the color */
 	var spot:Spot; 
 
 	public function new():Void;

@@ -11,7 +11,7 @@ package extendscript.illustrator;
 	function add(artboardRect:Rectangle):Artboard;
 
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; //todo check, cause in api it says ArtBoard
 
 	/* The class name of the object. */
 	var typename:String; 

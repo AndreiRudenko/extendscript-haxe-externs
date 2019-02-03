@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("Documents") extern class Documents implements ArrayAccess<Document> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Application; 
 
 	/* The class name of the object. */
 	var typename:String; 

@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("DataSet") extern class DataSet {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

@@ -76,6 +76,12 @@ package extendscript.illustrator;
 	 * @param {String} [key] The preference key.
 	 */
 	function removePreference(key:String):Void;
+	
+	/*
+	 * Checks whether the application preference key exists..
+	 * @param {String} [key] The preference key.
+	 */
+	function preferenceExists(key:String):Void;
 
 	public function new():Void;
 

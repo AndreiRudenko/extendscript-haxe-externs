@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("TextItem") extern class TextItem {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:ArtLayer; 
 
 	/* The class name of the object. */
 	var typename:String; 

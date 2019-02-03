@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("PathPoints") extern class PathPoints implements ArrayAccess<PathPoint> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:SubPathItem; 
 
 	/* The class name of the object. */
 	var typename:String; 

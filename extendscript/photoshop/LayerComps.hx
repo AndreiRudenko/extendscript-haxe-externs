@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("LayerComps") extern class LayerComps implements ArrayAccess<LayerComp> {
 
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

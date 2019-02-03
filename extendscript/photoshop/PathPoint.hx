@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("PathPoint") extern class PathPoint {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:SubPathItem; 
 
 	/* The class name of the object. */
 	var typename:String; 

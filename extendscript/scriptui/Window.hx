@@ -220,52 +220,52 @@ package extendscript.scriptui;
 	/*
 	 * Simulates the occurrence of an event in this target.
 	 */
-	function dispatchEvent():UIEvent;
+	function dispatchEvent():UIEvent; //todo: tests this
 
 	/*
 	 * An event-handler callback function, called when the window acquires the keyboard focus.
 	 */
-	function onActivate():Void;
+	var onActivate:Void->Void;
 
 	/*
 	 * An event-handler callback function, called when the window loses the keyboard focus.
 	 */
-	function onDeactivate():Void;
+	var onDeactivate:Void->Void;
 
 	/*
 	 * An event-handler callback function, called  when the window is about to be closed.
 	 */
-	function onClose():Bool;
+	var onClose:Bool->Void;
 
 	/*
 	 * An event-handler callback function, called  when the window  has been moved
 	 */
-	function onMove():Void;
+	var onMove:Void->Void;
 
 	/*
 	 * An event-handler callback function, called  when the window is being moved
 	 */
-	function onMoving():Void;
+	var onMoving:Void->Void;
 
 	/*
 	 * An event-handler callback function, called after the window has been resized
 	 */
-	function onResize():Void;
+	var onResize:Void->Void;
 
 	/*
 	 * An event-handler callback function, called while a window is being resized
 	 */
-	function onResizing():Void;
+	var onResizing:Void->Void;
 
 	/*
 	 * { text => In Windows only, an event-handler callback function, called a shortcut-key sequence is typed that matches the  value for this window., a => { text => shortcutKey, href => /Window/shortcutKey } }
 	 */
-	function onShortcutKey():Void;
+	var onShortcutKey:Void->Void;
 
 	/*
 	 * An event-handler callback function, called just before the window is displayed
 	 */
-	function onShow():Void;
+	var onShow:Void->Void;
 
 
 }

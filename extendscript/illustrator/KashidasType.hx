@@ -4,13 +4,13 @@ package extendscript.illustrator;
 @:native("KashidasType") extern enum KashidasType {
 	
 	/* null */
-	kashidaDefault; 
+	DEFAULT_KASHIDAS; 
 
 	/* null */
-	kashidaOn; 
+	KASHIDAS_ON; 
 
 	/* null */
-	kashidaOff; 
+	KASHIDAS_OFF; 
 
 
 }

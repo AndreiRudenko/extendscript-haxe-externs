@@ -116,12 +116,12 @@ package extendscript.scriptui;
 	/*
 	 * An event-handler callback function, called when the window is about to be drawn.
 	 */
-	function onDraw():Void;
+	var onDraw:Void->Void;
 
 	/*
 	 * { b => shortcutKey, text => An event-handler callback function, called when the element's  sequence is typed in the active window. }
 	 */
-	function onShortcutKey():Void;
+	var onShortcutKey:Void->Void;
 
 
 }

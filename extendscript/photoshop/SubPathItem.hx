@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("SubPathItem") extern class SubPathItem {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:PathItem; 
 
 	/* The class name of the object. */
 	var typename:String; 

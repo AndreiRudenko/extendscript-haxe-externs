@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("TextFonts") extern class TextFonts implements ArrayAccess<TextFont> {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Document; 
 
 	/* The class name of the object. */
 	var typename:String; 

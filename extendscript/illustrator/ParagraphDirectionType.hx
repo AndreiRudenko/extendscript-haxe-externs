@@ -4,9 +4,9 @@ package extendscript.illustrator;
 @:native("ParagraphDirectionType") extern enum ParagraphDirectionType {
 	
 	/* null */
-	leftToRight; 
+	LEFT_TO_RIGHT_DIRECTION; 
 
 	/* null */
-	rightToLeft; 
+	RIGHT_TO_LEFT_DIRECTION; 
 
 }

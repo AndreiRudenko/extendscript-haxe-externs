@@ -140,27 +140,27 @@ package extendscript.scriptui;
 	/*
 	 * An event-handler callback function, called when the element acquires the keyboard focus.
 	 */
-	function onActivate():Void;
+	var onActivate:Void->Void;
 
 	/*
 	 * An event-handler callback function, called when the element loses the keyboard focus.
 	 */
-	function onDeactivate():Void;
+	var onDeactivate:Void->Void;
 
 	/*
 	 * An event-handler callback function, called when the content of the element has been changed
 	 */
-	function onChange():Void;
+	var onChange:Void->Void;
 
 	/*
 	 * { text => An event-handler callback function, called when the element's  sequence is typed in the active window., a => { text => shortcutKey, href => /DropDownList/shortcutKey } }
 	 */
-	function onShortcutKey():Void;
+	var onShortcutKey:Void->Void;
 
 	/*
 	 * An event-handler callback function, called when the window is about to be drawn.
 	 */
-	function onDraw():Void;
+	var onDraw:Void->Void;
 
 
 }

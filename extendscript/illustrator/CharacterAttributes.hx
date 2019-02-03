@@ -160,6 +160,30 @@ package extendscript.illustrator;
 	/* Whether to draw a strike through line over the text. */
 	var strikeThrough:Bool; 
 
+	/* Kashidas attribute. */
+	var kashidas:KashidasType; 
+
+	/* Direction override attribute. */
+	var dirOverride:DirOverrideType;
+
+	/* Digit set attribute. */
+	var digitSet:DigitSetType; 
+
+	/* Diacritics positioning attribute. */
+	var diacVPos:DiacVPosType; 
+
+	/* Diacritics x offset attribute. */
+	var diacXOffset:Float; 
+
+	/* critics y offset attribute. */
+	var diacYOffset:Float; 
+
+	/* Justification alternates attribute. */
+	var justificationAlternates:Bool; 
+
+	/* Stylistic sets attribute. */
+	var stylisticSets:Int; 
+
 	public function new():Void;
 
 }

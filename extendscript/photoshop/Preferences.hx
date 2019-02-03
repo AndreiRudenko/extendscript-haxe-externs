@@ -5,7 +5,7 @@ package extendscript.photoshop;
 @:native("Preferences") extern class Preferences {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Application; 
 
 	/* The class name of the object. */
 	var typename:String; 

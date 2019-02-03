@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("Document") extern class Document {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Application; 
 
 	/* The class name of the object. */
 	var typename:String; 
@@ -297,8 +297,9 @@ package extendscript.illustrator;
 	 * @param {Float} [creationTime] For Internal Use.
 	 * @param {String} [adobeStockId] For Internal Use.
 	 * @param {String} [adobeStockLicense] For Internal Use.
+	 * @param {String} [shouldLoadToPlaceGun] Whether or not to load the imported file to placegun.
 	 */
-	function importFile(importFile:File, isLinked:Bool, ?libraryName:String, ?itemName:String, ?elementRef:String, ?modifiedTime:Float, ?creationTime:Float, ?adobeStockId:String, ?adobeStockLicense:String):Void;
+	function importFile(importFile:File, isLinked:Bool, ?libraryName:String, ?itemName:String, ?elementRef:String, ?modifiedTime:Float, ?creationTime:Float, ?adobeStockId:String, ?adobeStockLicense:String, ?shouldLoadToPlaceGun:Bool):Void;
 
 	/*
 	 * Activate the first window associated with the document.

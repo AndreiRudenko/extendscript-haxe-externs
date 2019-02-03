@@ -5,7 +5,7 @@ package extendscript.illustrator;
 @:native("GradientStop") extern class GradientStop {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:Gradient; 
 
 	/* The class name of the object. */
 	var typename:String; 

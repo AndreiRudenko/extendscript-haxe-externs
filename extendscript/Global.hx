@@ -11,7 +11,11 @@ package extendscript;
 	static var Infinity:Float; 
 
 	/* This global property is a predefined variable with the value for an undefined value. */
-	static var undefined:Dynamic; 
+	static var undefined(get, never):Dynamic;
+
+	@:noCompletion static inline function get_undefined():Dynamic {
+		return untyped (__js__("undefined"));
+	}
 
 	/*
 	 * Encodes a string after RFC2396.

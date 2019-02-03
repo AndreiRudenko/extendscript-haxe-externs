@@ -6,7 +6,7 @@ import extendscript.illustrator.ElementPlacement;
 @:native("TextRange") extern class TextRange {
 	
 	/* The object's container. */
-	var parent:Dynamic; 
+	var parent:TextRange; 
 
 	/* The class name of the object. */
 	var typename:String; 
