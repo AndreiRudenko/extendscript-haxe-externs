@@ -51,6 +51,9 @@ import extendscript.illustrator.ElementPlacement;
 	/* The item's name. */
 	var name:String; 
 
+	/* The item's unique identifier. */
+	var uuid:String; 
+
 	/* The mode used when compositing an object. */
 	var blendingMode:BlendModes; 
 

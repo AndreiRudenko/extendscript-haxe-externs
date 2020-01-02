@@ -19,6 +19,9 @@ package extendscript.illustrator;
 	/* The zoom factor of this view. */
 	var zoom:Float; 
 
+	/* The zoom factor of this view that is visible to user. */
+	var visibleZoom:Float; 
+
 	/* The mode of display. */
 	var screenMode:ScreenMode; 
 

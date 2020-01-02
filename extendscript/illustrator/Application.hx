@@ -91,6 +91,9 @@ package extendscript.illustrator;
 	/* The open documents. */
 	var documents:Documents; 
 
+	/* True if home Screen is Visible. */
+	var homeScreenVisible:Bool; 
+
 	/* Installed fonts. */
 	var textFonts:TextFonts; 
 
@@ -583,6 +586,19 @@ package extendscript.illustrator;
 	 * Is user sharing the application usage data.
 	 */
 	function isUserSharingAppUsageData():Bool;
+
+	/*
+	 * Select tool using toolname
+	 * @param {String} [toolName] Tool Name.
+	 */
+	function selectTool(toolName:String):Bool;
+
+	/*
+	 * Display learn panel with specific content.
+	 * @param {String} [manifest] Path of the manifest.
+	 * @param {String} [hTMLPage] Url of the html file to be displayed on learn panel.
+	 */
+	function showLearnPanelWithContent(manifest:String, hTMLPage:String):Void;
 
 	public function new():Void;
 

@@ -287,6 +287,13 @@ package extendscript.illustrator;
 	function exportSelectionAsAi(exportFile:File):Void;
 
 	/*
+	 * Write the document to a file as a library of specified type.
+	 * @param {File} [file] The file to write the library in.
+	 * @param {LibraryType} [libraryType] Type of library to write as.
+	 */
+	function writeAsLibrary(file:File, libraryType:LibraryType):Void;
+
+	/*
 	 * Import the file into current Ai document.
 	 * @param {File} [importFile] The file to import in the current document.
 	 * @param {Bool} [isLinked] Is AssetLiveLinked.
@@ -446,6 +453,12 @@ package extendscript.illustrator;
 	 * @param {PerspectiveGridPlaneType} [perspectiveGridPlane] Type of perspective grid plane.
 	 */
 	function setPerspectiveActivePlane(perspectiveGridPlane:PerspectiveGridPlaneType):Bool;
+
+	/*
+	 * Retrieves the pageitem using Uuid.
+	 * @param {String} [uuid] Uuid of pageitem.
+	 */
+	function getPageItemFromUuid(uuid:String):PageItem;
 
 	public function new():Void;
 
