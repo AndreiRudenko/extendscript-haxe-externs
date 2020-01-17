@@ -1,23 +1,22 @@
 package extendscript.illustrator;
 
-/* Controls where Photoshop places an element. */
-@:native("ElementPlacement") extern enum ElementPlacement {
+/* Controls where illustrator places an element. */
+@:native("ElementPlacement") @:enum extern enum abstract ElementPlacement(Int) {
 	
 	/*  */
-	INSIDE; 
+	var INSIDE; 
 
 	/*  */
-	PLACEATBEGINNING; 
+	var PLACEATBEGINNING; 
 
 	/* Place after an element. */
-	PLACEAFTER; 
+	var PLACEAFTER; 
 
 	/* Place before an element. */
-	PLACEBEFORE; 
+	var PLACEBEFORE; 
 
 	/* Place an element at the end. */
-	PLACEATEND; 
-
+	var PLACEATEND; 
 
 
 }

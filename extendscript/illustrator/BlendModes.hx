@@ -1,55 +1,23 @@
 package extendscript.illustrator;
 
 /* Blend modes used when compositing an object. */
-@:native("BlendModes") extern enum BlendModes {
-	
-	/* null */
-	NORMAL; 
+@:native("BlendModes") @:enum extern enum abstract BlendModes(Int) {
 
-	/* null */
-	MULTIPLY; 
-
-	/* null */
-	SCREEN; 
-
-	/* null */
-	OVERLAY; 
-
-	/* null */
-	SOFTLIGHT; 
-
-	/* null */
-	HARDLIGHT; 
-
-	/* null */
-	COLORDODGE; 
-
-	/* null */
-	COLORBURN; 
-
-	/* null */
-	DARKEN; 
-
-	/* null */
-	LIGHTEN; 
-
-	/* null */
-	DIFFERENCE; 
-
-	/* null */
-	EXCLUSION; 
-
-	/* null */
-	HUE; 
-
-	/* null */
-	SATURATIONBLEND; 
-
-	/* null */
-	COLORBLEND; 
-
-	/* null */
-	LUMINOSITY; 
-
+	var NORMAL;
+	var MULTIPLY;
+	var SCREEN;
+	var OVERLAY;
+	var SOFTLIGHT;
+	var HARDLIGHT;
+	var COLORDODGE;
+	var COLORBURN;
+	var DARKEN;
+	var LIGHTEN;
+	var DIFFERENCE;
+	var EXCLUSION;
+	var HUE;
+	var SATURATIONBLEND;
+	var COLORBLEND;
+	var LUMINOSITY; 
 
 }
