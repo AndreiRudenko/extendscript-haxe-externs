@@ -59,7 +59,7 @@ package extendscript.illustrator;
 	var printTiles:Bool; 
 
 	/* The selection within the document. */
-	var selection:Any; 
+	var selection:Array<Object>; 
 
 	/* null */
 	var splitLongPaths:Bool; 
