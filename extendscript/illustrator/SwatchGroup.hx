@@ -32,7 +32,7 @@ package extendscript.illustrator;
 	/*
 	 * Get all swatches in the swatch group.
 	 */
-	function getAllSwatches():Swatch;
+	function getAllSwatches():Array<Swatch>;
 
 	/*
 	 * Add a spot swatch to the group.
