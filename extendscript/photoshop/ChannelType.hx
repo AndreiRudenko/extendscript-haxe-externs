@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The type of channel. */
-@:native("ChannelType") extern enum ChannelType {
+@:native("ChannelType") @:enum extern enum abstract ChannelType(Int) { 
 	
 	/* The channel related to the document color model. */
-	COMPONENT; 
-
+	var COMPONENT;
+	
 	/* The apha channel where color indicates a masked area. */
-	MASKEDAREA; 
-
+	var MASKEDAREA;
+	
 	/* The lpha channel where color indicates a selected area. */
-	SELECTEDAREA; 
-
+	var SELECTEDAREA;
+	
 	/* The alpha channel to store a spot color. */
-	SPOTCOLOR; 
-
-
+	var SPOTCOLOR;
+	
+	
 }

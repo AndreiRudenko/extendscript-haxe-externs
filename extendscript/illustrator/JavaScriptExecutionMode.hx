@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* When should a JavaScript debugger be shown. */
-@:native("JavaScriptExecutionMode") extern enum JavaScriptExecutionMode {
+@:native("JavaScriptExecutionMode") @:enum extern enum abstract JavaScriptExecutionMode(Int) { 
 	
 	/* Never show the JavaScript debugger. Treat runtime errors by throwing a JavaScript exceptions. */
-	never; 
-
+	var never;
+	
 	/* Show the JavaScript debugger is a runtime error occurs. */
-	OnRuntimeError; 
-
+	var OnRuntimeError;
+	
 	/* Show the JavaScript debugger at the first line of the JavaScript. */
-	BeforeRunning; 
-
-
+	var BeforeRunning;
+	
+	
 }

@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The type of dither. */
-@:native("DitherType") extern enum DitherType {
+@:native("DitherType") @:enum extern enum abstract DitherType(Int) { 
 	
 	/* No dither is used. */
-	NONE; 
-
+	var NONE;
+	
 	/* Diffuses dither effects in random patterns across adjacent pixels. */
-	DIFFUSION; 
-
+	var DIFFUSION;
+	
 	/* Applies a halftone-like square pattern. */
-	PATTERN; 
-
+	var PATTERN;
+	
 	/* Applies a random pattern but without diffusing the pattern across adjacent pixels; prevents the appearance of seams. */
-	NOISE; 
-
-
+	var NOISE;
+	
+	
 }

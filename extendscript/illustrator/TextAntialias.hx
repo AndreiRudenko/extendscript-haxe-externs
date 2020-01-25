@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The type of text antialiasing. */
-@:native("TextAntialias") extern enum TextAntialias {
+@:native("TextAntialias") @:enum extern enum abstract TextAntialias(Int) { 
 	
 	/* Text from a point. */
-	NONE; 
-
+	var NONE;
+	
 	/* Text within an area. */
-	SHARP; 
-
+	var SHARP;
+	
 	/* Text on a path. */
-	CRISP; 
-
+	var CRISP;
+	
 	/* Text on a path. */
-	STRONG; 
-
-
+	var STRONG;
+	
+	
 }

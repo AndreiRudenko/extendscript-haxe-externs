@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The baseline direction type. */
-@:native("BaselineDirectionType") extern enum BaselineDirectionType {
+@:native("BaselineDirectionType") @:enum extern enum abstract BaselineDirectionType(Int) { 
 	
-	/* null */
-	Standard; 
-
-	/* null */
-	VerticalRotated; 
-
-	/* null */
-	TateChuYoko; 
-
-
+	/* */
+	var Standard;
+	
+	/* */
+	var VerticalRotated;
+	
+	/* */
+	var TateChuYoko;
+	
+	
 }

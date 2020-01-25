@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADUnit") extern enum AutoCADUnit {
+@:native("AutoCADUnit") @:enum extern enum abstract AutoCADUnit(Int) { 
 	
-	/* null */
-	Points; 
-
-	/* null */
-	Picas; 
-
-	/* null */
-	Inches; 
-
-	/* null */
-	Millimeters; 
-
-	/* null */
-	Centimeters; 
-
-	/* null */
-	Pixels; 
-
-
+	/* */
+	var Points;
+	
+	/* */
+	var Picas;
+	
+	/* */
+	var Inches;
+	
+	/* */
+	var Millimeters;
+	
+	/* */
+	var Centimeters;
+	
+	/* */
+	var Pixels;
+	
+	
 }

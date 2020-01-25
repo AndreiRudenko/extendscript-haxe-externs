@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The compression type to use whan saving as PICT. */
-@:native("PICTCompression") extern enum PICTCompression {
+@:native("PICTCompression") @:enum extern enum abstract PICTCompression(Int) { 
 	
 	/* No compression. */
-	NONE; 
-
+	var NONE;
+	
 	/* Low quality JPEG encoding (high amount of compression). */
-	JPEGLOWPICT; 
-
+	var JPEGLOWPICT;
+	
 	/* Medium quality JPEG encoding (medium amount of compression). */
-	JPEGMEDIUMPICT; 
-
+	var JPEGMEDIUMPICT;
+	
 	/* High quality JPEG encoding. */
-	JPEGHIGHPICT; 
-
+	var JPEGHIGHPICT;
+	
 	/* Maximum quality JPEG encoding (very little compression). */
-	JPEGMAXIMUMPICT; 
-
-
+	var JPEGMAXIMUMPICT;
+	
+	
 }

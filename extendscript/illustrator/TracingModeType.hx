@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The tracing mode: color, grayscale, black and white. */
-@:native("TracingModeType") extern enum TracingModeType {
+@:native("TracingModeType") @:enum extern enum abstract TracingModeType(Int) { 
 	
 	/* Color tracing mode. */
-	TRACINGMODECOLOR; 
-
+	var TRACINGMODECOLOR;
+	
 	/* Grayscale tracing mode. */
-	TRACINGMODEGRAY; 
-
+	var TRACINGMODEGRAY;
+	
 	/* Black and white tracing mode. */
-	TRACINGMODEBLACKANDWHITE; 
-
-
+	var TRACINGMODEBLACKANDWHITE;
+	
+	
 }

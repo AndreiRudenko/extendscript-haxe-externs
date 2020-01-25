@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* The color to use for matting. */
-@:native("MatteType") extern enum MatteType {
+@:native("MatteType") @:enum extern enum abstract MatteType(Int) { 
 	
 	/* None. */
-	NONE; 
-
+	var NONE;
+	
 	/* The current foreground color. */
-	FOREGROUND; 
-
+	var FOREGROUND;
+	
 	/* The current background color. */
-	BACKGROUND; 
-
+	var BACKGROUND;
+	
 	/* White. */
-	WHITE; 
-
+	var WHITE;
+	
 	/* Black. */
-	BLACK; 
-
+	var BLACK;
+	
 	/* 50% gray. */
-	SEMIGRAY; 
-
+	var SEMIGRAY;
+	
 	/* Gray. */
-	NETSCAPE; 
-
-
+	var NETSCAPE;
+	
+	
 }

@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The color profile type. */
-@:native("PrintColorProfile") extern enum PrintColorProfile {
+@:native("PrintColorProfile") @:enum extern enum abstract PrintColorProfile(Int) { 
 	
 	/* Use old style AI color profile. */
-	OLDSTYLEPROFILE; 
-
+	var OLDSTYLEPROFILE;
+	
 	/* Same as source color profile. */
-	SOURCEPROFILE; 
-
+	var SOURCEPROFILE;
+	
 	/* Same as printer color profile. */
-	PRINTERPROFILE; 
-
+	var PRINTERPROFILE;
+	
 	/* Use custom color profile. */
-	CUSTOMPROFILE; 
-
-
+	var CUSTOMPROFILE;
+	
+	
 }

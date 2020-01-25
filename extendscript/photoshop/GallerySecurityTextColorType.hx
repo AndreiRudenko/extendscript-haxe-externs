@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The color to use for text displayed over gallery images as an antitheft deterrent. */
-@:native("GallerySecurityTextColorType") extern enum GallerySecurityTextColorType {
+@:native("GallerySecurityTextColorType") @:enum extern enum abstract GallerySecurityTextColorType(Int) { 
 	
 	/* Black text. */
-	BLACK; 
-
+	var BLACK;
+	
 	/* White text. */
-	WHITE; 
-
+	var WHITE;
+	
 	/* Custom color. */
-	CUSTOM; 
-
-
+	var CUSTOM;
+	
+	
 }

@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The figure style type. */
-@:native("FigureStyleType") extern enum FigureStyleType {
+@:native("FigureStyleType") @:enum extern enum abstract FigureStyleType(Int) { 
 	
 	/* Default figure style. */
-	DEFAULTFIGURESTYLE; 
-
+	var DEFAULTFIGURESTYLE;
+	
 	/* Tabular lining style. */
-	TABULAR; 
-
+	var TABULAR;
+	
 	/* Proportional oldstyle. */
-	PROPORTIONALOLDSTYLE; 
-
+	var PROPORTIONALOLDSTYLE;
+	
 	/* Proportional lining style. */
-	PROPORTIONAL; 
-
+	var PROPORTIONAL;
+	
 	/* Tabular oldstyle. */
-	TABULAROLDSTYLE; 
-
-
+	var TABULAROLDSTYLE;
+	
+	
 }

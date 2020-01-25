@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The default Camera RAW settings. */
-@:native("CameraRAWSettingsType") extern enum CameraRAWSettingsType {
+@:native("CameraRAWSettingsType") @:enum extern enum abstract CameraRAWSettingsType(Int) { 
 	
 	/* Use the settings of the camera. */
-	CAMERA; 
-
+	var CAMERA;
+	
 	/* Use the settings of the selected image. */
-	SELECTEDIMAGE; 
-
+	var SELECTEDIMAGE;
+	
 	/* Use the custom settings. */
-	CUSTOM; 
-
-
+	var CUSTOM;
+	
+	
 }

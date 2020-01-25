@@ -1,12 +1,12 @@
 package extendscript.illustrator;
 
 /* The composer type constants. */
-@:native("ParagraphDirectionType") extern enum ParagraphDirectionType {
+@:native("ParagraphDirectionType") @:enum extern enum abstract ParagraphDirectionType(Int) { 
 	
-	/* null */
-	LEFT_TO_RIGHT_DIRECTION; 
-
-	/* null */
-	RIGHT_TO_LEFT_DIRECTION; 
-
+	/* */
+	var LEFT_TO_RIGHT_DIRECTION;
+	
+	/* */
+	var RIGHT_TO_LEFT_DIRECTION;
+	
 }

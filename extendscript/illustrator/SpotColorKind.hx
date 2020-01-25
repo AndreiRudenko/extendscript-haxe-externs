@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Custom color kind of the spot color. */
-@:native("SpotColorKind") extern enum SpotColorKind {
+@:native("SpotColorKind") @:enum extern enum abstract SpotColorKind(Int) { 
 	
 	/* Solid ink, expressed in four CMYK values. */
-	SPOTCMYK; 
-
+	var SPOTCMYK;
+	
 	/* Solid color, expressed as three RGB values. */
-	SPOTRGB; 
-
+	var SPOTRGB;
+	
 	/* Lab color. Only valid for spot colors. */
-	SPOTLAB; 
-
-
+	var SPOTLAB;
+	
+	
 }

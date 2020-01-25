@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The type of object(s) to reset to default settings. */
-@:native("ResetTarget") extern enum ResetTarget {
+@:native("ResetTarget") @:enum extern enum abstract ResetTarget(Int) { 
 	
 	/* Warning dialogs. */
-	ALLWARNINGS; 
-
+	var ALLWARNINGS;
+	
 	/* Tools. */
-	ALLTOOLS; 
-
+	var ALLTOOLS;
+	
 	/* All targets. */
-	EVERYTHING; 
-
-
+	var EVERYTHING;
+	
+	
 }

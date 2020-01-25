@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("FlashExportStyle") extern enum FlashExportStyle {
+@:native("FlashExportStyle") @:enum extern enum abstract FlashExportStyle(Int) { 
 	
 	/* Illustrator Artboards to Flash Files. */
-	ARTBOARDSTOFILES; 
-
+	var ARTBOARDSTOFILES;
+	
 	/* Illustrator file to Flash file. */
-	ASFLASHFILE; 
-
+	var ASFLASHFILE;
+	
 	/* Illustrator layers to Flash frames. */
-	LAYERSASFRAMES; 
-
+	var LAYERSASFRAMES;
+	
 	/* Illustrator layers to Flash files. */
-	LAYERSASFILES; 
-
+	var LAYERSASFILES;
+	
 	/* Illustrator layers to Flash Symbols. */
-	LAYERSASSYMBOLS; 
-
-
+	var LAYERSASSYMBOLS;
+	
+	
 }

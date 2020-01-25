@@ -1,37 +1,37 @@
 package extendscript.illustrator;
 
 /* Export file types. */
-@:native("ExportType") extern enum ExportType {
+@:native("ExportType") @:enum extern enum abstract ExportType(Int) { 
 	
 	/* JPEG export file format. */
-	JPEG; 
-
+	var JPEG;
+	
 	/* Photoshop export file format. */
-	PHOTOSHOP; 
-
+	var PHOTOSHOP;
+	
 	/* SVG export file format. */
-	SVG; 
-
+	var SVG;
+	
 	/* PNG 8-bit export file format. */
-	PNG8; 
-
+	var PNG8;
+	
 	/* PNG 24-bit export file format. */
-	PNG24; 
-
+	var PNG24;
+	
 	/* GIF export file format. */
-	GIF; 
-
+	var GIF;
+	
 	/* Flash export file format. */
-	FLASH; 
-
+	var FLASH;
+	
 	/* AutoCAD export file format. */
-	AUTOCAD; 
-
+	var AUTOCAD;
+	
 	/* TIFF export file format. */
-	TIFF; 
-
+	var TIFF;
+	
 	/* Web Optimized SVG export file format. */
-	WOSVG; 
-
-
+	var WOSVG;
+	
+	
 }

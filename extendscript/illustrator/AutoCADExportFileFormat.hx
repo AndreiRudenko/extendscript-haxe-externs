@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADExportFileFormat") extern enum AutoCADExportFileFormat {
+@:native("AutoCADExportFileFormat") @:enum extern enum abstract AutoCADExportFileFormat(Int) { 
 	
-	/* null */
-	DXF; 
-
-	/* null */
-	DWG; 
-
-
+	/* */
+	var DXF;
+	
+	/* */
+	var DWG;
+	
+	
 }

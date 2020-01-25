@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Pdf trim mark weight options. */
-@:native("PDFTrimMarkWeight") extern enum PDFTrimMarkWeight {
+@:native("PDFTrimMarkWeight") @:enum extern enum abstract PDFTrimMarkWeight(Int) { 
 	
-	/* null */
-	TRIMMARKWEIGHT0125; 
-
-	/* null */
-	TRIMMARKWEIGHT025; 
-
-	/* null */
-	TRIMMARKWEIGHT05; 
-
-
+	/* */
+	var TRIMMARKWEIGHT0125;
+	
+	/* */
+	var TRIMMARKWEIGHT025;
+	
+	/* */
+	var TRIMMARKWEIGHT05;
+	
+	
 }

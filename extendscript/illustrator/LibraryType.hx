@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* Illustrator library types. */
-@:native("LibraryType") extern enum LibraryType {
+@:native("LibraryType") @:enum extern enum abstract LibraryType(Int) { 
 	
 	/* Illustrator artwork. */
-	ILLUSTRATORARTWORK; 
-
+	var ILLUSTRATORARTWORK;
+	
 	/* Illustrator swatches library. */
-	SWATCHES; 
-
+	var SWATCHES;
+	
 	/* Illustrator brushes library. */
-	BRUSHES; 
-
+	var BRUSHES;
+	
 	/* Illustrator graphic styles library. */
-	GRAPHICSTYLES; 
-
+	var GRAPHICSTYLES;
+	
 	/* Illustrator symbols library. */
-	SYMBOLS; 
-
-
+	var SYMBOLS;
+	
+	
 }

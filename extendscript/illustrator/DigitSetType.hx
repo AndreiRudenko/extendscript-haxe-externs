@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Digit set type constants. */
-@:native("DigitSetType") extern enum DigitSetType {
+@:native("DigitSetType") @:enum extern enum abstract DigitSetType(Int) { 
 	
-	/* null */
-	DEFAULT_DIGITS; 
-
-	/* null */
-	ARABIC_DIGITS; 
-
-	/* null */
-	HINDI_DIGITS; 
-
-	/* null */
-	FARSI_DIGITS; 
-
-
+	/* */
+	var DEFAULT_DIGITS;
+	
+	/* */
+	var ARABIC_DIGITS;
+	
+	/* */
+	var HINDI_DIGITS;
+	
+	/* */
+	var FARSI_DIGITS;
+	
+	
 }

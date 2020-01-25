@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The orientation. */
-@:native("TextOrientation") extern enum TextOrientation {
+@:native("TextOrientation") @:enum extern enum abstract TextOrientation(Int) { 
 	
 	/* Horizontal orientation. */
-	HORIZONTAL; 
-
+	var HORIZONTAL;
+	
 	/* Vertical orientation. */
-	VERTICAL; 
-
-
+	var VERTICAL;
+	
+	
 }

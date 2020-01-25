@@ -1,58 +1,58 @@
 package extendscript.photoshop;
 
 /* The language to use. */
-@:native("Language") extern enum Language {
+@:native("Language") @:enum extern enum abstract Language(Int) { 
 	
 	/* American English. */
-	ENGLISHUSA; 
-
+	var ENGLISHUSA;
+	
 	/* British English. */
-	ENGLISHUK; 
-
+	var ENGLISHUK;
+	
 	/* French. */
-	FRENCH; 
-
+	var FRENCH;
+	
 	/* Canadian French. */
-	CANADIANFRENCH; 
-
+	var CANADIANFRENCH;
+	
 	/* Finnish. */
-	FINNISH; 
-
+	var FINNISH;
+	
 	/* German. */
-	GERMAN; 
-
+	var GERMAN;
+	
 	/* Old German. */
-	OLDGERMAN; 
-
+	var OLDGERMAN;
+	
 	/* Swiss German. */
-	SWISSGERMAN; 
-
+	var SWISSGERMAN;
+	
 	/* Italian. */
-	ITALIAN; 
-
+	var ITALIAN;
+	
 	/* Norwegian. */
-	NORWEGIAN; 
-
+	var NORWEGIAN;
+	
 	/* Nynorsk Norwegian. */
-	NYNORSKNORWEGIAN; 
-
+	var NYNORSKNORWEGIAN;
+	
 	/* Portuguese. */
-	PORTUGUESE; 
-
+	var PORTUGUESE;
+	
 	/* Brazillian Portuguese. */
-	BRAZILLIANPORTUGUESE; 
-
+	var BRAZILLIANPORTUGUESE;
+	
 	/* Spanish. */
-	SPANISH; 
-
+	var SPANISH;
+	
 	/* Swedish. */
-	SWEDISH; 
-
+	var SWEDISH;
+	
 	/* Dutch. */
-	DUTCH; 
-
+	var DUTCH;
+	
 	/* Danish. */
-	DANISH; 
-
-
+	var DANISH;
+	
+	
 }

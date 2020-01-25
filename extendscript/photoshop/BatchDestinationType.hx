@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The destination, if any, for batch-processed files. */
-@:native("BatchDestinationType") extern enum BatchDestinationType {
+@:native("BatchDestinationType") @:enum extern enum abstract BatchDestinationType(Int) { 
 	
 	/* Leaves all files open. */
-	NODESTINATION; 
-
+	var NODESTINATION;
+	
 	/* Saves changes and closes all files. */
-	SAVEANDCLOSE; 
-
+	var SAVEANDCLOSE;
+	
 	/* Outputs files to a folder. */
-	FOLDER; 
-
-
+	var FOLDER;
+	
+	
 }

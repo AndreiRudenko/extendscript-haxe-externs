@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The path point type: smooth/corner. */
-@:native("PointType") extern enum PointType {
+@:native("PointType") @:enum extern enum abstract PointType(Int) { 
 	
 	/* Smooth path point. */
-	SMOOTH; 
-
+	var SMOOTH;
+	
 	/* Corner point. */
-	CORNER; 
-
-
+	var CORNER;
+	
+	
 }

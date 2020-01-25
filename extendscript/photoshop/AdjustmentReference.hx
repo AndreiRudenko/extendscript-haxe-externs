@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* Method to use for interpreting selective color adjustment specifications. */
-@:native("AdjustmentReference") extern enum AdjustmentReference {
+@:native("AdjustmentReference") @:enum extern enum abstract AdjustmentReference(Int) { 
 	
 	/* A percentage of the existing color amount. */
-	RELATIVE; 
-
+	var RELATIVE;
+	
 	/* A percentage of the whole. */
-	ABSOLUTE; 
-
-
+	var ABSOLUTE;
+	
+	
 }

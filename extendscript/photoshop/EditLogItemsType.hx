@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The history log edit options. */
-@:native("EditLogItemsType") extern enum EditLogItemsType {
+@:native("EditLogItemsType") @:enum extern enum abstract EditLogItemsType(Int) { 
 	
 	/* Save a history for only for the session. */
-	SESSIONONLY; 
-
+	var SESSIONONLY;
+	
 	/* Save a concise history log. */
-	CONCISE; 
-
+	var CONCISE;
+	
 	/* Save a detailed history log. */
-	DETAILED; 
-
-
+	var DETAILED;
+	
+	
 }

@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The stroke joint. */
-@:native("StrokeJoin") extern enum StrokeJoin {
+@:native("StrokeJoin") @:enum extern enum abstract StrokeJoin(Int) { 
 	
 	/* Mitered joints. */
-	MITERENDJOIN; 
-
+	var MITERENDJOIN;
+	
 	/* Rounded joints. */
-	ROUNDENDJOIN; 
-
+	var ROUNDENDJOIN;
+	
 	/* Beveled joints. */
-	BEVELENDJOIN; 
-
-
+	var BEVELENDJOIN;
+	
+	
 }

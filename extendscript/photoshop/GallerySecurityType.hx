@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* DEPRECATED. Web photo gallery security types. */
-@:native("GallerySecurityType") extern enum GallerySecurityType {
+@:native("GallerySecurityType") @:enum extern enum abstract GallerySecurityType(Int) { 
 	
 	/* No security. */
-	NONE; 
-
+	var NONE;
+	
 	/* Custom text security. */
-	CUSTOMTEXT; 
-
+	var CUSTOMTEXT;
+	
 	/* Filename security. */
-	FILENAME; 
-
+	var FILENAME;
+	
 	/* Copyright security. */
-	COPYRIGHT; 
-
+	var COPYRIGHT;
+	
 	/* Caption security. */
-	CAPTION; 
-
+	var CAPTION;
+	
 	/* Credit security. */
-	CREDIT; 
-
+	var CREDIT;
+	
 	/* Title security. */
-	TITLE; 
-
-
+	var TITLE;
+	
+	
 }

@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* Diacritic vertical position type constants. */
-@:native("DiacVPosType") extern enum DiacVPosType {
+@:native("DiacVPosType") @:enum extern enum abstract DiacVPosType(Int) { 
 	
-	/* null */
-	DEFAULT_POSITION; 
-
-	/* null */
-	LOOSE_POSITION; 
-
-	/* null */
-	MEDIUM_POSITION; 
-
-	/* null */
-	TIGHT_POSITION; 
-
-	/* null */
-	OPENTYPE_POSITION; 
-
-
+	/* */
+	var DEFAULT_POSITION;
+	
+	/* */
+	var LOOSE_POSITION;
+	
+	/* */
+	var MEDIUM_POSITION;
+	
+	/* */
+	var TIGHT_POSITION;
+	
+	/* */
+	var OPENTYPE_POSITION;
+	
+	
 }

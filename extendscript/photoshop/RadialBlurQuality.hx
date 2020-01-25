@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The radial blur quality. */
-@:native("RadialBlurQuality") extern enum RadialBlurQuality {
+@:native("RadialBlurQuality") @:enum extern enum abstract RadialBlurQuality(Int) { 
 	
 	/* Produces fast but grainy results. */
-	DRAFT; 
-
+	var DRAFT;
+	
 	/* Produces good results. */
-	GOOD; 
-
+	var GOOD;
+	
 	/* Produces best results. */
-	BEST; 
-
-
+	var BEST;
+	
+	
 }

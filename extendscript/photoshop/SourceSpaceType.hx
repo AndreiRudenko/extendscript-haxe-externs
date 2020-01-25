@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The color space for the source when printing. */
-@:native("SourceSpaceType") extern enum SourceSpaceType {
+@:native("SourceSpaceType") @:enum extern enum abstract SourceSpaceType(Int) { 
 	
 	/* The document color space. */
-	DOCUMENT; 
-
+	var DOCUMENT;
+	
 	/* The proof color space. */
-	PROOF; 
-
-
+	var PROOF;
+	
+	
 }

@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* Depth map source options. */
-@:native("DepthMapSource") extern enum DepthMapSource {
+@:native("DepthMapSource") @:enum extern enum abstract DepthMapSource(Int) { 
 	
 	/* No depth map in use. */
-	NONE; 
-
+	var NONE;
+	
 	/* Uses the transparency channel for the depth map. */
-	TRANSPARENCYCHANNEL; 
-
+	var TRANSPARENCYCHANNEL;
+	
 	/* Uses the layer mask for the depth map. */
-	LAYERMASK; 
-
+	var LAYERMASK;
+	
 	/* Uses the image highlight for the depth map. */
-	IMAGEHIGHLIGHT; 
-
-
+	var IMAGEHIGHLIGHT;
+	
+	
 }

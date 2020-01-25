@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The raster link state. */
-@:native("RasterLinkState") extern enum RasterLinkState {
+@:native("RasterLinkState") @:enum extern enum abstract RasterLinkState(Int) { 
 	
 	/* Image data is not set. */
-	NODATA; 
-
+	var NODATA;
+	
 	/* Image data is from the linked file. */
-	DATAFROMFILE; 
-
+	var DATAFROMFILE;
+	
 	/* Image data has been modified. */
-	DATAMODIFIED; 
-
-
+	var DATAMODIFIED;
+	
+	
 }

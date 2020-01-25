@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The colors whose inclusion to force in the color table. */
-@:native("ForcedColors") extern enum ForcedColors {
+@:native("ForcedColors") @:enum extern enum abstract ForcedColors(Int) { 
 	
 	/* No forced colors. */
-	NONE; 
-
+	var NONE;
+	
 	/* Forces pure black and white. */
-	BLACKWHITE; 
-
+	var BLACKWHITE;
+	
 	/* Forces red, green, blue, cyan, magenta, yellow, black, and white. */
-	PRIMARIES; 
-
+	var PRIMARIES;
+	
 	/* Forces the 216 web-safe colors. */
-	WEB; 
-
-
+	var WEB;
+	
+	
 }

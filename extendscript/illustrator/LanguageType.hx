@@ -1,145 +1,145 @@
 package extendscript.illustrator;
 
 /* The language of text. */
-@:native("LanguageType") extern enum LanguageType {
+@:native("LanguageType") @:enum extern enum abstract LanguageType(Int) { 
 	
-	/* null */
-	ENGLISH; 
-
-	/* null */
-	FINNISH; 
-
-	/* null */
-	STANDARDFRENCH; 
-
-	/* null */
-	CANADIANFRENCH; 
-
-	/* null */
-	STANDARDGERMAN; 
-
-	/* null */
-	OLDGERMAN; 
-
-	/* null */
-	SWISSGERMAN; 
-
-	/* null */
-	ITALIAN; 
-
-	/* null */
-	BOKMALNORWEGIAN; 
-
+	/* */
+	var ENGLISH;
+	
+	/* */
+	var FINNISH;
+	
+	/* */
+	var STANDARDFRENCH;
+	
+	/* */
+	var CANADIANFRENCH;
+	
+	/* */
+	var STANDARDGERMAN;
+	
+	/* */
+	var OLDGERMAN;
+	
+	/* */
+	var SWISSGERMAN;
+	
+	/* */
+	var ITALIAN;
+	
+	/* */
+	var BOKMALNORWEGIAN;
+	
 	/* Nynorsk Norwegian. */
-	NYNORSKNORWEGIAN; 
-
-	/* null */
-	STANDARDPORTUGUESE; 
-
-	/* null */
-	BRAZILLIANPORTUGUESE; 
-
-	/* null */
-	SPANISH; 
-
-	/* null */
-	SWEDISH; 
-
-	/* null */
-	UKENGLISH; 
-
-	/* null */
-	DUTCH; 
-
-	/* null */
-	DANISH; 
-
-	/* null */
-	CATALAN; 
-
-	/* null */
-	RUSSIAN; 
-
-	/* null */
-	UKRANIAN; 
-
-	/* null */
-	BULGARIAN; 
-
-	/* null */
-	SERBIAN; 
-
-	/* null */
-	CZECH; 
-
-	/* null */
-	POLISH; 
-
-	/* null */
-	RUMANIAN; 
-
-	/* null */
-	GREEK; 
-
-	/* null */
-	TURKISH; 
-
-	/* null */
-	ICELANDIC; 
-
-	/* null */
-	HUNGARIAN; 
-
-	/* null */
-	CHINESE; 
-
-	/* null */
-	JAPANESE; 
-
-	/* null */
-	ARABIC; 
-
-	/* null */
-	FARSI; 
-
-	/* null */
-	GERMAN2006REFORM; 
-
-	/* null */
-	DUTCH2005REFORM; 
-
-	/* null */
-	SWISSGERMAN2006REFORM; 
-
-	/* null */
-	HINDI; 
-
-	/* null */
-	MARATHI; 
-
-	/* null */
-	BENGALIINDIA; 
-
-	/* null */
-	PUNJABI; 
-
-	/* null */
-	GUJARATI; 
-
-	/* null */
-	ORIYA; 
-
-	/* null */
-	TAMIL; 
-
-	/* null */
-	TELUGU; 
-
-	/* null */
-	KANNADA; 
-
-	/* null */
-	MALAYALAM; 
-
-
+	var NYNORSKNORWEGIAN;
+	
+	/* */
+	var STANDARDPORTUGUESE;
+	
+	/* */
+	var BRAZILLIANPORTUGUESE;
+	
+	/* */
+	var SPANISH;
+	
+	/* */
+	var SWEDISH;
+	
+	/* */
+	var UKENGLISH;
+	
+	/* */
+	var DUTCH;
+	
+	/* */
+	var DANISH;
+	
+	/* */
+	var CATALAN;
+	
+	/* */
+	var RUSSIAN;
+	
+	/* */
+	var UKRANIAN;
+	
+	/* */
+	var BULGARIAN;
+	
+	/* */
+	var SERBIAN;
+	
+	/* */
+	var CZECH;
+	
+	/* */
+	var POLISH;
+	
+	/* */
+	var RUMANIAN;
+	
+	/* */
+	var GREEK;
+	
+	/* */
+	var TURKISH;
+	
+	/* */
+	var ICELANDIC;
+	
+	/* */
+	var HUNGARIAN;
+	
+	/* */
+	var CHINESE;
+	
+	/* */
+	var JAPANESE;
+	
+	/* */
+	var ARABIC;
+	
+	/* */
+	var FARSI;
+	
+	/* */
+	var GERMAN2006REFORM;
+	
+	/* */
+	var DUTCH2005REFORM;
+	
+	/* */
+	var SWISSGERMAN2006REFORM;
+	
+	/* */
+	var HINDI;
+	
+	/* */
+	var MARATHI;
+	
+	/* */
+	var BENGALIINDIA;
+	
+	/* */
+	var PUNJABI;
+	
+	/* */
+	var GUJARATI;
+	
+	/* */
+	var ORIYA;
+	
+	/* */
+	var TAMIL;
+	
+	/* */
+	var TELUGU;
+	
+	/* */
+	var KANNADA;
+	
+	/* */
+	var MALAYALAM;
+	
+	
 }

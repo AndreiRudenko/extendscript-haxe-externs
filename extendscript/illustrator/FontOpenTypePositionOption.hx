@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The OpenType font position option. */
-@:native("FontOpenTypePositionOption") extern enum FontOpenTypePositionOption {
+@:native("FontOpenTypePositionOption") @:enum extern enum abstract FontOpenTypePositionOption(Int) { 
 	
 	/* Default position. */
-	OPENTYPEDEFAULT; 
-
+	var OPENTYPEDEFAULT;
+	
 	/* OpenType superscript position. */
-	OPENTYPESUPERSCRIPT; 
-
+	var OPENTYPESUPERSCRIPT;
+	
 	/* OpenType subscript position. */
-	OPENTYPESUBSCRIPT; 
-
+	var OPENTYPESUBSCRIPT;
+	
 	/* OpenType numerator position. */
-	NUMERATOR; 
-
+	var NUMERATOR;
+	
 	/* OpenType denominator position. */
-	DENOMINATOR; 
-
-
+	var DENOMINATOR;
+	
+	
 }

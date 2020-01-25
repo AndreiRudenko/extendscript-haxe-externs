@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The color profile to use. */
-@:native("OpenDocumentMode") extern enum OpenDocumentMode {
+@:native("OpenDocumentMode") @:enum extern enum abstract OpenDocumentMode(Int) { 
 	
 	/* Grayscale. */
-	GRAYSCALE; 
-
+	var GRAYSCALE;
+	
 	/* RGB. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK. */
-	CMYK; 
-
+	var CMYK;
+	
 	/* Lab. */
-	LAB; 
-
-
+	var LAB;
+	
+	
 }

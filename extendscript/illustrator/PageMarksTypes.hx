@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The page marks style type. */
-@:native("PageMarksTypes") extern enum PageMarksTypes {
+@:native("PageMarksTypes") @:enum extern enum abstract PageMarksTypes(Int) { 
 	
 	/* Roman page marks style. */
-	Roman; 
-
+	var Roman;
+	
 	/* Japanese page marks style. */
-	Japanese; 
-
-
+	var Japanese;
+	
+	
 }

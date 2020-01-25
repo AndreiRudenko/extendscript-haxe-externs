@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The source for recording measurements. */
-@:native("MeasurementSource") extern enum MeasurementSource {
+@:native("MeasurementSource") @:enum extern enum abstract MeasurementSource(Int) { 
 	
 	/* The measure selection. */
-	MEASURESELECTION; 
-
+	var MEASURESELECTION;
+	
 	/* The measure count tool. */
-	MEASURECOUNTTOOL; 
-
+	var MEASURECOUNTTOOL;
+	
 	/* The measure ruler tool. */
-	MEASURERULERTOOL; 
-
-
+	var MEASURERULERTOOL;
+	
+	
 }

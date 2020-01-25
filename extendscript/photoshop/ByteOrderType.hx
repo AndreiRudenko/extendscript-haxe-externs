@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The platform-specific order in which bytes will be read. */
-@:native("ByteOrderType") extern enum ByteOrderType {
+@:native("ByteOrderType") @:enum extern enum abstract ByteOrderType(Int) { 
 	
 	/* IBM PC. */
-	IBM; 
-
+	var IBM;
+	
 	/* Mac OS. */
-	MACOS; 
-
-
+	var MACOS;
+	
+	
 }

@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* Describes how the displacement map fits the image if the image is not the same size as the map. */
-@:native("DisplacementMapType") extern enum DisplacementMapType {
+@:native("DisplacementMapType") @:enum extern enum abstract DisplacementMapType(Int) { 
 	
 	/* The map is resized. */
-	STRETCHTOFIT; 
-
+	var STRETCHTOFIT;
+	
 	/* The selection is filled by repeating the map in a pattern. */
-	TILE; 
-
-
+	var TILE;
+	
+	
 }

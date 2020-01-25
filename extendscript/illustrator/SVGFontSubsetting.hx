@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* What fonts to include with the file? */
-@:native("SVGFontSubsetting") extern enum SVGFontSubsetting {
+@:native("SVGFontSubsetting") @:enum extern enum abstract SVGFontSubsetting(Int) { 
 	
 	/* Use system fonts. */
-	None; 
-
-	/* null */
-	GLYPHSUSED; 
-
-	/* null */
-	COMMONENGLISH; 
-
-	/* null */
-	GLYPHSUSEDPLUSENGLISH; 
-
-	/* null */
-	COMMONROMAN; 
-
-	/* null */
-	GLYPHSUSEDPLUSROMAN; 
-
-	/* null */
-	ALLGLYPHS; 
-
-
+	var None;
+	
+	/* */
+	var GLYPHSUSED;
+	
+	/* */
+	var COMMONENGLISH;
+	
+	/* */
+	var GLYPHSUSEDPLUSENGLISH;
+	
+	/* */
+	var COMMONROMAN;
+	
+	/* */
+	var GLYPHSUSEDPLUSROMAN;
+	
+	/* */
+	var ALLGLYPHS;
+	
+	
 }

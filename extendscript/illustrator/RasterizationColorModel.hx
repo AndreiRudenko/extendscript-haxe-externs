@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Controls the color model for the rasterization. */
-@:native("RasterizationColorModel") extern enum RasterizationColorModel {
+@:native("RasterizationColorModel") @:enum extern enum abstract RasterizationColorModel(Int) { 
 	
 	/* Rasterize in the default document color space. */
-	DEFAULTCOLORMODEL; 
-
+	var DEFAULTCOLORMODEL;
+	
 	/* Rasterize as grayscale image. */
-	GRAYSCALE; 
-
+	var GRAYSCALE;
+	
 	/* Rasterize as 1-bit bitmap. */
-	BITMAP; 
-
-
+	var BITMAP;
+	
+	
 }

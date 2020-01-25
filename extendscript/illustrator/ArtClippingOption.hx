@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* How the arts should be clipped. */
-@:native("ArtClippingOption") extern enum ArtClippingOption {
+@:native("ArtClippingOption") @:enum extern enum abstract ArtClippingOption(Int) { 
 	
 	/* Output size is the size of the artwork. */
-	OUTPUTARTBOUNDS; 
-
+	var OUTPUTARTBOUNDS;
+	
 	/* Output size is the size of the artboard. */
-	OUTPUTARTBOARDBOUNDS; 
-
+	var OUTPUTARTBOARDBOUNDS;
+	
 	/* Output size is the size of the crop area. */
-	OUTPUTCROPRECTBOUNDS; 
-
-
+	var OUTPUTCROPRECTBOUNDS;
+	
+	
 }

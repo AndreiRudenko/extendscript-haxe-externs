@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The color picker to use. */
-@:native("ColorPicker") extern enum ColorPicker {
+@:native("ColorPicker") @:enum extern enum abstract ColorPicker(Int) { 
 	
 	/* The Adobe Color Picker. */
-	ADOBE; 
-
+	var ADOBE;
+	
 	/* The built-in Apple color picker. */
-	APPLE; 
-
+	var APPLE;
+	
 	/* The built-in Windows color picker. */
-	WINDOWS; 
-
+	var WINDOWS;
+	
 	/* An installed plug-in color picker. */
-	PLUGIN; 
-
-
+	var PLUGIN;
+	
+	
 }

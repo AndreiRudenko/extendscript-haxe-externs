@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Knockout state of a page item. */
-@:native("KnockoutState") extern enum KnockoutState {
+@:native("KnockoutState") @:enum extern enum abstract KnockoutState(Int) { 
 	
 	/* Unknown/uninitialized knockout state. */
-	Unknown; 
-
+	var Unknown;
+	
 	/* Knockout off. */
-	DISABLED; 
-
+	var DISABLED;
+	
 	/* Knockout off. */
-	ENABLED; 
-
+	var ENABLED;
+	
 	/* Knockout state inherited from group? */
-	INHERITED; 
-
-
+	var INHERITED;
+	
+	
 }

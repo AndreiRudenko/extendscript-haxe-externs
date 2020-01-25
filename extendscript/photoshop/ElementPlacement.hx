@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* Controls where Photoshop places an element. */
-@:native("ElementPlacement") extern enum ElementPlacement {
+@:native("ElementPlacement") @:enum extern enum abstract ElementPlacement(Int) { 
 	
 	/* Place after an element. */
-	PLACEAFTER; 
-
+	var PLACEAFTER;
+	
 	/* Place before an element. */
-	PLACEBEFORE; 
-
+	var PLACEBEFORE;
+	
 	/* Place an element at the end. */
-	PLACEATEND; 
-
-
+	var PLACEATEND;
+	
+	
 }

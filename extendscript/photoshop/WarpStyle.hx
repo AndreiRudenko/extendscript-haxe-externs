@@ -1,55 +1,55 @@
 package extendscript.photoshop;
 
 /* The warp style for text. */
-@:native("WarpStyle") extern enum WarpStyle {
+@:native("WarpStyle") @:enum extern enum abstract WarpStyle(Int) { 
 	
 	/* No warp. */
-	NONE; 
-
+	var NONE;
+	
 	/* The type is warped in the shape of an arc. */
-	ARC; 
-
+	var ARC;
+	
 	/* Warp is heavier on the lower or left edge of the text than on the upper or right edge. */
-	ARCLOWER; 
-
+	var ARCLOWER;
+	
 	/* Warp is heavier on the upper or right edge of the text than on the lower or left edge. */
-	ARCUPPER; 
-
+	var ARCUPPER;
+	
 	/* Text is warped in the form of an arch. */
-	ARCH; 
-
+	var ARCH;
+	
 	/* Text is warped outward on both the upper and lower or right and left edges. */
-	BULGE; 
-
+	var BULGE;
+	
 	/* Text is warped downward or to the right in the shape of a fan-like seashell. */
-	SHELLLOWER; 
-
+	var SHELLLOWER;
+	
 	/* Text is warped upward or to the left in the shape of a fan-like seashell. */
-	SHELLUPPER; 
-
+	var SHELLUPPER;
+	
 	/* Text is warped in the shape of a waving flag. */
-	FLAG; 
-
+	var FLAG;
+	
 	/* Text is warped in the shape of a wave. */
-	WAVE; 
-
+	var WAVE;
+	
 	/* Text is warped in the shape of a fish. */
-	FISH; 
-
+	var FISH;
+	
 	/* Text is warped in an undulating, rising pattern. */
-	RISE; 
-
+	var RISE;
+	
 	/* Text bulges in the middle and is squeezed on the edges as if viewed through a fisheye lens. */
-	FISHEYE; 
-
+	var FISHEYE;
+	
 	/* Text is inflated. */
-	INFLATE; 
-
+	var INFLATE;
+	
 	/* Text is squeezed. */
-	SQUEEZE; 
-
+	var SQUEEZE;
+	
 	/* Text is twisted. */
-	TWIST; 
-
-
+	var TWIST;
+	
+	
 }

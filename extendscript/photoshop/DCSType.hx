@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The DCS format. */
-@:native("DCSType") extern enum DCSType {
+@:native("DCSType") @:enum extern enum abstract DCSType(Int) { 
 	
 	/* Does not create a composite file. */
-	NOCOMPOSITE; 
-
+	var NOCOMPOSITE;
+	
 	/* Creates a grayscale composite file in addition to DCS files. */
-	GRAYSCALECOMPOSITE; 
-
+	var GRAYSCALECOMPOSITE;
+	
 	/* Creates a color composite file in addition to DCS files. */
-	COLORCOMPOSITE; 
-
-
+	var COLORCOMPOSITE;
+	
+	
 }

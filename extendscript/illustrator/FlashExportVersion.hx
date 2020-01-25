@@ -1,34 +1,34 @@
 package extendscript.illustrator;
 
 /* Version of the SWF File to be exported. */
-@:native("FlashExportVersion") extern enum FlashExportVersion {
+@:native("FlashExportVersion") @:enum extern enum abstract FlashExportVersion(Int) { 
 	
 	/* SWF Version 1. */
-	FLASHVERSION1; 
-
+	var FLASHVERSION1;
+	
 	/* SWF Version 2. */
-	FLASHVERSION2; 
-
+	var FLASHVERSION2;
+	
 	/* SWF Version 3. */
-	FLASHVERSION3; 
-
+	var FLASHVERSION3;
+	
 	/* SWF Version 4. */
-	FLASHVERSION4; 
-
+	var FLASHVERSION4;
+	
 	/* SWF Version 5. */
-	FLASHVERSION5; 
-
+	var FLASHVERSION5;
+	
 	/* SWF Version 6. */
-	FLASHVERSION6; 
-
+	var FLASHVERSION6;
+	
 	/* SWF Version 7. */
-	FLASHVERSION7; 
-
+	var FLASHVERSION7;
+	
 	/* SWF Version 8. */
-	FLASHVERSION8; 
-
+	var FLASHVERSION8;
+	
 	/* SWF Version 9. */
-	FLASHVERSION9; 
-
-
+	var FLASHVERSION9;
+	
+	
 }

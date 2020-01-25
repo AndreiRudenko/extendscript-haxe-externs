@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The type of texture or glass surface image to load for a texturizer or glass filter. */
-@:native("TextureType") extern enum TextureType {
+@:native("TextureType") @:enum extern enum abstract TextureType(Int) { 
 	
 	/* The image appears as if viewed through glass blocks. */
-	BLOCKS; 
-
+	var BLOCKS;
+	
 	/* The image appears as if painted on canvas. */
-	CANVAS; 
-
+	var CANVAS;
+	
 	/* The image appears as if frosted. */
-	FROSTED; 
-
+	var FROSTED;
+	
 	/* The image appears as if viewed through an array of tiny lenses. */
-	TINYLENS; 
-
+	var TINYLENS;
+	
 	/* Texture from an existing document. */
-	FILE; 
-
-
+	var FILE;
+	
+	
 }

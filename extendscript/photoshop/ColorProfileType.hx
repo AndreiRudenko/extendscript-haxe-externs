@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The type of color model that defines the document's working space. */
-@:native("ColorProfileType") extern enum ColorProfileType {
+@:native("ColorProfileType") @:enum extern enum abstract ColorProfileType(Int) { 
 	
 	/* The document is not color managed. */
-	NONE; 
-
+	var NONE;
+	
 	/* Color manages this document using the working color profile. */
-	WORKING; 
-
+	var WORKING;
+	
 	/* Color manages this document using a custom color profile. */
-	CUSTOM; 
-
-
+	var CUSTOM;
+	
+	
 }

@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The measurement upon which to take action. */
-@:native("MeasurementRange") extern enum MeasurementRange {
+@:native("MeasurementRange") @:enum extern enum abstract MeasurementRange(Int) { 
 	
 	/* All measurements. */
-	ALLMEASUREMENTS; 
-
+	var ALLMEASUREMENTS;
+	
 	/* Only active measurements. */
-	ACTIVEMEASUREMENTS; 
-
-
+	var ACTIVEMEASUREMENTS;
+	
+	
 }

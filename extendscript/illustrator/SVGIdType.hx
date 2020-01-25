@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Type of SVG Id. */
-@:native("SVGIdType") extern enum SVGIdType {
+@:native("SVGIdType") @:enum extern enum abstract SVGIdType(Int) { 
 	
 	/* Style attributes with entity reference. */
-	SVGIDMINIMAL; 
-
-	/* null */
-	SVGIDREGULAR; 
-
-	/* null */
-	SVGIDUNIQUE; 
-
-
+	var SVGIDMINIMAL;
+	
+	/* */
+	var SVGIDREGULAR;
+	
+	/* */
+	var SVGIDUNIQUE;
+	
+	
 }

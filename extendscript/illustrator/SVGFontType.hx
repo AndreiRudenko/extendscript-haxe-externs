@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* What font type to include with the file? */
-@:native("SVGFontType") extern enum SVGFontType {
+@:native("SVGFontType") @:enum extern enum abstract SVGFontType(Int) { 
 	
-	/* null */
-	SVGFONT; 
-
-	/* null */
-	OUTLINEFONT; 
-
-
+	/* */
+	var SVGFONT;
+	
+	/* */
+	var OUTLINEFONT;
+	
+	
 }

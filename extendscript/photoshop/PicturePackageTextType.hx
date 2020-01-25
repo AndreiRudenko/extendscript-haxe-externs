@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* The function or meaning of text in a Picture Package. */
-@:native("PicturePackageTextType") extern enum PicturePackageTextType {
+@:native("PicturePackageTextType") @:enum extern enum abstract PicturePackageTextType(Int) { 
 	
 	/* No text. */
-	NONE; 
-
+	var NONE;
+	
 	/* The text is user defined. */
-	USER; 
-
+	var USER;
+	
 	/* The text is the filename. */
-	FILENAME; 
-
+	var FILENAME;
+	
 	/* The text is the copyright. */
-	COPYRIGHT; 
-
+	var COPYRIGHT;
+	
 	/* The text is a caption. */
-	CAPTION; 
-
+	var CAPTION;
+	
 	/* The text is the credit. */
-	CREDIT; 
-
+	var CREDIT;
+	
 	/* The text is the origin. */
-	ORIGIN; 
-
-
+	var ORIGIN;
+	
+	
 }

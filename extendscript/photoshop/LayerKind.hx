@@ -1,79 +1,79 @@
 package extendscript.photoshop;
 
 /* The types of art layers. */
-@:native("LayerKind") extern enum LayerKind {
+@:native("LayerKind") @:enum extern enum abstract LayerKind(Int) { 
 	
 	/* Normal. */
-	NORMAL; 
-
+	var NORMAL;
+	
 	/* Text. */
-	TEXT; 
-
+	var TEXT;
+	
 	/* Solid color. */
-	SOLIDFILL; 
-
+	var SOLIDFILL;
+	
 	/* Gradient fill. */
-	GRADIENTFILL; 
-
+	var GRADIENTFILL;
+	
 	/* Pattern fill. */
-	PATTERNFILL; 
-
+	var PATTERNFILL;
+	
 	/* Levels adjustment layer. */
-	LEVELS; 
-
+	var LEVELS;
+	
 	/* Curves adjustment layer. */
-	CURVES; 
-
+	var CURVES;
+	
 	/* Color balance adjustment layer. */
-	COLORBALANCE; 
-
+	var COLORBALANCE;
+	
 	/* Brightness contrast adjustment layer. */
-	BRIGHTNESSCONTRAST; 
-
+	var BRIGHTNESSCONTRAST;
+	
 	/* Hue saturation adjustment laye. */
-	HUESATURATION; 
-
+	var HUESATURATION;
+	
 	/* Selective color adjustment layer. */
-	SELECTIVECOLOR; 
-
+	var SELECTIVECOLOR;
+	
 	/* Channel mixer adjustment layer. */
-	CHANNELMIXER; 
-
+	var CHANNELMIXER;
+	
 	/* Gradient map adjustment laye. */
-	GRADIENTMAP; 
-
+	var GRADIENTMAP;
+	
 	/* Invert adjustment layer. */
-	INVERSION; 
-
+	var INVERSION;
+	
 	/* Threshold adjustment layer. */
-	THRESHOLD; 
-
+	var THRESHOLD;
+	
 	/* Posterize adjustment layer. */
-	POSTERIZE; 
-
+	var POSTERIZE;
+	
 	/* Smart object layer. */
-	SMARTOBJECT; 
-
+	var SMARTOBJECT;
+	
 	/* Photo filter layer. */
-	PHOTOFILTER; 
-
+	var PHOTOFILTER;
+	
 	/* Exposure layer. */
-	EXPOSURE; 
-
+	var EXPOSURE;
+	
 	/* 3D layer. */
-	LAYER3D; 
-
+	var LAYER3D;
+	
 	/* Video layer. */
-	VIDEO; 
-
+	var VIDEO;
+	
 	/* Black and white layer. */
-	BLACKANDWHITE; 
-
+	var BLACKANDWHITE;
+	
 	/* Vibrance layer. */
-	VIBRANCE; 
-
+	var VIBRANCE;
+	
 	/* Color lookup layer. */
-	COLORLOOKUP; 
-
-
+	var COLORLOOKUP;
+	
+	
 }

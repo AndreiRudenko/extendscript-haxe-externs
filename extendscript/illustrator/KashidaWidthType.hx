@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The kashida width type constants. */
-@:native("KashidaWidthType") extern enum KashidaWidthType {
+@:native("KashidaWidthType") @:enum extern enum abstract KashidaWidthType(Int) { 
 	
-	/* null */
-	kashidaNone; 
-
-	/* null */
-	kashidaSmall; 
-
-	/* null */
-	kashidaMedium; 
-
-	/* null */
-	kashidaLong; 
-
-	/* null */
-	kashidaStylistic; 
-
-
+	/* */
+	var kashidaNone;
+	
+	/* */
+	var kashidaSmall;
+	
+	/* */
+	var kashidaMedium;
+	
+	/* */
+	var kashidaLong;
+	
+	/* */
+	var kashidaStylistic;
+	
+	
 }

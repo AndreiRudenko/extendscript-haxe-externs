@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The document window fill type. */
-@:native("DocumentFill") extern enum DocumentFill {
+@:native("DocumentFill") @:enum extern enum abstract DocumentFill(Int) { 
 	
 	/* White. */
-	WHITE; 
-
+	var WHITE;
+	
 	/* The background color as displayed in the toolbox. */
-	BACKGROUNDCOLOR; 
-
+	var BACKGROUNDCOLOR;
+	
 	/* Transparent. */
-	TRANSPARENT; 
-
-
+	var TRANSPARENT;
+	
+	
 }

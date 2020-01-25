@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The printing bounds type. */
-@:native("PrintingBounds") extern enum PrintingBounds {
+@:native("PrintingBounds") @:enum extern enum abstract PrintingBounds(Int) { 
 	
 	/* Use artboard bounds. */
-	ARTBOARDBOUNDS; 
-
+	var ARTBOARDBOUNDS;
+	
 	/* Use artwork bounds. */
-	ARTWORKBOUNDS; 
-
+	var ARTWORKBOUNDS;
+	
 	/* Use crop bounds. */
-	CROPBOUNDS; 
-
-
+	var CROPBOUNDS;
+	
+	
 }

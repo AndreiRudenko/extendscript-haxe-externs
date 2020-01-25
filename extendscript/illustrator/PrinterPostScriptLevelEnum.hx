@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The PostScript levels supported by various printers. */
-@:native("PrinterPostScriptLevelEnum") extern enum PrinterPostScriptLevelEnum {
+@:native("PrinterPostScriptLevelEnum") @:enum extern enum abstract PrinterPostScriptLevelEnum(Int) { 
 	
 	/* PostScript Level 1. */
-	PSLEVEL1; 
-
+	var PSLEVEL1;
+	
 	/* PostScript Level 2. */
-	PSLEVEL2; 
-
+	var PSLEVEL2;
+	
 	/* PostScript Level 3. */
-	PSLEVEL3; 
-
-
+	var PSLEVEL3;
+	
+	
 }

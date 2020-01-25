@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* The paragraph alignment. */
-@:native("Justification") extern enum Justification {
+@:native("Justification") @:enum extern enum abstract Justification(Int) { 
 	
-	/* null */
-	LEFT; 
-
-	/* null */
-	RIGHT; 
-
-	/* null */
-	CENTER; 
-
-	/* null */
-	FULLJUSTIFYLASTLINELEFT; 
-
-	/* null */
-	FULLJUSTIFYLASTLINERIGHT; 
-
-	/* null */
-	FULLJUSTIFYLASTLINECENTER; 
-
-	/* null */
-	FULLJUSTIFY; 
-
-
+	/* */
+	var LEFT;
+	
+	/* */
+	var RIGHT;
+	
+	/* */
+	var CENTER;
+	
+	/* */
+	var FULLJUSTIFYLASTLINELEFT;
+	
+	/* */
+	var FULLJUSTIFYLASTLINERIGHT;
+	
+	/* */
+	var FULLJUSTIFYLASTLINECENTER;
+	
+	/* */
+	var FULLJUSTIFY;
+	
+	
 }

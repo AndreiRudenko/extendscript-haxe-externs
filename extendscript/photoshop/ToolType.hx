@@ -1,55 +1,55 @@
 package extendscript.photoshop;
 
 /* Tools for the stroke path command. */
-@:native("ToolType") extern enum ToolType {
+@:native("ToolType") @:enum extern enum abstract ToolType(Int) { 
 	
 	/* Pencil. */
-	PENCIL; 
-
+	var PENCIL;
+	
 	/* Brush. */
-	BRUSH; 
-
+	var BRUSH;
+	
 	/* Eraser. */
-	ERASER; 
-
+	var ERASER;
+	
 	/* Background eraser. */
-	BACKGROUNDERASER; 
-
+	var BACKGROUNDERASER;
+	
 	/* Clone stamp. */
-	CLONESTAMP; 
-
+	var CLONESTAMP;
+	
 	/* Pattern stamp. */
-	PATTERNSTAMP; 
-
+	var PATTERNSTAMP;
+	
 	/* Healing brush. */
-	HEALINGBRUSH; 
-
+	var HEALINGBRUSH;
+	
 	/* History brush. */
-	HISTORYBRUSH; 
-
+	var HISTORYBRUSH;
+	
 	/* Art history brush. */
-	ARTHISTORYBRUSH; 
-
+	var ARTHISTORYBRUSH;
+	
 	/* Smudge. */
-	SMUDGE; 
-
+	var SMUDGE;
+	
 	/* Blur. */
-	BLUR; 
-
+	var BLUR;
+	
 	/* Sharpen. */
-	SHARPEN; 
-
+	var SHARPEN;
+	
 	/* Dodge. */
-	DODGE; 
-
+	var DODGE;
+	
 	/* Burn. */
-	BURN; 
-
+	var BURN;
+	
 	/* Sponge. */
-	SPONGE; 
-
+	var SPONGE;
+	
 	/* Color replacement tool. */
-	COLORREPLACEMENTTOOL; 
-
-
+	var COLORREPLACEMENTTOOL;
+	
+	
 }

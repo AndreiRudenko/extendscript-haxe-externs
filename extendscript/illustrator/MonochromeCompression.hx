@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The monochrome compression type. */
-@:native("MonochromeCompression") extern enum MonochromeCompression {
+@:native("MonochromeCompression") @:enum extern enum abstract MonochromeCompression(Int) { 
 	
 	/* Automatic compression. */
-	None; 
-
+	var None;
+	
 	/* CCITT Group 3 compression. */
-	CCIT3; 
-
+	var CCIT3;
+	
 	/* CCITT Group 4 compression. */
-	CCIT4; 
-
+	var CCIT4;
+	
 	/* ZIP compression. */
-	MONOZIP; 
-
+	var MONOZIP;
+	
 	/* RLE compression. */
-	RUNLENGTH; 
-
-
+	var RUNLENGTH;
+	
+	
 }

@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The cache to be targeted in a purge operation. */
-@:native("PurgeTarget") extern enum PurgeTarget {
+@:native("PurgeTarget") @:enum extern enum abstract PurgeTarget(Int) { 
 	
 	/* Clears the undo cache. */
-	UNDOCACHES; 
-
+	var UNDOCACHES;
+	
 	/* Deletes all history states from the History palette. */
-	HISTORYCACHES; 
-
+	var HISTORYCACHES;
+	
 	/* Clears the clipboard. */
-	CLIPBOARDCACHE; 
-
+	var CLIPBOARDCACHE;
+	
 	/* Clears all caches. */
-	ALLCACHES; 
-
-
+	var ALLCACHES;
+	
+	
 }

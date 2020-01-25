@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The smart blur quality. */
-@:native("SmartBlurQuality") extern enum SmartBlurQuality {
+@:native("SmartBlurQuality") @:enum extern enum abstract SmartBlurQuality(Int) { 
 	
 	/* Low quality. */
-	LOW; 
-
+	var LOW;
+	
 	/* Medium quality. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* High quality. */
-	HIGH; 
-
-
+	var HIGH;
+	
+	
 }

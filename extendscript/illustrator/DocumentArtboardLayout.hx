@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* The layout of artboards in document. */
-@:native("DocumentArtboardLayout") extern enum DocumentArtboardLayout {
+@:native("DocumentArtboardLayout") @:enum extern enum abstract DocumentArtboardLayout(Int) { 
 	
 	/* Arrange artboards in Grid by Row pattern. */
-	GridByRow; 
-
+	var GridByRow;
+	
 	/* Arrange artboards in Grid by Column pattern. */
-	GridByCol; 
-
+	var GridByCol;
+	
 	/* Arrange artboards in a single row. */
-	Row; 
-
+	var Row;
+	
 	/* Arrange artboards in a single column. */
-	Column; 
-
+	var Column;
+	
 	/* Arrange artboards in Grid by Row pattern from right-to-left. */
-	RLGridByRow; 
-
+	var RLGridByRow;
+	
 	/* Arrange artboards in Grid by Column pattern from right-to-left. */
-	RLGridByCol; 
-
+	var RLGridByCol;
+	
 	/* Arrange artboards in a single row from right-to-left. */
-	RLRow; 
-
-
+	var RLRow;
+	
+	
 }

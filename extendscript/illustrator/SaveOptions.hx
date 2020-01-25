@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The options that may be applied when saving a file. */
-@:native("SaveOptions") extern enum SaveOptions {
+@:native("SaveOptions") @:enum extern enum abstract SaveOptions(Int) { 
 	
 	/* Save changes. */
-	SAVECHANGES; 
-
+	var SAVECHANGES;
+	
 	/* Do not save changes. */
-	DONOTSAVECHANGES; 
-
+	var DONOTSAVECHANGES;
+	
 	/* Ask the user whether to save. */
-	PROMPTTOSAVECHANGES; 
-
-
+	var PROMPTTOSAVECHANGES;
+	
+	
 }

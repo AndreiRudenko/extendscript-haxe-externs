@@ -1,46 +1,46 @@
 package extendscript.photoshop;
 
 /* The value type of an object. */
-@:native("DescValueType") extern enum DescValueType {
+@:native("DescValueType") @:enum extern enum abstract DescValueType(Int) { 
 	
 	/* Integer. */
-	INTEGERTYPE; 
-
+	var INTEGERTYPE;
+	
 	/* Double. */
-	DOUBLETYPE; 
-
+	var DOUBLETYPE;
+	
 	/* Unit value of type double. */
-	UNITDOUBLE; 
-
+	var UNITDOUBLE;
+	
 	/* String. */
-	STRINGTYPE; 
-
+	var STRINGTYPE;
+	
 	/* Boolean. */
-	BOOLEANTYPE; 
-
+	var BOOLEANTYPE;
+	
 	/* Action list. */
-	LISTTYPE; 
-
+	var LISTTYPE;
+	
 	/* Object. */
-	OBJECTTYPE; 
-
+	var OBJECTTYPE;
+	
 	/* Enumeration. */
-	ENUMERATEDTYPE; 
-
+	var ENUMERATEDTYPE;
+	
 	/* Reference. */
-	REFERENCETYPE; 
-
+	var REFERENCETYPE;
+	
 	/* Class. */
-	CLASSTYPE; 
-
+	var CLASSTYPE;
+	
 	/* Alias. */
-	ALIASTYPE; 
-
+	var ALIASTYPE;
+	
 	/* Raw. */
-	RAWTYPE; 
-
-	/* null */
-	LARGEINTEGERTYPE; 
-
-
+	var RAWTYPE;
+	
+	/* */
+	var LARGEINTEGERTYPE;
+	
+	
 }

@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* COM user interaction enumeration. */
-@:native("UserInteractionLevel") extern enum UserInteractionLevel {
+@:native("UserInteractionLevel") @:enum extern enum abstract UserInteractionLevel(Int) { 
 	
-	/* null */
-	DONTDISPLAYALERTS; 
-
-	/* null */
-	DISPLAYALERTS; 
-
-
+	/* */
+	var DONTDISPLAYALERTS;
+	
+	/* */
+	var DISPLAYALERTS;
+	
+	
 }

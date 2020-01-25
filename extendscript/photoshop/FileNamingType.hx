@@ -1,61 +1,61 @@
 package extendscript.photoshop;
 
 /* File naming options for the batch command. */
-@:native("FileNamingType") extern enum FileNamingType {
+@:native("FileNamingType") @:enum extern enum abstract FileNamingType(Int) { 
 	
 	/* Use the document name in mixed case. */
-	DOCUMENTNAMEMIXED; 
-
+	var DOCUMENTNAMEMIXED;
+	
 	/* Use the document name in lower case. */
-	DOCUMENTNAMELOWER; 
-
+	var DOCUMENTNAMELOWER;
+	
 	/* Use the document name in UPPER case. */
-	DOCUMENTNAMEUPPER; 
-
+	var DOCUMENTNAMEUPPER;
+	
 	/* Use a 1-digit serial number. */
-	SERIALNUMBER1; 
-
+	var SERIALNUMBER1;
+	
 	/* Use a 2-digit serial number. */
-	SERIALNUMBER2; 
-
+	var SERIALNUMBER2;
+	
 	/* Use a 3-digit serial number. */
-	SERIALNUMBER3; 
-
+	var SERIALNUMBER3;
+	
 	/* Use a 4-digit serial number. */
-	SERIALNUMBER4; 
-
+	var SERIALNUMBER4;
+	
 	/* Use letter serial number lower case (a, b, c, ...) */
-	SERIALLETTERLOWER; 
-
+	var SERIALLETTERLOWER;
+	
 	/* Use letter serial number UPPER case (A, B, C, ...) */
-	SERIALLETTERUPPER; 
-
+	var SERIALLETTERUPPER;
+	
 	/* Uses the date formatted as mmddyy. */
-	MMDDYY; 
-
+	var MMDDYY;
+	
 	/* Uses the date formatted as mmdd. */
-	MMDD; 
-
+	var MMDD;
+	
 	/* Uses the date formatted as yyyymmdd. */
-	YYYYMMDD; 
-
+	var YYYYMMDD;
+	
 	/* Uses the date formatted as yymmdd. */
-	YYMMDD; 
-
+	var YYMMDD;
+	
 	/* Uses the date formatted as yyddmm. */
-	YYDDMM; 
-
+	var YYDDMM;
+	
 	/* Uses the date formatted as ddmmyy. */
-	DDMMYY; 
-
+	var DDMMYY;
+	
 	/* Uses the date formatted as ddmm. */
-	DDMM; 
-
+	var DDMM;
+	
 	/* Use the extension of the file in lower case. */
-	EXTENSIONLOWER; 
-
+	var EXTENSIONLOWER;
+	
 	/* Use the extension of the file in UPPER case. */
-	EXTENSIONUPPER; 
-
-
+	var EXTENSIONUPPER;
+	
+	
 }

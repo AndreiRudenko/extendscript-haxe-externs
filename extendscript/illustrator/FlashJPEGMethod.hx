@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("FlashJPEGMethod") extern enum FlashJPEGMethod {
+@:native("FlashJPEGMethod") @:enum extern enum abstract FlashJPEGMethod(Int) { 
 	
-	/* null */
-	Standard; 
-
-	/* null */
-	Optimized; 
-
-
+	/* */
+	var Standard;
+	
+	/* */
+	var Optimized;
+	
+	
 }

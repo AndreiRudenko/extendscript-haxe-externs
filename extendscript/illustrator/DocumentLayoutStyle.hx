@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* Document layout style types. */
-@:native("DocumentLayoutStyle") extern enum DocumentLayoutStyle {
+@:native("DocumentLayoutStyle") @:enum extern enum abstract DocumentLayoutStyle(Int) { 
 	
 	/* Arranges document in cascaded style. */
-	CASCADE; 
-
+	var CASCADE;
+	
 	/* Arranges documents as horizontal tiles. */
-	HORIZONTALTILE; 
-
+	var HORIZONTALTILE;
+	
 	/* Arranges documents as vertical tiles. */
-	VERTICALTILE; 
-
+	var VERTICALTILE;
+	
 	/* Arranges all documents floating layout. */
-	FLOATALL; 
-
+	var FLOATALL;
+	
 	/* Consolidates all documents. */
-	CONSOLIDATEALL; 
-
-
+	var CONSOLIDATEALL;
+	
+	
 }

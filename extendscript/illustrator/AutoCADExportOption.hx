@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADExportOption") extern enum AutoCADExportOption {
+@:native("AutoCADExportOption") @:enum extern enum abstract AutoCADExportOption(Int) { 
 	
-	/* null */
-	PreserveAppearance; 
-
-	/* null */
-	MaximumEditability; 
-
-
+	/* */
+	var PreserveAppearance;
+	
+	/* */
+	var MaximumEditability;
+	
+	
 }

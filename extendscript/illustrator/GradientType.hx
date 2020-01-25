@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The gradient type. */
-@:native("GradientType") extern enum GradientType {
+@:native("GradientType") @:enum extern enum abstract GradientType(Int) { 
 	
 	/* Linear gradient. */
-	LINEAR; 
-
-	/* null */
-	RADIAL; 
-
-
+	var LINEAR;
+	
+	/* */
+	var RADIAL;
+	
+	
 }

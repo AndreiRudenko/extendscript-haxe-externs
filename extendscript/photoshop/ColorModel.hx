@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* Color models. */
-@:native("ColorModel") extern enum ColorModel {
+@:native("ColorModel") @:enum extern enum abstract ColorModel(Int) { 
 	
 	/* Grayscale. */
-	GRAYSCALE; 
-
+	var GRAYSCALE;
+	
 	/* RGB. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK. */
-	CMYK; 
-
+	var CMYK;
+	
 	/* Lab. */
-	LAB; 
-
+	var LAB;
+	
 	/* HSB. */
-	HSB; 
-
+	var HSB;
+	
 	/* The color model has not yet been assigned. */
-	NONE; 
-
-
+	var NONE;
+	
+	
 }

@@ -1,103 +1,103 @@
 package extendscript.photoshop;
 
 /* Document formats that Photoshop can open. */
-@:native("OpenDocumentType") extern enum OpenDocumentType {
+@:native("OpenDocumentType") @:enum extern enum abstract OpenDocumentType(Int) { 
 	
 	/* Photoshop format. */
-	PHOTOSHOP; 
-
+	var PHOTOSHOP;
+	
 	/* BMP format. */
-	BMP; 
-
+	var BMP;
+	
 	/* CompuServe GIF format. */
-	COMPUSERVEGIF; 
-
+	var COMPUSERVEGIF;
+	
 	/* EPS document produced by Photoshop. */
-	PHOTOSHOPEPS; 
-
+	var PHOTOSHOPEPS;
+	
 	/* Filmstrip format. */
-	FILMSTRIP; 
-
+	var FILMSTRIP;
+	
 	/* JPEG format. */
-	JPEG; 
-
+	var JPEG;
+	
 	/* PCX format. */
-	PCX; 
-
+	var PCX;
+	
 	/* PDF document produced by Photoshop. */
-	PHOTOSHOPPDF; 
-
+	var PHOTOSHOPPDF;
+	
 	/* Photo CD format. */
-	PHOTOCD; 
-
+	var PHOTOCD;
+	
 	/* PICT file format. */
-	PICTFILEFORMAT; 
-
+	var PICTFILEFORMAT;
+	
 	/* PICT resource format. */
-	PICTRESOURCEFORMAT; 
-
+	var PICTRESOURCEFORMAT;
+	
 	/* Pixar format. */
-	PIXAR; 
-
+	var PIXAR;
+	
 	/* PNG format. */
-	PNG; 
-
+	var PNG;
+	
 	/* Raw format. */
-	RAW; 
-
+	var RAW;
+	
 	/* Scitex CT format. */
-	SCITEXCT; 
-
+	var SCITEXCT;
+	
 	/* Targa format. */
-	TARGA; 
-
+	var TARGA;
+	
 	/* TIFF format. */
-	TIFF; 
-
+	var TIFF;
+	
 	/* Photoshop DCS 1.0 format. */
-	PHOTOSHOPDCS_1; 
-
+	var PHOTOSHOPDCS_1;
+	
 	/* Photoshop DCS 2.0 format. */
-	PHOTOSHOPDCS_2; 
-
+	var PHOTOSHOPDCS_2;
+	
 	/* Generic PDF format. */
-	PDF; 
-
+	var PDF;
+	
 	/* Generic EPS format. */
-	EPS; 
-
+	var EPS;
+	
 	/* EPS format with embedded PICT Preview. */
-	EPSPICTPREVIEW; 
-
+	var EPSPICTPREVIEW;
+	
 	/* EPS format with embedded TIFF Preview. */
-	EPSTIFFPREVIEW; 
-
+	var EPSTIFFPREVIEW;
+	
 	/* Alias PIX format. */
-	ALIASPIX; 
-
+	var ALIASPIX;
+	
 	/* Electric format. */
-	ELECTRICIMAGE; 
-
+	var ELECTRICIMAGE;
+	
 	/* Portable Bitmap format. */
-	PORTABLEBITMAP; 
-
+	var PORTABLEBITMAP;
+	
 	/* Wavefront RLA format. */
-	WAVEFRONTRLA; 
-
+	var WAVEFRONTRLA;
+	
 	/* SGI RGB format. */
-	SGIRGB; 
-
+	var SGIRGB;
+	
 	/* SoftImage format. */
-	SOFTIMAGE; 
-
+	var SOFTIMAGE;
+	
 	/* Wireless Bitmap format (WBMP) */
-	WIRELESSBITMAP; 
-
+	var WIRELESSBITMAP;
+	
 	/* Camera RAW format. */
-	CAMERARAW; 
-
+	var CAMERARAW;
+	
 	/* DICOM format. */
-	DICOM; 
-
-
+	var DICOM;
+	
+	
 }

@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The type of color space. */
-@:native("ColorSpaceType") extern enum ColorSpaceType {
+@:native("ColorSpaceType") @:enum extern enum abstract ColorSpaceType(Int) { 
 	
 	/* Use the Adobe RGB color space. */
-	ADOBERGB; 
-
+	var ADOBERGB;
+	
 	/* Use the ColorMatch RGB color space. */
-	COLORMATCHRGB; 
-
+	var COLORMATCHRGB;
+	
 	/* Use the ProPhoto RGB color space. */
-	PROPHOTORGB; 
-
+	var PROPHOTORGB;
+	
 	/* Use the sRGB color space. */
-	SRGB; 
-
-
+	var SRGB;
+	
+	
 }

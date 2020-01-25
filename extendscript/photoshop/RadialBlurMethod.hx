@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The blur method to use. */
-@:native("RadialBlurMethod") extern enum RadialBlurMethod {
+@:native("RadialBlurMethod") @:enum extern enum abstract RadialBlurMethod(Int) { 
 	
 	/* Blurs along concentric circular lines at the specified degree of rotation. */
-	SPIN; 
-
+	var SPIN;
+	
 	/* Blurs along radial lines, as if zooming into or out of the image. */
-	ZOOM; 
-
-
+	var ZOOM;
+	
+	
 }

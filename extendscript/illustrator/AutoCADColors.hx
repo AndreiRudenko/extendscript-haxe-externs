@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADColors") extern enum AutoCADColors {
+@:native("AutoCADColors") @:enum extern enum abstract AutoCADColors(Int) { 
 	
-	/* null */
-	Max8Colors; 
-
-	/* null */
-	Max16Colors; 
-
-	/* null */
-	Max256Colors; 
-
-	/* null */
-	TrueColors; 
-
-
+	/* */
+	var Max8Colors;
+	
+	/* */
+	var Max16Colors;
+	
+	/* */
+	var Max256Colors;
+	
+	/* */
+	var TrueColors;
+	
+	
 }

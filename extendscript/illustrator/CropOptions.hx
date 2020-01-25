@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The crop style. */
-@:native("CropOptions") extern enum CropOptions {
+@:native("CropOptions") @:enum extern enum abstract CropOptions(Int) { 
 	
 	/* Standard crop style. */
-	Standard; 
-
+	var Standard;
+	
 	/* Japanese crop style. */
-	Japanese; 
-
-
+	var Japanese;
+	
+	
 }

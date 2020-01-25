@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The formatting for the filename extension. */
-@:native("MacExtensionType") extern enum MacExtensionType {
+@:native("MacExtensionType") @:enum extern enum abstract MacExtensionType(Int) { 
 	
 	/* Does not use an extension. */
-	NONE; 
-
+	var NONE;
+	
 	/* The extension is in lowercase letters. */
-	LOWERCASE; 
-
+	var LOWERCASE;
+	
 	/* The extension is in uppercase letters. */
-	UPPERCASE; 
-
-
+	var UPPERCASE;
+	
+	
 }

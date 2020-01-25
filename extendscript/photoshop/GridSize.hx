@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The size of grid squares. */
-@:native("GridSize") extern enum GridSize {
+@:native("GridSize") @:enum extern enum abstract GridSize(Int) { 
 	
 	/* No grid is displayed. */
-	NONE; 
-
+	var NONE;
+	
 	/* Small grid squares. */
-	SMALL; 
-
+	var SMALL;
+	
 	/* Medium grid squares. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* Large grid squares. */
-	LARGE; 
-
-
+	var LARGE;
+	
+	
 }

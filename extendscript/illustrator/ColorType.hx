@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* The color model. */
-@:native("ColorType") extern enum ColorType {
+@:native("ColorType") @:enum extern enum abstract ColorType(Int) { 
 	
-	/* null */
-	None; 
-
-	/* null */
-	CMYK; 
-
-	/* null */
-	GRAY; 
-
-	/* null */
-	RGB; 
-
-	/* null */
-	SPOT; 
-
-	/* null */
-	PATTERN; 
-
-	/* null */
-	GRADIENT; 
-
-
+	/* */
+	var None;
+	
+	/* */
+	var CMYK;
+	
+	/* */
+	var GRAY;
+	
+	/* */
+	var RGB;
+	
+	/* */
+	var SPOT;
+	
+	/* */
+	var PATTERN;
+	
+	/* */
+	var GRADIENT;
+	
+	
 }

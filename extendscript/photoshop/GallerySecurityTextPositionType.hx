@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The position of the text displayed over gallery images as an antitheft deterrent. */
-@:native("GallerySecurityTextPositionType") extern enum GallerySecurityTextPositionType {
+@:native("GallerySecurityTextPositionType") @:enum extern enum abstract GallerySecurityTextPositionType(Int) { 
 	
 	/* Text is centered on each image. */
-	CENTERED; 
-
+	var CENTERED;
+	
 	/* Text is in the upper left corner of each image. */
-	UPPERLEFT; 
-
+	var UPPERLEFT;
+	
 	/* Ltext is in the lower left corner of each image. */
-	LOWERLEFT; 
-
+	var LOWERLEFT;
+	
 	/* Text is in the upper right corner of each image. */
-	UPPERRIGHT; 
-
+	var UPPERRIGHT;
+	
 	/* Text is in the lower right corner of each image. */
-	LOWERRIGHT; 
-
-
+	var LOWERRIGHT;
+	
+	
 }

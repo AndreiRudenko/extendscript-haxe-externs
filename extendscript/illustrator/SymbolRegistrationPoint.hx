@@ -1,34 +1,34 @@
 package extendscript.illustrator;
 
 /* The symbol registration point. */
-@:native("SymbolRegistrationPoint") extern enum SymbolRegistrationPoint {
+@:native("SymbolRegistrationPoint") @:enum extern enum abstract SymbolRegistrationPoint(Int) { 
 	
 	/* Top left point of symbol bounding box. */
-	SYMBOLTOPLEFTPOINT; 
-
+	var SYMBOLTOPLEFTPOINT;
+	
 	/* Top middle point of symbol bounding box. */
-	SYMBOLTOPMIDDLEPOINT; 
-
+	var SYMBOLTOPMIDDLEPOINT;
+	
 	/* Top right point of symbol bounding box. */
-	SYMBOLTOPRIGHTPOINT; 
-
+	var SYMBOLTOPRIGHTPOINT;
+	
 	/* Middle left point of symbol bounding box. */
-	SYMBOLMIDDLELEFTPOINT; 
-
+	var SYMBOLMIDDLELEFTPOINT;
+	
 	/* Center point of symbol bounding box. */
-	SYMBOLCENTERPOINT; 
-
+	var SYMBOLCENTERPOINT;
+	
 	/* Middle right point of symbol bounding box. */
-	SYMBOLMIDDLERIGHTPOINT; 
-
+	var SYMBOLMIDDLERIGHTPOINT;
+	
 	/* Bottom left point of symbol bounding box. */
-	SYMBOLBOTTOMLEFTPOINT; 
-
+	var SYMBOLBOTTOMLEFTPOINT;
+	
 	/* Bottom middle point of symbol bounding box. */
-	SYMBOLBOTTOMMIDDLEPOINT; 
-
+	var SYMBOLBOTTOMMIDDLEPOINT;
+	
 	/* Bottom right point of symbol bounding box. */
-	SYMBOLBOTTOMRIGHTPOINT; 
-
-
+	var SYMBOLBOTTOMRIGHTPOINT;
+	
+	
 }

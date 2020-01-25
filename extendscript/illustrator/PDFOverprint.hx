@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* Pdf overprint options. */
-@:native("PDFOverprint") extern enum PDFOverprint {
+@:native("PDFOverprint") @:enum extern enum abstract PDFOverprint(Int) { 
 	
 	/* Preserve overprint. */
-	PRESERVEPDFOVERPRINT; 
-
+	var PRESERVEPDFOVERPRINT;
+	
 	/* Discard overprint. */
-	DISCARDPDFOVERPRINT; 
-
-
+	var DISCARDPDFOVERPRINT;
+	
+	
 }

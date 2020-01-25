@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* Controls the type of vector view. */
-@:native("ViewType") extern enum ViewType {
+@:native("ViewType") @:enum extern enum abstract ViewType(Int) { 
 	
 	/* View artwork. */
-	TRACINGVIEWVECTORTRACINGRESULT; 
-
+	var TRACINGVIEWVECTORTRACINGRESULT;
+	
 	/* View paths and transparent fills. */
-	TRACINGVIEWVECTOROUTLINESWITHTRACING; 
-
+	var TRACINGVIEWVECTOROUTLINESWITHTRACING;
+	
 	/* View just the paths. */
-	TRACINGVIEWVECTOROUTLINES; 
-
+	var TRACINGVIEWVECTOROUTLINES;
+	
 	/* View Outlines with Transparent Image. */
-	TRACINGVIEWVECTORWITHTRANSPARENTIMAGE; 
-
+	var TRACINGVIEWVECTORWITHTRANSPARENTIMAGE;
+	
 	/* View Source Image. */
-	TRACINGVIEWIMAGE; 
-
-
+	var TRACINGVIEWIMAGE;
+	
+	
 }

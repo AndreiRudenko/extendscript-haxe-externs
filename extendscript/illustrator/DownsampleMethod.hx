@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The resample type. */
-@:native("DownsampleMethod") extern enum DownsampleMethod {
+@:native("DownsampleMethod") @:enum extern enum abstract DownsampleMethod(Int) { 
 	
 	/* Downsampling. */
-	NODOWNSAMPLE; 
-
+	var NODOWNSAMPLE;
+	
 	/* Average Downsampling. */
-	AVERAGEDOWNSAMPLE; 
-
+	var AVERAGEDOWNSAMPLE;
+	
 	/* Subsampling. */
-	SUBSAMPLE; 
-
+	var SUBSAMPLE;
+	
 	/* Bicubic Downsampling. */
-	BICUBICDOWNSAMPLE; 
-
-
+	var BICUBICDOWNSAMPLE;
+	
+	
 }

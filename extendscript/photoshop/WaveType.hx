@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The type of wave. */
-@:native("WaveType") extern enum WaveType {
+@:native("WaveType") @:enum extern enum abstract WaveType(Int) { 
 	
 	/* Rolling. */
-	SINE; 
-
+	var SINE;
+	
 	/* Triangular. */
-	TRIANGULAR; 
-
+	var TRIANGULAR;
+	
 	/* Square. */
-	SQUARE; 
-
-
+	var SQUARE;
+	
+	
 }

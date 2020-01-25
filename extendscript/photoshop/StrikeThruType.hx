@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The strikethrough style. */
-@:native("StrikeThruType") extern enum StrikeThruType {
+@:native("StrikeThruType") @:enum extern enum abstract StrikeThruType(Int) { 
 	
 	/* No strikethrough. */
-	STRIKEOFF; 
-
+	var STRIKEOFF;
+	
 	/* (For vertical type) The strikethrough is through the height of the text. */
-	STRIKEHEIGHT; 
-
+	var STRIKEHEIGHT;
+	
 	/* (For vertical type) The strikethrough is through the em box. */
-	STRIKEBOX; 
-
-
+	var STRIKEBOX;
+	
+	
 }

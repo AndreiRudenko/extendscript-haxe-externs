@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The PDF magnification type. */
-@:native("MagnificationType") extern enum MagnificationType {
+@:native("MagnificationType") @:enum extern enum abstract MagnificationType(Int) { 
 	
 	/* Displays the image at actual size. */
-	ACTUALSIZE; 
-
+	var ACTUALSIZE;
+	
 	/* Fits the image to the page. */
-	FITPAGE; 
-
-
+	var FITPAGE;
+	
+	
 }

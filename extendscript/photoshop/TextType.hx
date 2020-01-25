@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The type of text. */
-@:native("TextType") extern enum TextType {
+@:native("TextType") @:enum extern enum abstract TextType(Int) { 
 	
 	/* Text that does not wrap. */
-	POINTTEXT; 
-
+	var POINTTEXT;
+	
 	/* Text that wraps within a bounding box. */
-	PARAGRAPHTEXT; 
-
-
+	var PARAGRAPHTEXT;
+	
+	
 }

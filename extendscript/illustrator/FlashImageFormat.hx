@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("FlashImageFormat") extern enum FlashImageFormat {
+@:native("FlashImageFormat") @:enum extern enum abstract FlashImageFormat(Int) { 
 	
-	/* null */
-	LOSSLESS; 
-
-	/* null */
-	LOSSY; 
-
-
+	/* */
+	var LOSSLESS;
+	
+	/* */
+	var LOSSY;
+	
+	
 }

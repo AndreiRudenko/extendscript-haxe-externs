@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* Blends Expand policy used by FXG file format. */
-@:native("BlendsExpandPolicy") extern enum BlendsExpandPolicy {
+@:native("BlendsExpandPolicy") @:enum extern enum abstract BlendsExpandPolicy(Int) { 
 	
 	/* Automatically Convert Blends. */
-	AUTOMATICALLYCONVERTBLENDS; 
-
+	var AUTOMATICALLYCONVERTBLENDS;
+	
 	/* Expand Blends by Rasterizing. */
-	RASTERIZEBLENDS; 
-
-
+	var RASTERIZEBLENDS;
+	
+	
 }

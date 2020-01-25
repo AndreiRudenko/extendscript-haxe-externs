@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* The color space. */
-@:native("ImageColorSpace") extern enum ImageColorSpace {
+@:native("ImageColorSpace") @:enum extern enum abstract ImageColorSpace(Int) { 
 	
 	/* Gray color space. */
-	GrayScale; 
-
+	var GrayScale;
+	
 	/* RGB color space. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK color space. */
-	CMYK; 
-
+	var CMYK;
+	
 	/* LAB color space. */
-	LAB; 
-
+	var LAB;
+	
 	/* Separation color space. */
-	Separation; 
-
+	var Separation;
+	
 	/* DeviceN color space. */
-	DeviceN; 
-
+	var DeviceN;
+	
 	/* Indexed color space. */
-	Indexed; 
-
-
+	var Indexed;
+	
+	
 }

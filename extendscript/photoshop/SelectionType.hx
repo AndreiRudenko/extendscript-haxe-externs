@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The selection behavior when a selection already exists. */
-@:native("SelectionType") extern enum SelectionType {
+@:native("SelectionType") @:enum extern enum abstract SelectionType(Int) { 
 	
 	/* Replace the selected area. */
-	REPLACE; 
-
+	var REPLACE;
+	
 	/* Add the selection to an already selected area. */
-	EXTEND; 
-
+	var EXTEND;
+	
 	/* Remove the selection from the already selected area. */
-	DIMINISH; 
-
+	var DIMINISH;
+	
 	/* Make the selection only the area where the new selection intersects the already selected area. */
-	INTERSECT; 
-
-
+	var INTERSECT;
+	
+	
 }

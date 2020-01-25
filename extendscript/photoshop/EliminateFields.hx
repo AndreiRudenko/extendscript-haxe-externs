@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The type of fields to eliminate. */
-@:native("EliminateFields") extern enum EliminateFields {
+@:native("EliminateFields") @:enum extern enum abstract EliminateFields(Int) { 
 	
 	/* Eliminate odd interlaced lines in a video image. */
-	ODDFIELDS; 
-
+	var ODDFIELDS;
+	
 	/* Eliminate even interlaced lines in a video image. */
-	EVENFIELDS; 
-
-
+	var EVENFIELDS;
+	
+	
 }

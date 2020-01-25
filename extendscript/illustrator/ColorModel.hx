@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Color model of the custom color. */
-@:native("ColorModel") extern enum ColorModel {
+@:native("ColorModel") @:enum extern enum abstract ColorModel(Int) { 
 	
 	/* Registration color (prints on in all separations) */
-	REGISTRATION; 
-
+	var REGISTRATION;
+	
 	/* Process color (mixed ink) */
-	PROCESS; 
-
+	var PROCESS;
+	
 	/* Spot color (separate ink) */
-	SPOT; 
-
-
+	var SPOT;
+	
+	
 }

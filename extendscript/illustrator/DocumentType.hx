@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Savable document types. */
-@:native("DocumentType") extern enum DocumentType {
+@:native("DocumentType") @:enum extern enum abstract DocumentType(Int) { 
 	
 	/* Illustrator file format. */
-	ILLUSTRATOR; 
-
+	var ILLUSTRATOR;
+	
 	/* EPS file format. */
-	EPS; 
-
+	var EPS;
+	
 	/* Acrobat PDF file format. */
-	PDF; 
-
+	var PDF;
+	
 	/* FXG file format. */
-	FXG; 
-
-
+	var FXG;
+	
+	
 }

@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The input color type Full Color or Limited colors. */
-@:native("TracingColorType") extern enum TracingColorType {
+@:native("TracingColorType") @:enum extern enum abstract TracingColorType(Int) { 
 	
 	/* Use Limited colors for Tracing. */
-	TRACINGLIMITEDCOLOR; 
-
+	var TRACINGLIMITEDCOLOR;
+	
 	/* Use Full colors for Tracing. */
-	TRACINGFULLCOLOR; 
-
-
+	var TRACINGFULLCOLOR;
+	
+	
 }

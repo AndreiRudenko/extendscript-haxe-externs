@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The method to use to smooth edges by softening the color transition between edge pixels and background pixels. */
-@:native("AntiAlias") extern enum AntiAlias {
+@:native("AntiAlias") @:enum extern enum abstract AntiAlias(Int) { 
 	
 	/* Does not use anti-aliasing. */
-	NONE; 
-
+	var NONE;
+	
 	/* Makes type appear its sharpest. */
-	SHARP; 
-
+	var SHARP;
+	
 	/* Makes type appear somewhat sharp. */
-	CRISP; 
-
+	var CRISP;
+	
 	/* Makes type appear heavier. */
-	STRONG; 
-
+	var STRONG;
+	
 	/* Makes type appear smoother. */
-	SMOOTH; 
-
-
+	var SMOOTH;
+	
+	
 }

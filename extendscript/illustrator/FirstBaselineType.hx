@@ -1,28 +1,28 @@
 package extendscript.illustrator;
 
 /* Text Item First baseline types. */
-@:native("FirstBaselineType") extern enum FirstBaselineType {
+@:native("FirstBaselineType") @:enum extern enum abstract FirstBaselineType(Int) { 
 	
 	/* First Baseline Ascent Type. */
-	BASELINEASCENT; 
-
+	var BASELINEASCENT;
+	
 	/* First baseline Cap Height Type. */
-	BASELINECAPHEIGHT; 
-
+	var BASELINECAPHEIGHT;
+	
 	/* First Baseline Leading Type. */
-	BASELINELEADING; 
-
+	var BASELINELEADING;
+	
 	/* First Baseline x Height Type. */
-	BASELINEXHEIGHT; 
-
+	var BASELINEXHEIGHT;
+	
 	/* First Baseline Em Box Height Type. */
-	BASELINEEMBOXHEIGHT; 
-
+	var BASELINEEMBOXHEIGHT;
+	
 	/* First Baseline Fixed Type. */
-	BASELINEFIXED; 
-
+	var BASELINEFIXED;
+	
 	/* First Baseline Legacy Type. */
-	BASELINELEGACY; 
-
-
+	var BASELINELEGACY;
+	
+	
 }

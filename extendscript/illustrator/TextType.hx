@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The type of text art. */
-@:native("TextType") extern enum TextType {
+@:native("TextType") @:enum extern enum abstract TextType(Int) { 
 	
 	/* Text from a point. */
-	POINTTEXT; 
-
+	var POINTTEXT;
+	
 	/* Text within an area. */
-	AREATEXT; 
-
+	var AREATEXT;
+	
 	/* Text on a path. */
-	PATHTEXT; 
-
-
+	var PATHTEXT;
+	
+	
 }

@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The number of bits per pixel to use when compressing a PICT file. */
-@:native("PICTBitsPerPixels") extern enum PICTBitsPerPixels {
+@:native("PICTBitsPerPixels") @:enum extern enum abstract PICTBitsPerPixels(Int) { 
 	
 	/* 2 bits per pixel. */
-	TWO; 
-
+	var TWO;
+	
 	/* 4 bits per pixel. */
-	FOUR; 
-
+	var FOUR;
+	
 	/* 8 bits per pixel. */
-	EIGHT; 
-
+	var EIGHT;
+	
 	/* 16 bits per pixel. */
-	SIXTEEN; 
-
+	var SIXTEEN;
+	
 	/* 32 bits per pixel. */
-	THIRTYTWO; 
-
-
+	var THIRTYTWO;
+	
+	
 }

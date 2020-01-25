@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* The style run alignment. */
-@:native("StyleRunAlignmentType") extern enum StyleRunAlignmentType {
+@:native("StyleRunAlignmentType") @:enum extern enum abstract StyleRunAlignmentType(Int) { 
 	
-	/* null */
-	bottom; 
-
-	/* null */
-	icfBottom; 
-
-	/* null */
-	ROMANBASELINE; 
-
-	/* null */
-	center; 
-
-	/* null */
-	icfTop; 
-
-	/* null */
-	top; 
-
-
+	/* */
+	var bottom;
+	
+	/* */
+	var icfBottom;
+	
+	/* */
+	var ROMANBASELINE;
+	
+	/* */
+	var center;
+	
+	/* */
+	var icfTop;
+	
+	/* */
+	var top;
+	
+	
 }

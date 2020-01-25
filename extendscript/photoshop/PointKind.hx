@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The path point kind. */
-@:native("PointKind") extern enum PointKind {
+@:native("PointKind") @:enum extern enum abstract PointKind(Int) { 
 	
 	/* The point can be a curve. */
-	SMOOTHPOINT; 
-
+	var SMOOTHPOINT;
+	
 	/* The point must be a corner. */
-	CORNERPOINT; 
-
-
+	var CORNERPOINT;
+	
+	
 }

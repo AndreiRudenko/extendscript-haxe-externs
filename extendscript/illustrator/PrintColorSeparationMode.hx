@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The color separation mode. */
-@:native("PrintColorSeparationMode") extern enum PrintColorSeparationMode {
+@:native("PrintColorSeparationMode") @:enum extern enum abstract PrintColorSeparationMode(Int) { 
 	
 	/* The composite mode. */
-	COMPOSITE; 
-
+	var COMPOSITE;
+	
 	/* The host based color separation mode. */
-	HOSTBASEDSEPARATION; 
-
+	var HOSTBASEDSEPARATION;
+	
 	/* The InRIP color separation mode. */
-	INRIPSEPARATION; 
-
-
+	var INRIPSEPARATION;
+	
+	
 }

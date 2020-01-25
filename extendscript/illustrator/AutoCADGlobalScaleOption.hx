@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADGlobalScaleOption") extern enum AutoCADGlobalScaleOption {
+@:native("AutoCADGlobalScaleOption") @:enum extern enum abstract AutoCADGlobalScaleOption(Int) { 
 	
-	/* null */
-	OriginalSize; 
-
-	/* null */
-	FitArtboard; 
-
-	/* null */
-	ScaleByValue; 
-
-
+	/* */
+	var OriginalSize;
+	
+	/* */
+	var FitArtboard;
+	
+	/* */
+	var ScaleByValue;
+	
+	
 }

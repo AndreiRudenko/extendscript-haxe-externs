@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("FlashPlaybackSecurity") extern enum FlashPlaybackSecurity {
+@:native("FlashPlaybackSecurity") @:enum extern enum abstract FlashPlaybackSecurity(Int) { 
 	
-	/* null */
-	PlaybackLocal; 
-
-	/* null */
-	PlaybackNetwork; 
-
-
+	/* */
+	var PlaybackLocal;
+	
+	/* */
+	var PlaybackNetwork;
+	
+	
 }

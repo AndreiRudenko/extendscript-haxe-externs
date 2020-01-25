@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The preferred Kinsoku order. */
-@:native("KinsokuOrderEnum") extern enum KinsokuOrderEnum {
+@:native("KinsokuOrderEnum") @:enum extern enum abstract KinsokuOrderEnum(Int) { 
 	
-	/* null */
-	PUSHIN; 
-
-	/* null */
-	PUSHOUTFIRST; 
-
-	/* null */
-	PUSHOUTONLY; 
-
-
+	/* */
+	var PUSHIN;
+	
+	/* */
+	var PUSHOUTFIRST;
+	
+	/* */
+	var PUSHOUTONLY;
+	
+	
 }

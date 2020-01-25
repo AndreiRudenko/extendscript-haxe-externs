@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* The style to use when cropping a page. */
-@:native("CropToType") extern enum CropToType {
+@:native("CropToType") @:enum extern enum abstract CropToType(Int) { 
 	
 	/* Crop to the bounding box. */
-	BOUNDINGBOX; 
-
+	var BOUNDINGBOX;
+	
 	/* Crop to the media box. */
-	MEDIABOX; 
-
+	var MEDIABOX;
+	
 	/* Crop to the crop box. */
-	CROPBOX; 
-
+	var CROPBOX;
+	
 	/* Crop to the bleed box. */
-	BLEEDBOX; 
-
+	var BLEEDBOX;
+	
 	/* Crop to the trim box. */
-	TRIMBOX; 
-
+	var TRIMBOX;
+	
 	/* Crop to the art box. */
-	ARTBOX; 
-
-
+	var ARTBOX;
+	
+	
 }

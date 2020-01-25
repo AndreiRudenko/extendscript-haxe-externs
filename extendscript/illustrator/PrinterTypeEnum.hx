@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The printer type. */
-@:native("PrinterTypeEnum") extern enum PrinterTypeEnum {
+@:native("PrinterTypeEnum") @:enum extern enum abstract PrinterTypeEnum(Int) { 
 	
 	/* Unknown printer type. */
-	Unknown; 
-
+	var Unknown;
+	
 	/* PostScript printer. */
-	POSTSCRIPTPRINTER; 
-
+	var POSTSCRIPTPRINTER;
+	
 	/* Non PostScript printer. */
-	NONPOSTSCRIPTPRINTER; 
-
-
+	var NONPOSTSCRIPTPRINTER;
+	
+	
 }

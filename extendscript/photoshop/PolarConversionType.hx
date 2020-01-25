@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The method of polar distortion to use. */
-@:native("PolarConversionType") extern enum PolarConversionType {
+@:native("PolarConversionType") @:enum extern enum abstract PolarConversionType(Int) { 
 	
 	/* The selection is converted from its rectangular to polar coordinates. */
-	RECTANGULARTOPOLAR; 
-
+	var RECTANGULARTOPOLAR;
+	
 	/* The selection is converted from its polar to rectangular coordinates. */
-	POLARTORECTANGULAR; 
-
-
+	var POLARTORECTANGULAR;
+	
+	
 }

@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The method of zigzagging. */
-@:native("ZigZagType") extern enum ZigZagType {
+@:native("ZigZagType") @:enum extern enum abstract ZigZagType(Int) { 
 	
 	/* Pixels are rotated around the center of the selection. */
-	AROUNDCENTER; 
-
+	var AROUNDCENTER;
+	
 	/* Pixels are displaced toward or away from the center of the selection. */
-	OUTFROMCENTER; 
-
+	var OUTFROMCENTER;
+	
 	/* Pixels are displaced to the upper left or lower right. */
-	PONDRIPPLES; 
-
-
+	var PONDRIPPLES;
+	
+	
 }

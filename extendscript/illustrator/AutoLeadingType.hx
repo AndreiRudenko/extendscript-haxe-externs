@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The auto leading type. */
-@:native("AutoLeadingType") extern enum AutoLeadingType {
+@:native("AutoLeadingType") @:enum extern enum abstract AutoLeadingType(Int) { 
 	
 	/* Roman leading type. */
-	BOTTOMTOBOTTOM; 
-
+	var BOTTOMTOBOTTOM;
+	
 	/* Japanese leading type. */
-	TOPTOTOP; 
-
-
+	var TOPTOTOP;
+	
+	
 }

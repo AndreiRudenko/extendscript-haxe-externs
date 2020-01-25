@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The ink type. */
-@:native("InkType") extern enum InkType {
+@:native("InkType") @:enum extern enum abstract InkType(Int) { 
 	
 	/* Cyan color ink. */
-	CYANINK; 
-
+	var CYANINK;
+	
 	/* Magenta color ink. */
-	MAGENTAINK; 
-
+	var MAGENTAINK;
+	
 	/* Yellow color ink. */
-	YELLOWINK; 
-
+	var YELLOWINK;
+	
 	/* Black color ink. */
-	BLACKINK; 
-
+	var BLACKINK;
+	
 	/* Custom color ink. */
-	CUSTOMINK; 
-
-
+	var CUSTOMINK;
+	
+	
 }

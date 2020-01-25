@@ -1,31 +1,31 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("RulerUnits") extern enum RulerUnits {
+@:native("RulerUnits") @:enum extern enum abstract RulerUnits(Int) { 
 	
 	/* Ruler units are unknown. */
-	Unknown; 
-
+	var Unknown;
+	
 	/* Ruler units are unknown. */
-	Inches; 
-
+	var Inches;
+	
 	/* Ruler units are measured in centimeters. */
-	Centimeters; 
-
+	var Centimeters;
+	
 	/* Ruler units are measured in points. */
-	Points; 
-
+	var Points;
+	
 	/* Ruler units are measured in picas. */
-	Picas; 
-
+	var Picas;
+	
 	/* Ruler units are measured in millimeters. */
-	Millimeters; 
-
+	var Millimeters;
+	
 	/* Ruler units are measured in Qs. */
-	Qs; 
-
+	var Qs;
+	
 	/* Ruler units are measured in pixels. */
-	Pixels; 
-
-
+	var Pixels;
+	
+	
 }

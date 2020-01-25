@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* Geometric options for shapes, such as the iris shape in the Lens Blur Filter. */
-@:native("Geometry") extern enum Geometry {
+@:native("Geometry") @:enum extern enum abstract Geometry(Int) { 
 	
 	/* Triangle. */
-	TRIANGLE; 
-
+	var TRIANGLE;
+	
 	/* Pentagon. */
-	PENTAGON; 
-
+	var PENTAGON;
+	
 	/* Hexagon. */
-	HEXAGON; 
-
+	var HEXAGON;
+	
 	/* Square. */
-	SQUARE; 
-
+	var SQUARE;
+	
 	/* Heptagon. */
-	HEPTAGON; 
-
+	var HEPTAGON;
+	
 	/* Octagon. */
-	OCTAGON; 
-
-
+	var OCTAGON;
+	
+	
 }

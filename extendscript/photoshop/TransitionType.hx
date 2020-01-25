@@ -1,61 +1,61 @@
 package extendscript.photoshop;
 
 /* PDF presentation transition types. */
-@:native("TransitionType") extern enum TransitionType {
+@:native("TransitionType") @:enum extern enum abstract TransitionType(Int) { 
 	
 	/* Images transition in horizontal stripes like Venetian blinds. */
-	BLINDSHORIZONTAL; 
-
+	var BLINDSHORIZONTAL;
+	
 	/* Images transition in vertical stripes. */
-	BLINDSVERTICAL; 
-
+	var BLINDSVERTICAL;
+	
 	/* One image dissolves into the next. */
-	DISSOLVE; 
-
+	var DISSOLVE;
+	
 	/* Images transition using a shrinking box shape. */
-	BOXIN; 
-
+	var BOXIN;
+	
 	/* Images transition using an expanding box shape. */
-	BOXOUT; 
-
+	var BOXOUT;
+	
 	/* Images dissolve top to bottom. */
-	GLITTERDOWN; 
-
+	var GLITTERDOWN;
+	
 	/* Images dissolve left to right. */
-	GLITTERRIGHT; 
-
+	var GLITTERRIGHT;
+	
 	/* Images dissolve top-left to bottom-right. */
-	GLITTERRIGHTDOWN; 
-
+	var GLITTERRIGHTDOWN;
+	
 	/* Images change with no visible transition. */
-	NONE; 
-
+	var NONE;
+	
 	/* Images transition using random effects. */
-	RANDOM; 
-
+	var RANDOM;
+	
 	/* The new images roll in from the top and bottom of the screen. */
-	SPLITHORIZONTALIN; 
-
+	var SPLITHORIZONTALIN;
+	
 	/* The new image spreads from the middle of the screen to the top and bottom of the screen. */
-	SPLITHORIZONTALOUT; 
-
+	var SPLITHORIZONTALOUT;
+	
 	/* The new image rolls in from the left and right edges of the screen. */
-	SPLITVERTICALIN; 
-
+	var SPLITVERTICALIN;
+	
 	/* The new image rolls out from the middle of the screen to the left and right edges of the screen. */
-	SPLITVERTICALOUT; 
-
+	var SPLITVERTICALOUT;
+	
 	/* The new image rolls in from the top of the screen. */
-	WIPEDOWN; 
-
+	var WIPEDOWN;
+	
 	/* The new image rolls in from the right side of the screen. */
-	WIPELEFT; 
-
+	var WIPELEFT;
+	
 	/* The new image rolls in from the left side of the screen. */
-	WIPERIGHT; 
-
+	var WIPERIGHT;
+	
 	/* The new image rolls in from the bottom of the screen. */
-	WIPEUP; 
-
-
+	var WIPEUP;
+	
+	
 }

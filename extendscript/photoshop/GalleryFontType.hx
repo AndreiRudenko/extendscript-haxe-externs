@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* Fonts for web photo gallery text. */
-@:native("GalleryFontType") extern enum GalleryFontType {
+@:native("GalleryFontType") @:enum extern enum abstract GalleryFontType(Int) { 
 	
 	/* Arial font. */
-	ARIAL; 
-
+	var ARIAL;
+	
 	/* Courier New font. */
-	COURIERNEW; 
-
+	var COURIERNEW;
+	
 	/* Helvetica font. */
-	HELVETICA; 
-
+	var HELVETICA;
+	
 	/* Times New Roman font. */
-	TIMESNEWROMAN; 
-
-
+	var TIMESNEWROMAN;
+	
+	
 }

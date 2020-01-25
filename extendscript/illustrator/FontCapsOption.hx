@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The font capitalization option. */
-@:native("FontCapsOption") extern enum FontCapsOption {
+@:native("FontCapsOption") @:enum extern enum abstract FontCapsOption(Int) { 
 	
 	/* Normal caps. */
-	NORMALCAPS; 
-
+	var NORMALCAPS;
+	
 	/* Small caps. */
-	SMALLCAPS; 
-
+	var SMALLCAPS;
+	
 	/* All caps. */
-	ALLCAPS; 
-
+	var ALLCAPS;
+	
 	/* All small caps. */
-	ALLSMALLCAPS; 
-
-
+	var ALLSMALLCAPS;
+	
+	
 }

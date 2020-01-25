@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The line style for nonprinting grids displayed over images. */
-@:native("GridLineStyle") extern enum GridLineStyle {
+@:native("GridLineStyle") @:enum extern enum abstract GridLineStyle(Int) { 
 	
 	/* Solid. */
-	SOLID; 
-
+	var SOLID;
+	
 	/* Dashed. */
-	DASHED; 
-
+	var DASHED;
+	
 	/* Dotted. */
-	DOTTED; 
-
-
+	var DOTTED;
+	
+	
 }

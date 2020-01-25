@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADRasterFormat") extern enum AutoCADRasterFormat {
+@:native("AutoCADRasterFormat") @:enum extern enum abstract AutoCADRasterFormat(Int) { 
 	
-	/* null */
-	PNG; 
-
-	/* null */
-	JPEG; 
-
-
+	/* */
+	var PNG;
+	
+	/* */
+	var JPEG;
+	
+	
 }

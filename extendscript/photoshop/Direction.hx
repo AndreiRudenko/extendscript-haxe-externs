@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The orientation of the object. */
-@:native("Direction") extern enum Direction {
+@:native("Direction") @:enum extern enum abstract Direction(Int) { 
 	
 	/* Horizontal. */
-	HORIZONTAL; 
-
+	var HORIZONTAL;
+	
 	/* Vertical. */
-	VERTICAL; 
-
-
+	var VERTICAL;
+	
+	
 }

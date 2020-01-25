@@ -1,79 +1,79 @@
 package extendscript.photoshop;
 
 /* Document formats that Photoshop can save to. */
-@:native("SaveDocumentType") extern enum SaveDocumentType {
+@:native("SaveDocumentType") @:enum extern enum abstract SaveDocumentType(Int) { 
 	
 	/* Photoshop format. */
-	PHOTOSHOP; 
-
+	var PHOTOSHOP;
+	
 	/* BMP format. */
-	BMP; 
-
+	var BMP;
+	
 	/* CompuServe GIF format. */
-	COMPUSERVEGIF; 
-
+	var COMPUSERVEGIF;
+	
 	/* EPS document produced by Photoshop. */
-	PHOTOSHOPEPS; 
-
+	var PHOTOSHOPEPS;
+	
 	/* JPEG format. */
-	JPEG; 
-
+	var JPEG;
+	
 	/* PCX format. */
-	PCX; 
-
+	var PCX;
+	
 	/* PDF document produced by Photoshop. */
-	PHOTOSHOPPDF; 
-
+	var PHOTOSHOPPDF;
+	
 	/* PICT file format. */
-	PICTFileFORMAT; 
-
+	var PICTFileFORMAT;
+	
 	/* PICT resource format. */
-	PICTRESOURCEFORMAT; 
-
+	var PICTRESOURCEFORMAT;
+	
 	/* Pixar format. */
-	PIXAR; 
-
+	var PIXAR;
+	
 	/* PNG format. */
-	PNG; 
-
+	var PNG;
+	
 	/* Raw format. */
-	RAW; 
-
+	var RAW;
+	
 	/* Scitex CT format. */
-	SCITEXCT; 
-
+	var SCITEXCT;
+	
 	/* Targa format. */
-	TARGA; 
-
+	var TARGA;
+	
 	/* TIFF format. */
-	TIFF; 
-
+	var TIFF;
+	
 	/* Photoshop DCS 1.0 format. */
-	PHOTOSHOPDCS_1; 
-
+	var PHOTOSHOPDCS_1;
+	
 	/* Photoshop DCS 2.0 format. */
-	PHOTOSHOPDCS_2; 
-
+	var PHOTOSHOPDCS_2;
+	
 	/* Alias PIX format. */
-	ALIASPIX; 
-
+	var ALIASPIX;
+	
 	/* Electric format. */
-	ELECTRICIMAGE; 
-
+	var ELECTRICIMAGE;
+	
 	/* Portable Bitmap format. */
-	PORTABLEBITMAP; 
-
+	var PORTABLEBITMAP;
+	
 	/* Wavefront RLA format. */
-	WAVEFRONTRLA; 
-
+	var WAVEFRONTRLA;
+	
 	/* SGI RGB format. */
-	SGIRGB; 
-
+	var SGIRGB;
+	
 	/* SoftImage format. */
-	SOFTIMAGE; 
-
+	var SOFTIMAGE;
+	
 	/* Wireless Bitmap format (WBMP) */
-	WIRELESSBITMAP; 
-
-
+	var WIRELESSBITMAP;
+	
+	
 }

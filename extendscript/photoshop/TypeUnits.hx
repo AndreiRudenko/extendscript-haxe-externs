@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The measurement unit for type. */
-@:native("TypeUnits") extern enum TypeUnits {
+@:native("TypeUnits") @:enum extern enum abstract TypeUnits(Int) { 
 	
 	/* Pixels. */
-	PIXELS; 
-
+	var PIXELS;
+	
 	/* Millimeters. */
-	MM; 
-
+	var MM;
+	
 	/* Points. */
-	POINTS; 
-
-
+	var POINTS;
+	
+	
 }

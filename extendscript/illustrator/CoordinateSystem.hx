@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* Coordinate system used by Illustrator. */
-@:native("CoordinateSystem") extern enum CoordinateSystem {
+@:native("CoordinateSystem") @:enum extern enum abstract CoordinateSystem(Int) { 
 	
 	/* Document coordinate system. */
-	DOCUMENTCOORDINATESYSTEM; 
-
+	var DOCUMENTCOORDINATESYSTEM;
+	
 	/* Artboard coordinate system. */
-	ARTBOARDCOORDINATESYSTEM; 
-
-
+	var ARTBOARDCOORDINATESYSTEM;
+	
+	
 }

@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The path point selection state. */
-@:native("PathPointSelection") extern enum PathPointSelection {
+@:native("PathPointSelection") @:enum extern enum abstract PathPointSelection(Int) { 
 	
 	/* Path point not selected. */
-	NOSELECTION; 
-
+	var NOSELECTION;
+	
 	/* Anchor point selected. */
-	ANCHORPOINT; 
-
+	var ANCHORPOINT;
+	
 	/* Left direction point selected. */
-	LEFTDIRECTION; 
-
+	var LEFTDIRECTION;
+	
 	/* Right direction point selected. */
-	RIGHTDIRECTION; 
-
+	var RIGHTDIRECTION;
+	
 	/* Left and right direction points selected. */
-	LEFTRIGHTPOINT; 
-
-
+	var LEFTRIGHTPOINT;
+	
+	
 }

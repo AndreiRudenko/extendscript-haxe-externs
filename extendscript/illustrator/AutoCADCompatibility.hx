@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("AutoCADCompatibility") extern enum AutoCADCompatibility {
+@:native("AutoCADCompatibility") @:enum extern enum abstract AutoCADCompatibility(Int) { 
 	
-	/* null */
-	AutoCADRelease13; 
-
-	/* null */
-	AutoCADRelease14; 
-
-	/* null */
-	AutoCADRelease15; 
-
-	/* null */
-	AutoCADRelease18; 
-
-	/* null */
-	AutoCADRelease21; 
-
-	/* null */
-	AutoCADRelease24; 
-
-
+	/* */
+	var AutoCADRelease13;
+	
+	/* */
+	var AutoCADRelease14;
+	
+	/* */
+	var AutoCADRelease15;
+	
+	/* */
+	var AutoCADRelease18;
+	
+	/* */
+	var AutoCADRelease21;
+	
+	/* */
+	var AutoCADRelease24;
+	
+	
 }

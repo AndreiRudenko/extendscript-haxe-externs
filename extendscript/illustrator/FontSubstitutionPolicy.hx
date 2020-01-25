@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The font substitution policy. */
-@:native("FontSubstitutionPolicy") extern enum FontSubstitutionPolicy {
+@:native("FontSubstitutionPolicy") @:enum extern enum abstract FontSubstitutionPolicy(Int) { 
 	
 	/* Substitute oblique font. */
-	SUBSTITUTEOBLIQUE; 
-
+	var SUBSTITUTEOBLIQUE;
+	
 	/* Substitute tint font. */
-	SUBSTITUTETINT; 
-
+	var SUBSTITUTETINT;
+	
 	/* Substitute device font. */
-	SUBSTITUTEDEVICE; 
-
-
+	var SUBSTITUTEDEVICE;
+	
+	
 }

@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* The type of action reference object. */
-@:native("ReferenceFormType") extern enum ReferenceFormType {
+@:native("ReferenceFormType") @:enum extern enum abstract ReferenceFormType(Int) { 
 	
 	/* Name. */
-	NAME; 
-
+	var NAME;
+	
 	/* Index. */
-	INDEX; 
-
+	var INDEX;
+	
 	/* Identifier. */
-	IDENTIFIER; 
-
+	var IDENTIFIER;
+	
 	/* Offset. */
-	OFFSET; 
-
+	var OFFSET;
+	
 	/* Enumerated. */
-	ENUMERATED; 
-
+	var ENUMERATED;
+	
 	/* Property. */
-	PROPERTY; 
-
+	var PROPERTY;
+	
 	/* Class. */
-	CLASSTYPE; 
-
-
+	var CLASSTYPE;
+	
+	
 }

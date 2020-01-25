@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The capitalization to use. */
-@:native("Case") extern enum Case {
+@:native("Case") @:enum extern enum abstract Case(Int) { 
 	
 	/* Uses uppercase and lowercase letters. */
-	NORMAL; 
-
+	var NORMAL;
+	
 	/* Uses all uppercase letters. */
-	ALLCAPS; 
-
+	var ALLCAPS;
+	
 	/* Uses small caps for lowercase letters. */
-	SMALLCAPS; 
-
-
+	var SMALLCAPS;
+	
+	
 }

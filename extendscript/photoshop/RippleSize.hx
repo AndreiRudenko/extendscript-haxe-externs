@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The size of undulations. */
-@:native("RippleSize") extern enum RippleSize {
+@:native("RippleSize") @:enum extern enum abstract RippleSize(Int) { 
 	
 	/* Small. */
-	SMALL; 
-
+	var SMALL;
+	
 	/* Medium. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* Large. */
-	LARGE; 
-
-
+	var LARGE;
+	
+	
 }

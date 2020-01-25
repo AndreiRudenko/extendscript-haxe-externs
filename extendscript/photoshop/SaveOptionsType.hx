@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The save options for closing a file. */
-@:native("SaveOptionsType") extern enum SaveOptionsType {
+@:native("SaveOptionsType") @:enum extern enum abstract SaveOptionsType(Int) { 
 	
 	/* Save changes. */
-	SAVECHANGES; 
-
+	var SAVECHANGES;
+	
 	/* Do not save changes. */
-	DONOTSAVECHANGES; 
-
+	var DONOTSAVECHANGES;
+	
 	/* Ask the user whether to save. */
-	PROMPTTOSAVECHANGES; 
-
-
+	var PROMPTTOSAVECHANGES;
+	
+	
 }

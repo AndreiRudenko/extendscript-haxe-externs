@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The kashida type constants. */
-@:native("KashidasType") extern enum KashidasType {
+@:native("KashidasType") @:enum extern enum abstract KashidasType(Int) { 
 	
-	/* null */
-	DEFAULT_KASHIDAS; 
-
-	/* null */
-	KASHIDAS_ON; 
-
-	/* null */
-	KASHIDAS_OFF; 
-
-
+	/* */
+	var DEFAULT_KASHIDAS;
+	
+	/* */
+	var KASHIDAS_ON;
+	
+	/* */
+	var KASHIDAS_OFF;
+	
+	
 }

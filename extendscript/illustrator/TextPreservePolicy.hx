@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Text preserve policy used by FXG file format. */
-@:native("TextPreservePolicy") extern enum TextPreservePolicy {
+@:native("TextPreservePolicy") @:enum extern enum abstract TextPreservePolicy(Int) { 
 	
 	/* Preserve the appearance of text by outlining it. */
-	OUTLINETEXT; 
-
+	var OUTLINETEXT;
+	
 	/* Preserve the appearance of text by rasterizing it. */
-	RASTERIZETEXT; 
-
+	var RASTERIZETEXT;
+	
 	/* Preserve the editability of text. */
-	KEEPTEXTEDITABLE; 
-
+	var KEEPTEXTEDITABLE;
+	
 	/* Automatically convert text. */
-	AUTOMATICALLYCONVERTTEXT; 
-
-
+	var AUTOMATICALLYCONVERTTEXT;
+	
+	
 }

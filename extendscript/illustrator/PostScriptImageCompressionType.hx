@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The PostScript image compression type. */
-@:native("PostScriptImageCompressionType") extern enum PostScriptImageCompressionType {
+@:native("PostScriptImageCompressionType") @:enum extern enum abstract PostScriptImageCompressionType(Int) { 
 	
 	/* No image compression. */
-	IMAGECOMPRESSIONNONE; 
-
+	var IMAGECOMPRESSIONNONE;
+	
 	/* RLE image compression. */
-	RLE; 
-
+	var RLE;
+	
 	/* JPEG image compression. */
-	JPEG; 
-
-
+	var JPEG;
+	
+	
 }

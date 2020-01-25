@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* DEPRECATED. Constrain values for images. */
-@:native("GalleryConstrainType") extern enum GalleryConstrainType {
+@:native("GalleryConstrainType") @:enum extern enum abstract GalleryConstrainType(Int) { 
 	
 	/* Constrain width. */
-	CONSTRAINWIDTH; 
-
+	var CONSTRAINWIDTH;
+	
 	/* Constrain the height of the image. */
-	CONSTRAINHEIGHT; 
-
+	var CONSTRAINHEIGHT;
+	
 	/* Constrain both the height and the width of the image. */
-	CONSTRAINBOTH; 
-
-
+	var CONSTRAINBOTH;
+	
+	
 }

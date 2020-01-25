@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The image orientation on the media. */
-@:native("Orientation") extern enum Orientation {
+@:native("Orientation") @:enum extern enum abstract Orientation(Int) { 
 	
 	/* Landscape. */
-	LANDSCAPE; 
-
+	var LANDSCAPE;
+	
 	/* Portrait. */
-	PORTRAIT; 
-
-
+	var PORTRAIT;
+	
+	
 }

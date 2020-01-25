@@ -1,34 +1,34 @@
 package extendscript.illustrator;
 
 /* The transparency grid for the new document, in video presets. */
-@:native("DocumentTransparencyGrid") extern enum DocumentTransparencyGrid {
+@:native("DocumentTransparencyGrid") @:enum extern enum abstract DocumentTransparencyGrid(Int) { 
 	
 	/* No grids. */
-	TransparencyGridNone; 
-
+	var TransparencyGridNone;
+	
 	/* Light grid colors. */
-	TransparencyGridLight; 
-
+	var TransparencyGridLight;
+	
 	/* Medium grid colors. */
-	TransparencyGridMedium; 
-
+	var TransparencyGridMedium;
+	
 	/* Dark color grids. */
-	TransparencyGridDark; 
-
+	var TransparencyGridDark;
+	
 	/* Red grids. */
-	TransparencyGridRed; 
-
+	var TransparencyGridRed;
+	
 	/* Orange grids. */
-	TransparencyGridOrange; 
-
+	var TransparencyGridOrange;
+	
 	/* Green grids. */
-	TransparencyGridGreen; 
-
+	var TransparencyGridGreen;
+	
 	/* Blue grids. */
-	TransparencyGridBlue; 
-
+	var TransparencyGridBlue;
+	
 	/* Purple grids. */
-	TransparencyGridPurple; 
-
-
+	var TransparencyGridPurple;
+	
+	
 }

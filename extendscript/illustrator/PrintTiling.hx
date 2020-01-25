@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The page tiling type. */
-@:native("PrintTiling") extern enum PrintTiling {
+@:native("PrintTiling") @:enum extern enum abstract PrintTiling(Int) { 
 	
 	/* Tile single full page. */
-	TILESINGLEFULLPAGE; 
-
+	var TILESINGLEFULLPAGE;
+	
 	/* Tile full pages. */
-	TILEFULLPAGES; 
-
+	var TILEFULLPAGES;
+	
 	/* Tile imageable areas. */
-	TILEIMAGEABLEAREAS; 
-
-
+	var TILEIMAGEABLEAREAS;
+	
+	
 }

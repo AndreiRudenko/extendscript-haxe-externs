@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Controls the type of antialiasing method used in the rasterization. */
-@:native("AntiAliasingMethod") extern enum AntiAliasingMethod {
+@:native("AntiAliasingMethod") @:enum extern enum abstract AntiAliasingMethod(Int) { 
 	
 	/* No anti-aliasing allowed. */
-	None; 
-
+	var None;
+	
 	/* Optimize for the art object. */
-	ARTOPTIMIZED; 
-
+	var ARTOPTIMIZED;
+	
 	/* Optimize for the type object. */
-	TYPEOPTIMIZED; 
-
-
+	var TYPEOPTIMIZED;
+	
+	
 }

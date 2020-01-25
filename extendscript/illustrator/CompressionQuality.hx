@@ -1,82 +1,82 @@
 package extendscript.illustrator;
 
 /* The compression type. */
-@:native("CompressionQuality") extern enum CompressionQuality {
+@:native("CompressionQuality") @:enum extern enum abstract CompressionQuality(Int) { 
 	
 	/* Automatic compression. */
-	None; 
-
-	/* null */
-	JPEGMINIMUM; 
-
-	/* null */
-	JPEGLOW; 
-
-	/* null */
-	JPEGMEDIUM; 
-
-	/* null */
-	JPEGHIGH; 
-
-	/* null */
-	JPEGMAXIMUM; 
-
-	/* null */
-	ZIP4BIT; 
-
-	/* null */
-	ZIP8BIT; 
-
+	var None;
+	
+	/* */
+	var JPEGMINIMUM;
+	
+	/* */
+	var JPEGLOW;
+	
+	/* */
+	var JPEGMEDIUM;
+	
+	/* */
+	var JPEGHIGH;
+	
+	/* */
+	var JPEGMAXIMUM;
+	
+	/* */
+	var ZIP4BIT;
+	
+	/* */
+	var ZIP8BIT;
+	
 	/* Automatically choose between JPEG and ZIP performing minimum compression depending on images. */
-	AUTOMATICJPEGMINIMUM; 
-
+	var AUTOMATICJPEGMINIMUM;
+	
 	/* Automatic JPEG compression low. */
-	AUTOMATICJPEGLOW; 
-
+	var AUTOMATICJPEGLOW;
+	
 	/* Automatic JPEG compression medium. */
-	AUTOMATICJPEGMEDIUM; 
-
+	var AUTOMATICJPEGMEDIUM;
+	
 	/* Automatic JPEG compression high. */
-	AUTOMATICJPEGHIGH; 
-
+	var AUTOMATICJPEGHIGH;
+	
 	/* Automatic JPEG compression maximum. */
-	AUTOMATICJPEGMAXIMUM; 
-
+	var AUTOMATICJPEGMAXIMUM;
+	
 	/* Automatic JPEG2000 compression minimum. */
-	AUTOMATICJPEG2000MINIMUM; 
-
+	var AUTOMATICJPEG2000MINIMUM;
+	
 	/* Automatic JPEG2000 compression low. */
-	AUTOMATICJPEG2000LOW; 
-
+	var AUTOMATICJPEG2000LOW;
+	
 	/* Automatic JPEG2000 compression medium. */
-	AUTOMATICJPEG2000MEDIUM; 
-
+	var AUTOMATICJPEG2000MEDIUM;
+	
 	/* Automatic JPEG2000 compression high. */
-	AUTOMATICJPEG2000HIGH; 
-
+	var AUTOMATICJPEG2000HIGH;
+	
 	/* Automatic JPEG2000 compression maximum. */
-	AUTOMATICJPEG2000MAXIMUM; 
-
+	var AUTOMATICJPEG2000MAXIMUM;
+	
 	/* Automatic JPEG2000 compression lossless. */
-	AUTOMATICJPEG2000LOSSLESS; 
-
-	/* null */
-	JPEG2000MINIMUM; 
-
-	/* null */
-	JPEG2000LOW; 
-
-	/* null */
-	JPEG2000MEDIUM; 
-
-	/* null */
-	JPEG2000HIGH; 
-
-	/* null */
-	JPEG2000MAXIMUM; 
-
-	/* null */
-	JPEG2000LOSSLESS; 
-
-
+	var AUTOMATICJPEG2000LOSSLESS;
+	
+	/* */
+	var JPEG2000MINIMUM;
+	
+	/* */
+	var JPEG2000LOW;
+	
+	/* */
+	var JPEG2000MEDIUM;
+	
+	/* */
+	var JPEG2000HIGH;
+	
+	/* */
+	var JPEG2000MAXIMUM;
+	
+	/* */
+	var JPEG2000LOSSLESS;
+	
+	
 }

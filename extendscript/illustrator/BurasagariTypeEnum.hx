@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The Burasagari type. */
-@:native("BurasagariTypeEnum") extern enum BurasagariTypeEnum {
+@:native("BurasagariTypeEnum") @:enum extern enum abstract BurasagariTypeEnum(Int) { 
 	
-	/* null */
-	None; 
-
-	/* null */
-	Standard; 
-
-	/* null */
-	Forced; 
-
-
+	/* */
+	var None;
+	
+	/* */
+	var Standard;
+	
+	/* */
+	var Forced;
+	
+	
 }

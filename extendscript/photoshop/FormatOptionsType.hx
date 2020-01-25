@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The options for saving a JPEG file. */
-@:native("FormatOptionsType") extern enum FormatOptionsType {
+@:native("FormatOptionsType") @:enum extern enum abstract FormatOptionsType(Int) { 
 	
 	/* Baseline (Standard). Recognized by most web browsers. */
-	STANDARDBASELINE; 
-
+	var STANDARDBASELINE;
+	
 	/* Baseline (Optimized). Optimized color and a slightly reduced file size. */
-	OPTIMIZEDBASELINE; 
-
+	var OPTIMIZEDBASELINE;
+	
 	/* Displays a series of increasingly detailed scans as the image downloads. */
-	PROGRESSIVE; 
-
-
+	var PROGRESSIVE;
+	
+	
 }

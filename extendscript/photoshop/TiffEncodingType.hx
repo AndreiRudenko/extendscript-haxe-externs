@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The encoding to use when saving to TIFF format. */
-@:native("TiffEncodingType") extern enum TiffEncodingType {
+@:native("TiffEncodingType") @:enum extern enum abstract TiffEncodingType(Int) { 
 	
 	/* No compression. */
-	NONE; 
-
+	var NONE;
+	
 	/* LZW compression, which is lossless and most useful for images with large areas of single color. */
-	TIFFLZW; 
-
+	var TIFFLZW;
+	
 	/* JPEG compression, which is lossy and recommended for continuous-tone images, such as photographs. */
-	JPEG; 
-
+	var JPEG;
+	
 	/* Zip compression, which is lossless and most effective for images that contain large areas of single color. */
-	TIFFZIP; 
-
-
+	var TIFFZIP;
+	
+	
 }

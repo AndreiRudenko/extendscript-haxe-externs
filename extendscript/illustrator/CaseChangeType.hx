@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The case change type. */
-@:native("CaseChangeType") extern enum CaseChangeType {
+@:native("CaseChangeType") @:enum extern enum abstract CaseChangeType(Int) { 
 	
 	/* Change to upper case. */
-	UPPERCASE; 
-
+	var UPPERCASE;
+	
 	/* Change to lower case. */
-	LOWERCASE; 
-
+	var LOWERCASE;
+	
 	/* Change to title case. */
-	TITLECASE; 
-
+	var TITLECASE;
+	
 	/* Change to sentence case. */
-	SENTENCECASE; 
-
-
+	var SENTENCECASE;
+	
+	
 }

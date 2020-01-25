@@ -1,31 +1,31 @@
 package extendscript.illustrator;
 
 /* The Wari-Chu alignment type. */
-@:native("WariChuJustificationType") extern enum WariChuJustificationType {
+@:native("WariChuJustificationType") @:enum extern enum abstract WariChuJustificationType(Int) { 
 	
-	/* null */
-	Left; 
-
-	/* null */
-	Right; 
-
-	/* null */
-	Center; 
-
-	/* null */
-	WARICHUFULLJUSTIFYLASTLINELEFT; 
-
-	/* null */
-	WARICHUFULLJUSTIFYLASTLINERIGHT; 
-
-	/* null */
-	WARICHUFULLJUSTIFYLASTLINECENTER; 
-
-	/* null */
-	WARICHUFULLJUSTIFY; 
-
-	/* null */
-	WARICHUAUTOJUSTIFY; 
-
-
+	/* */
+	var Left;
+	
+	/* */
+	var Right;
+	
+	/* */
+	var Center;
+	
+	/* */
+	var WARICHUFULLJUSTIFYLASTLINELEFT;
+	
+	/* */
+	var WARICHUFULLJUSTIFYLASTLINERIGHT;
+	
+	/* */
+	var WARICHUFULLJUSTIFYLASTLINECENTER;
+	
+	/* */
+	var WARICHUFULLJUSTIFY;
+	
+	/* */
+	var WARICHUAUTOJUSTIFY;
+	
+	
 }

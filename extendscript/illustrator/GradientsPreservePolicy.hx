@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* Gradients preserve policy used by FXG file format. */
-@:native("GradientsPreservePolicy") extern enum GradientsPreservePolicy {
+@:native("GradientsPreservePolicy") @:enum extern enum abstract GradientsPreservePolicy(Int) { 
 	
 	/* Preserve the editability of gradients. */
-	KEEPGRADIENTSEDITABLE; 
-
+	var KEEPGRADIENTSEDITABLE;
+	
 	/* Automatically Convert Gradients. */
-	AUTOMATICALLYCONVERTGRADIENTS; 
-
-
+	var AUTOMATICALLYCONVERTGRADIENTS;
+	
+	
 }

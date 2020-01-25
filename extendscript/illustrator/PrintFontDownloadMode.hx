@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The printer font download mode. */
-@:native("PrintFontDownloadMode") extern enum PrintFontDownloadMode {
+@:native("PrintFontDownloadMode") @:enum extern enum abstract PrintFontDownloadMode(Int) { 
 	
 	/* Download none. */
-	DOWNLOADNONE; 
-
+	var DOWNLOADNONE;
+	
 	/* Download subset. */
-	DOWNLOADSUBSET; 
-
+	var DOWNLOADSUBSET;
+	
 	/* Download complete. */
-	DOWNLOADCOMPLETE; 
-
-
+	var DOWNLOADCOMPLETE;
+	
+	
 }

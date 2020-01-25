@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Direction override type constants. */
-@:native("DirOverrideType") extern enum DirOverrideType {
+@:native("DirOverrideType") @:enum extern enum abstract DirOverrideType(Int) { 
 	
-	/* null */
-	DEFAULT_DIRECTION; 
-
-	/* null */
-	LEFT_TO_RIGHT_DIRECTION; 
-
-	/* null */
-	RIGHT_TO_LEFT_DIRECTION; 
-
-
+	/* */
+	var DEFAULT_DIRECTION;
+	
+	/* */
+	var LEFT_TO_RIGHT_DIRECTION;
+	
+	/* */
+	var RIGHT_TO_LEFT_DIRECTION;
+	
+	
 }

@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The copyright status of the document. */
-@:native("CopyrightedType") extern enum CopyrightedType {
+@:native("CopyrightedType") @:enum extern enum abstract CopyrightedType(Int) { 
 	
 	/* The document is copyrighted. */
-	COPYRIGHTEDWORK; 
-
+	var COPYRIGHTEDWORK;
+	
 	/* The document is in the public domain. */
-	PUBLICDOMAIN; 
-
+	var PUBLICDOMAIN;
+	
 	/* The copyright status is not indicated. */
-	UNMARKED; 
-
-
+	var UNMARKED;
+	
+	
 }

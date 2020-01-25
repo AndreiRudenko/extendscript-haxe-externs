@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("SVGCSSPropertyLocation") extern enum SVGCSSPropertyLocation {
+@:native("SVGCSSPropertyLocation") @:enum extern enum abstract SVGCSSPropertyLocation(Int) { 
 	
 	/* Style attributes with entity reference. */
-	ENTITIES; 
-
-	/* null */
-	STYLEATTRIBUTES; 
-
-	/* null */
-	STYLEELEMENTS; 
-
-	/* null */
-	PRESENTATIONATTRIBUTES; 
-
-
+	var ENTITIES;
+	
+	/* */
+	var STYLEATTRIBUTES;
+	
+	/* */
+	var STYLEELEMENTS;
+	
+	/* */
+	var PRESENTATIONATTRIBUTES;
+	
+	
 }

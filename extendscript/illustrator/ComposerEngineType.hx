@@ -1,15 +1,15 @@
 package extendscript.illustrator;
 
 /* The composer type constants. */
-@:native("ComposerEngineType") extern enum ComposerEngineType {
+@:native("ComposerEngineType") @:enum extern enum abstract ComposerEngineType(Int) { 
 	
-	/* null */
-	latinCJKComposer; 
-
-	/* null */
-	optycaComposer; 
-
-	/* null */
-	adornment; 
-
+	/* */
+	var latinCJKComposer;
+	
+	/* */
+	var optycaComposer;
+	
+	/* */
+	var adornment;
+	
 }

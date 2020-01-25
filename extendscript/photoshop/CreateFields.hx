@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The method for replacing eliminated fields. */
-@:native("CreateFields") extern enum CreateFields {
+@:native("CreateFields") @:enum extern enum abstract CreateFields(Int) { 
 	
 	/* Duplicates existing pixels. */
-	DUPLICATION; 
-
+	var DUPLICATION;
+	
 	/* Assigns color values to any new pixels that Photoshop creates based on the color values of existing pixels in the image. */
-	INTERPOLATION; 
-
-
+	var INTERPOLATION;
+	
+	
 }

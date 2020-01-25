@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The number of bits per color channel. */
-@:native("BitsPerChannelType") extern enum BitsPerChannelType {
+@:native("BitsPerChannelType") @:enum extern enum abstract BitsPerChannelType(Int) { 
 	
 	/* 1 bit per channel. */
-	ONE; 
-
+	var ONE;
+	
 	/* 8 bits per channel. */
-	EIGHT; 
-
+	var EIGHT;
+	
 	/* 16 bits per channel. */
-	SIXTEEN; 
-
+	var SIXTEEN;
+	
 	/* 32 bits per channel. */
-	THIRTYTWO; 
-
-
+	var THIRTYTWO;
+	
+	
 }

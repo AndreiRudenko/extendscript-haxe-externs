@@ -1,34 +1,34 @@
 package extendscript.illustrator;
 
 /* The artwork printing position on media. */
-@:native("PrintPosition") extern enum PrintPosition {
+@:native("PrintPosition") @:enum extern enum abstract PrintPosition(Int) { 
 	
 	/* Translate to the top left of media. */
-	TRANSLATETOPLEFT; 
-
+	var TRANSLATETOPLEFT;
+	
 	/* Translate to the top center of media. */
-	TRANSLATETOP; 
-
+	var TRANSLATETOP;
+	
 	/* Translate to the top right of media. */
-	TRANSLATETOPRIGHT; 
-
+	var TRANSLATETOPRIGHT;
+	
 	/* Translate to the left center of media. */
-	TRANSLATELEFT; 
-
+	var TRANSLATELEFT;
+	
 	/* Translate to the center of media. */
-	TRANSLATECENTER; 
-
+	var TRANSLATECENTER;
+	
 	/* Translate to the right center of media. */
-	TRANSLATERIGHT; 
-
+	var TRANSLATERIGHT;
+	
 	/* Translate to the bottom left of media. */
-	TRANSLATEBOTTOMLEFT; 
-
+	var TRANSLATEBOTTOMLEFT;
+	
 	/* Translate to the bottom center of media. */
-	TRANSLATEBOTTOM; 
-
+	var TRANSLATEBOTTOM;
+	
 	/* Translate to the bottom right of media. */
-	TRANSLATEBOTTOMRIGHT; 
-
-
+	var TRANSLATEBOTTOMRIGHT;
+	
+	
 }

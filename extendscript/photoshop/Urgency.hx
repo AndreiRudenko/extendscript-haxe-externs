@@ -1,34 +1,34 @@
 package extendscript.photoshop;
 
 /* The editorial urgency status of the artwork. */
-@:native("Urgency") extern enum Urgency {
+@:native("Urgency") @:enum extern enum abstract Urgency(Int) { 
 	
 	/* No urgency. */
-	NONE; 
-
+	var NONE;
+	
 	/* Low. */
-	LOW; 
-
+	var LOW;
+	
 	/* Level 2 (second highest) */
-	TWO; 
-
+	var TWO;
+	
 	/* Level 3 (third highest) */
-	THREE; 
-
+	var THREE;
+	
 	/* Level 4 (fourth highest) */
-	FOUR; 
-
+	var FOUR;
+	
 	/* Medium urgency. */
-	NORMAL; 
-
+	var NORMAL;
+	
 	/* Level 6 (third lowest) */
-	SIX; 
-
+	var SIX;
+	
 	/* Level 7 (second lowest) */
-	SEVEN; 
-
+	var SEVEN;
+	
 	/* Highest level of urgency. */
-	HIGH; 
-
-
+	var HIGH;
+	
+	
 }

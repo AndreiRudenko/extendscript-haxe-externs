@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The font baseline option. */
-@:native("FontBaselineOption") extern enum FontBaselineOption {
+@:native("FontBaselineOption") @:enum extern enum abstract FontBaselineOption(Int) { 
 	
 	/* Normal baseline. */
-	NORMALBASELINE; 
-
+	var NORMALBASELINE;
+	
 	/* Fauxed superscript baseline. */
-	SUPERSCRIPT; 
-
+	var SUPERSCRIPT;
+	
 	/* Fauxed subscript baseline. */
-	SUBSCRIPT; 
-
-
+	var SUBSCRIPT;
+	
+	
 }

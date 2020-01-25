@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("SVGDocumentEncoding") extern enum SVGDocumentEncoding {
+@:native("SVGDocumentEncoding") @:enum extern enum abstract SVGDocumentEncoding(Int) { 
 	
 	/* ISO 8859-1. */
-	ASCII; 
-
-	/* null */
-	UTF8; 
-
-	/* null */
-	UTF16; 
-
-
+	var ASCII;
+	
+	/* */
+	var UTF8;
+	
+	/* */
+	var UTF16;
+	
+	
 }

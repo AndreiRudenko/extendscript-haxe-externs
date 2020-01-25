@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* Font size in panels and dialogs. */
-@:native("FontSize") extern enum FontSize {
+@:native("FontSize") @:enum extern enum abstract FontSize(Int) { 
 	
 	/* Small size. */
-	SMALL; 
-
+	var SMALL;
+	
 	/* Medium size. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* Large size. */
-	LARGE; 
-
-
+	var LARGE;
+	
+	
 }

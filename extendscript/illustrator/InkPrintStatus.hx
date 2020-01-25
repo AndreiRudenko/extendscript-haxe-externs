@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The ink printing status. */
-@:native("InkPrintStatus") extern enum InkPrintStatus {
+@:native("InkPrintStatus") @:enum extern enum abstract InkPrintStatus(Int) { 
 	
 	/* Disable the ink during print. */
-	DISABLEINK; 
-
+	var DISABLEINK;
+	
 	/* Enable the ink during print. */
-	ENABLEINK; 
-
+	var ENABLEINK;
+	
 	/* Convert to process color during print. */
-	CONVERTINK; 
-
-
+	var CONVERTINK;
+	
+	
 }

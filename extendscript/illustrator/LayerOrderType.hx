@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("LayerOrderType") extern enum LayerOrderType {
+@:native("LayerOrderType") @:enum extern enum abstract LayerOrderType(Int) { 
 	
-	/* null */
-	BOTTOMUP; 
-
-	/* null */
-	TOPDOWN; 
-
-
+	/* */
+	var BOTTOMUP;
+	
+	/* */
+	var TOPDOWN;
+	
+	
 }

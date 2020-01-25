@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The color intent type. */
-@:native("PrintColorIntent") extern enum PrintColorIntent {
+@:native("PrintColorIntent") @:enum extern enum abstract PrintColorIntent(Int) { 
 	
 	/* Perceptual color intent. */
-	PERCEPTUALINTENT; 
-
+	var PERCEPTUALINTENT;
+	
 	/* Saturation color intent. */
-	SATURATIONINTENT; 
-
+	var SATURATIONINTENT;
+	
 	/* Relative colorimetric. */
-	RELATIVECOLORIMETRIC; 
-
+	var RELATIVECOLORIMETRIC;
+	
 	/* Absolute colorimetric. */
-	ABSOLUTECOLORIMETRIC; 
-
-
+	var ABSOLUTECOLORIMETRIC;
+	
+	
 }

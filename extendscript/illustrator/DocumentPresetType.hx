@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* The preset types available for new documents. */
-@:native("DocumentPresetType") extern enum DocumentPresetType {
+@:native("DocumentPresetType") @:enum extern enum abstract DocumentPresetType(Int) { 
 	
 	/* The default Print document preset. */
-	Print; 
-
+	var Print;
+	
 	/* The default Web document preset. */
-	Web; 
-
+	var Web;
+	
 	/* The default Mobile document preset. */
-	Mobile; 
-
+	var Mobile;
+	
 	/* The default Video and Film document preset. */
-	Video; 
-
+	var Video;
+	
 	/* The default CMYK document preset. */
-	BasicCMYK; 
-
+	var BasicCMYK;
+	
 	/* The default RGB document preset. */
-	BasicRGB; 
-
-
+	var BasicRGB;
+	
+	
 }

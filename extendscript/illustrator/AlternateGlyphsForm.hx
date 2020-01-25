@@ -1,43 +1,43 @@
 package extendscript.illustrator;
 
 /* The alternate glyphs form of text. */
-@:native("AlternateGlyphsForm") extern enum AlternateGlyphsForm {
+@:native("AlternateGlyphsForm") @:enum extern enum abstract AlternateGlyphsForm(Int) { 
 	
-	/* null */
-	DEFAULTFORM; 
-
-	/* null */
-	TRADITIONAL; 
-
-	/* null */
-	EXPERT; 
-
-	/* null */
-	JIS78FORM; 
-
-	/* null */
-	JIS83FORM; 
-
-	/* null */
-	HALFWIDTH; 
-
-	/* null */
-	THIRDWIDTH; 
-
-	/* null */
-	QUARTERWIDTH; 
-
-	/* null */
-	FULLWIDTH; 
-
-	/* null */
-	PROPORTIONALWIDTH; 
-
-	/* null */
-	JIS90FORM; 
-
-	/* null */
-	JIS04FORM; 
-
-
+	/* */
+	var DEFAULTFORM;
+	
+	/* */
+	var TRADITIONAL;
+	
+	/* */
+	var EXPERT;
+	
+	/* */
+	var JIS78FORM;
+	
+	/* */
+	var JIS83FORM;
+	
+	/* */
+	var HALFWIDTH;
+	
+	/* */
+	var THIRDWIDTH;
+	
+	/* */
+	var QUARTERWIDTH;
+	
+	/* */
+	var FULLWIDTH;
+	
+	/* */
+	var PROPORTIONALWIDTH;
+	
+	/* */
+	var JIS90FORM;
+	
+	/* */
+	var JIS04FORM;
+	
+	
 }

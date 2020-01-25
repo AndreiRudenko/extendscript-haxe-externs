@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* The preview type. */
-@:native("EPSPreview") extern enum EPSPreview {
+@:native("EPSPreview") @:enum extern enum abstract EPSPreview(Int) { 
 	
 	/* No preview. */
-	None; 
-
+	var None;
+	
 	/* Black and white Macintosh preview. */
-	BWMACINTOSH; 
-
+	var BWMACINTOSH;
+	
 	/* Color Macintosh preview. */
-	COLORMACINTOSH; 
-
+	var COLORMACINTOSH;
+	
 	/* Black and white PC preview. */
-	BWTIFF; 
-
+	var BWTIFF;
+	
 	/* Color PC preview. */
-	COLORTIFF; 
-
+	var COLORTIFF;
+	
 	/* Transparent color PC preview (8 or later) */
-	TRANSPARENTCOLORTIFF; 
-
-
+	var TRANSPARENTCOLORTIFF;
+	
+	
 }

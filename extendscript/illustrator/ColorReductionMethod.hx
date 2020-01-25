@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Method used to reduce color for PNG8 and GIF export formats. */
-@:native("ColorReductionMethod") extern enum ColorReductionMethod {
+@:native("ColorReductionMethod") @:enum extern enum abstract ColorReductionMethod(Int) { 
 	
-	/* null */
-	SELECTIVE; 
-
-	/* null */
-	ADAPTIVE; 
-
-	/* null */
-	PERCEPTUAL; 
-
-	/* null */
-	WEB; 
-
-
+	/* */
+	var SELECTIVE;
+	
+	/* */
+	var ADAPTIVE;
+	
+	/* */
+	var PERCEPTUAL;
+	
+	/* */
+	var WEB;
+	
+	
 }

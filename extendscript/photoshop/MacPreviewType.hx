@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* The type of image to use as a low-resolution preview in the destination application. */
-@:native("MacPreviewType") extern enum MacPreviewType {
+@:native("MacPreviewType") @:enum extern enum abstract MacPreviewType(Int) { 
 	
 	/* Does not use a preview. */
-	NONE; 
-
+	var NONE;
+	
 	/* Monochrome TIFF. */
-	MONOCHROMETIFF; 
-
+	var MONOCHROMETIFF;
+	
 	/* 8-bit TIFF. */
-	EIGHTBITTIFF; 
-
+	var EIGHTBITTIFF;
+	
 	/* Monochrome. */
-	MACOSMONOCHROME; 
-
+	var MACOSMONOCHROME;
+	
 	/* 8-bit. */
-	MACOSEIGHTBIT; 
-
+	var MACOSEIGHTBIT;
+	
 	/* JPEG. */
-	MACOSJPEG; 
-
-
+	var MACOSJPEG;
+	
+	
 }

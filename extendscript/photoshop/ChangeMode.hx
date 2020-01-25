@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* The destination color mode. Note: Color images must be changed to Grayscale mode before you can change them to Bitmap mode. */
-@:native("ChangeMode") extern enum ChangeMode {
+@:native("ChangeMode") @:enum extern enum abstract ChangeMode(Int) { 
 	
 	/* Grayscale. */
-	GRAYSCALE; 
-
+	var GRAYSCALE;
+	
 	/* RGB. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK. */
-	CMYK; 
-
+	var CMYK;
+	
 	/* Lab. */
-	LAB; 
-
+	var LAB;
+	
 	/* Bitmap. Note: Color images must be changed to Grayscale mode before you can change them to Bitmap mode. */
-	BITMAP; 
-
+	var BITMAP;
+	
 	/* Indexed color, in which the number of colors in the image is reduced to at most 256, the standard number of colors supported by the GIF and PNG-8 formats and many multimedia applications. */
-	INDEXEDCOLOR; 
-
+	var INDEXEDCOLOR;
+	
 	/* Image with multiple color channels. */
-	MULTICHANNEL; 
-
-
+	var MULTICHANNEL;
+	
+	
 }

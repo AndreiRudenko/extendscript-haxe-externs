@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The color spaces available for documents. */
-@:native("DocumentColorSpace") extern enum DocumentColorSpace {
+@:native("DocumentColorSpace") @:enum extern enum abstract DocumentColorSpace(Int) { 
 	
 	/* RGB document color space. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK document color space. */
-	CMYK; 
-
-
+	var CMYK;
+	
+	
 }

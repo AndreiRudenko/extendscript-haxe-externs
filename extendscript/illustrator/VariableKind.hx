@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("VariableKind") extern enum VariableKind {
+@:native("VariableKind") @:enum extern enum abstract VariableKind(Int) { 
 	
-	/* null */
-	Unknown; 
-
-	/* null */
-	VISIBILITY; 
-
-	/* null */
-	TEXTUAL; 
-
-	/* null */
-	IMAGE; 
-
-	/* null */
-	GRAPH; 
-
-
+	/* */
+	var Unknown;
+	
+	/* */
+	var VISIBILITY;
+	
+	/* */
+	var TEXTUAL;
+	
+	/* */
+	var IMAGE;
+	
+	/* */
+	var GRAPH;
+	
+	
 }

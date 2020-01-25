@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* The encoding to use when saving documents. */
-@:native("SaveEncoding") extern enum SaveEncoding {
+@:native("SaveEncoding") @:enum extern enum abstract SaveEncoding(Int) { 
 	
 	/* ASCII. */
-	ASCII; 
-
+	var ASCII;
+	
 	/* Binary. */
-	BINARY; 
-
+	var BINARY;
+	
 	/* Low quality JPEG encoding (high amount of compression). */
-	JPEGLOW; 
-
+	var JPEGLOW;
+	
 	/* Medium quality JPEG encoding (medium compression). */
-	JPEGMEDIUM; 
-
+	var JPEGMEDIUM;
+	
 	/* High quality JPEG encoding. */
-	JPEGHIGH; 
-
+	var JPEGHIGH;
+	
 	/* Maximum quality JPEG encoding (very little compression). */
-	JPEGMAXIMUM; 
-
-
+	var JPEGMAXIMUM;
+	
+	
 }

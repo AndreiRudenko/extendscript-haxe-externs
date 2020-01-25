@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* DEPRECATED. Web photo gallery thumb size types. */
-@:native("GalleryThumbSizeType") extern enum GalleryThumbSizeType {
+@:native("GalleryThumbSizeType") @:enum extern enum abstract GalleryThumbSizeType(Int) { 
 	
 	/* Small thumbnail. */
-	SMALL; 
-
+	var SMALL;
+	
 	/* Medium thumbnail. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* Large thumbnail. */
-	LARGE; 
-
+	var LARGE;
+	
 	/* Custom thumbnail. */
-	CUSTOM; 
-
-
+	var CUSTOM;
+	
+	
 }

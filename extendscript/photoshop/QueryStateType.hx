@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The permission state for queries. */
-@:native("QueryStateType") extern enum QueryStateType {
+@:native("QueryStateType") @:enum extern enum abstract QueryStateType(Int) { 
 	
 	/* Always maximize compatibility. */
-	ALWAYS; 
-
+	var ALWAYS;
+	
 	/* Always ask about maximize compatibility. */
-	ASK; 
-
+	var ASK;
+	
 	/* Never ask about maximize compatibility. */
-	NEVER; 
-
-
+	var NEVER;
+	
+	
 }

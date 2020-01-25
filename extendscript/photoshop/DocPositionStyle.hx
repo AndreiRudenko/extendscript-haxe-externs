@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* Position of document when printing. */
-@:native("DocPositionStyle") extern enum DocPositionStyle {
+@:native("DocPositionStyle") @:enum extern enum abstract DocPositionStyle(Int) { 
 	
 	/* Print image centered on page. */
-	PRINTCENTERED; 
-
+	var PRINTCENTERED;
+	
 	/* Resize image to fit on page when printing. */
-	SIZETOFIT; 
-
+	var SIZETOFIT;
+	
 	/* Print using user defined spacing. */
-	USERDEFINED; 
-
-
+	var USERDEFINED;
+	
+	
 }

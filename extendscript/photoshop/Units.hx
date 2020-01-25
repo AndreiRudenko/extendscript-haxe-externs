@@ -1,28 +1,28 @@
 package extendscript.photoshop;
 
 /* The measurement unit for ruler increments. */
-@:native("Units") extern enum Units {
+@:native("Units") @:enum extern enum abstract Units(Int) { 
 	
 	/* Pixels. */
-	PIXELS; 
-
+	var PIXELS;
+	
 	/* Inches. */
-	INCHES; 
-
+	var INCHES;
+	
 	/* Centimeters. */
-	CM; 
-
+	var CM;
+	
 	/* Millimeters. */
-	MM; 
-
+	var MM;
+	
 	/* Points. */
-	POINTS; 
-
+	var POINTS;
+	
 	/* Picas. */
-	PICAS; 
-
+	var PICAS;
+	
 	/* Percent. */
-	PERCENT; 
-
-
+	var PERCENT;
+	
+	
 }

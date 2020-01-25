@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* PDF ICC profile inclusion. */
-@:native("ColorProfile") extern enum ColorProfile {
+@:native("ColorProfile") @:enum extern enum abstract ColorProfile(Int) { 
 	
 	/* All profiles removed (embedProfile == false) */
-	None; 
-
+	var None;
+	
 	/* Everything gets tagged (embedProfile == true) */
-	INCLUDEALLPROFILE; 
-
+	var INCLUDEALLPROFILE;
+	
 	/* Leave tagged items tagged, untagged items untagged. */
-	LEAVEPROFILEUNCHANGED; 
-
+	var LEAVEPROFILEUNCHANGED;
+	
 	/* Tag all RGB, leave CMYK unchanged. */
-	INCLUDERGBPROFILE; 
-
+	var INCLUDERGBPROFILE;
+	
 	/* Everything ends up tagged with the destination profile. */
-	INCLUDEDESTPROFILE; 
-
-
+	var INCLUDEDESTPROFILE;
+	
+	
 }

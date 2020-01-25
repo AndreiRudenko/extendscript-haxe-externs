@@ -1,25 +1,25 @@
 package extendscript.illustrator;
 
 /* PDF destination profile. */
-@:native("ColorDestination") extern enum ColorDestination {
+@:native("ColorDestination") @:enum extern enum abstract ColorDestination(Int) { 
 	
 	/* N/A. */
-	None; 
-
+	var None;
+	
 	/* Converts all colors to the profile selected for Destination. */
-	COLORDESTINATIONDOCCMYK; 
-
+	var COLORDESTINATIONDOCCMYK;
+	
 	/* Preserves color numbers for untagged content in the same color space as the destination profile. Not available with CMS off. */
-	COLORDESTINATIONWORKINGCMYK; 
-
+	var COLORDESTINATIONWORKINGCMYK;
+	
 	/* Preserves color numbers for untagged content in the same color space as the destination profile. Not available with CMS off. */
-	COLORDESTINATIONDOCRGB; 
-
+	var COLORDESTINATIONDOCRGB;
+	
 	/* Preserves color numbers for untagged content in the same color space as the destination profile. Not available with CMS off. */
-	COLORDESTINATIONWORKINGRGB; 
-
+	var COLORDESTINATIONWORKINGRGB;
+	
 	/* Preserves color numbers for untagged content in the same color space as the destination profile. Not available with CMS off. */
-	COLORDESTINATIONPROFILE; 
-
-
+	var COLORDESTINATIONPROFILE;
+	
+	
 }

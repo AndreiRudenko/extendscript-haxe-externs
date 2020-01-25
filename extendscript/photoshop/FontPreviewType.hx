@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* The type size to use for font previews in the Type tool font menus. */
-@:native("FontPreviewType") extern enum FontPreviewType {
+@:native("FontPreviewType") @:enum extern enum abstract FontPreviewType(Int) { 
 	
 	/* No preview. */
-	NONE; 
-
+	var NONE;
+	
 	/* Small type. */
-	SMALL; 
-
+	var SMALL;
+	
 	/* Medium type. */
-	MEDIUM; 
-
+	var MEDIUM;
+	
 	/* Large type. */
-	LARGE; 
-
+	var LARGE;
+	
 	/* Extra large preview. */
-	EXTRALARGE; 
-
+	var EXTRALARGE;
+	
 	/* Huge preview. */
-	HUGE; 
-
-
+	var HUGE;
+	
+	
 }

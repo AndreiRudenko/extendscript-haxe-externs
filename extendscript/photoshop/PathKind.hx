@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The type of path. */
-@:native("PathKind") extern enum PathKind {
+@:native("PathKind") @:enum extern enum abstract PathKind(Int) { 
 	
 	/* Normal path. */
-	NORMALPATH; 
-
+	var NORMALPATH;
+	
 	/* Clipping path. */
-	CLIPPINGPATH; 
-
+	var CLIPPINGPATH;
+	
 	/* Workpath. */
-	WORKPATH; 
-
+	var WORKPATH;
+	
 	/* Vector mask path. */
-	VECTORMASK; 
-
+	var VECTORMASK;
+	
 	/* Text mask path. */
-	TEXTMASK; 
-
-
+	var TEXTMASK;
+	
+	
 }

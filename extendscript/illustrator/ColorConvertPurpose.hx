@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* Denotes the purpose of color conversion using ConvertSmapleColor method. */
-@:native("ColorConvertPurpose") extern enum ColorConvertPurpose {
+@:native("ColorConvertPurpose") @:enum extern enum abstract ColorConvertPurpose(Int) { 
 	
 	/* Do standard conversion, without black preservation. */
-	defaultpurpose; 
-
+	var defaultpurpose;
+	
 	/* Conversion options appropriate to creating an image for screen display. */
-	previewpurpose; 
-
+	var previewpurpose;
+	
 	/* Conversion options appropriate to creating an image for print or export. */
-	exportpurpose; 
-
+	var exportpurpose;
+	
 	/* Dummy option. */
-	dummypurpose; 
-
-
+	var dummypurpose;
+	
+	
 }

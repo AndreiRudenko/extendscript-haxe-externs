@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("PolarityValues") extern enum PolarityValues {
+@:native("PolarityValues") @:enum extern enum abstract PolarityValues(Int) { 
 	
-	/* null */
-	POSITIVE; 
-
-	/* null */
-	NEGATIVE; 
-
-
+	/* */
+	var POSITIVE;
+	
+	/* */
+	var NEGATIVE;
+	
+	
 }

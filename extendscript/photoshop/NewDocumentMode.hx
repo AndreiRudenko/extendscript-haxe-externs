@@ -1,22 +1,22 @@
 package extendscript.photoshop;
 
 /* The color profile to use. */
-@:native("NewDocumentMode") extern enum NewDocumentMode {
+@:native("NewDocumentMode") @:enum extern enum abstract NewDocumentMode(Int) { 
 	
 	/* Grayscale. */
-	GRAYSCALE; 
-
+	var GRAYSCALE;
+	
 	/* RGB. */
-	RGB; 
-
+	var RGB;
+	
 	/* CMYK. */
-	CMYK; 
-
+	var CMYK;
+	
 	/* Lab. */
-	LAB; 
-
+	var LAB;
+	
 	/* Bitmap. */
-	BITMAP; 
-
-
+	var BITMAP;
+	
+	
 }

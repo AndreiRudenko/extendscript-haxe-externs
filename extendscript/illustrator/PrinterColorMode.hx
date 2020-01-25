@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The printer color mode. */
-@:native("PrinterColorMode") extern enum PrinterColorMode {
+@:native("PrinterColorMode") @:enum extern enum abstract PrinterColorMode(Int) { 
 	
 	/* Color printer. */
-	COLORPRINTER; 
-
+	var COLORPRINTER;
+	
 	/* Grayscale printer. */
-	GRAYSCALEPRINTER; 
-
+	var GRAYSCALEPRINTER;
+	
 	/* Black and white printer. */
-	BLACKANDWHITEPRINTER; 
-
-
+	var BLACKANDWHITEPRINTER;
+	
+	
 }

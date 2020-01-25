@@ -1,25 +1,25 @@
 package extendscript.photoshop;
 
 /* The shape of the dots (ink deposits) in the halftone screen. */
-@:native("BitmapHalfToneType") extern enum BitmapHalfToneType {
+@:native("BitmapHalfToneType") @:enum extern enum abstract BitmapHalfToneType(Int) { 
 	
 	/* Round. */
-	ROUND; 
-
+	var ROUND;
+	
 	/* Diamond. */
-	DIAMOND; 
-
+	var DIAMOND;
+	
 	/* Ellipse. */
-	ELLIPSE; 
-
+	var ELLIPSE;
+	
 	/* Line. */
-	LINE; 
-
+	var LINE;
+	
 	/* Square. */
-	SQUARE; 
-
+	var SQUARE;
+	
 	/* Cross. */
-	CROSS; 
-
-
+	var CROSS;
+	
+	
 }

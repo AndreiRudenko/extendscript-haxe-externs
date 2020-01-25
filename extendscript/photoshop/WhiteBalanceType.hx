@@ -1,34 +1,34 @@
 package extendscript.photoshop;
 
 /* The lighting conditions (affects color balance). */
-@:native("WhiteBalanceType") extern enum WhiteBalanceType {
+@:native("WhiteBalanceType") @:enum extern enum abstract WhiteBalanceType(Int) { 
 	
 	/* Use the settings of the camera as shot. */
-	ASSHOT; 
-
+	var ASSHOT;
+	
 	/* Automatically use the white balance settings. */
-	AUTO; 
-
+	var AUTO;
+	
 	/* Use the settings as shot in daylight. */
-	DAYLIGHT; 
-
+	var DAYLIGHT;
+	
 	/* Use the settings as shot on a cloudy day. */
-	CLOUDY; 
-
+	var CLOUDY;
+	
 	/* Use the settings as shot in the shade. */
-	SHADE; 
-
+	var SHADE;
+	
 	/* Use the settings as shot with tungsten lighting. */
-	TUNGSTEN; 
-
+	var TUNGSTEN;
+	
 	/* Use the settings as shot with fluorescent lighting. */
-	FLUORESCENT; 
-
+	var FLUORESCENT;
+	
 	/* Use the settings as shot with a flash. */
-	FLASH; 
-
+	var FLASH;
+	
 	/* Use the custom settings for the shot parameters. */
-	CUSTOM; 
-
-
+	var CUSTOM;
+	
+	
 }

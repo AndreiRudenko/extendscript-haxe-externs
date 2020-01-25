@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The auto kern type. */
-@:native("AutoKernType") extern enum AutoKernType {
+@:native("AutoKernType") @:enum extern enum abstract AutoKernType(Int) { 
 	
 	/* No auto kerning. */
-	NOAUTOKERN; 
-
+	var NOAUTOKERN;
+	
 	/* Auto kerning. */
-	AUTO; 
-
+	var AUTO;
+	
 	/* Optical kerning. */
-	OPTICAL; 
-
+	var OPTICAL;
+	
 	/* Metrics roman only. */
-	METRICSROMANONLY; 
-
-
+	var METRICSROMANONLY;
+	
+	
 }

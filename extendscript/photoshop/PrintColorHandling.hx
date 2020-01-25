@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* Color conversion type when printing. */
-@:native("PrintColorHandling") extern enum PrintColorHandling {
+@:native("PrintColorHandling") @:enum extern enum abstract PrintColorHandling(Int) { 
 	
 	/* Printer manages color conversions. */
-	PRINTERMANAGED; 
-
+	var PRINTERMANAGED;
+	
 	/* Photoshop manages color conversions. */
-	PHOTOSHOPMANAGED; 
-
+	var PHOTOSHOPMANAGED;
+	
 	/* Print each channel separately without color conversions. */
-	SEPARATIONS; 
-
-
+	var SEPARATIONS;
+	
+	
 }

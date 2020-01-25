@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The preview modes available when creating a new document. */
-@:native("DocumentPreviewMode") extern enum DocumentPreviewMode {
+@:native("DocumentPreviewMode") @:enum extern enum abstract DocumentPreviewMode(Int) { 
 	
 	/* Default Preview mode. */
-	DefaultPreview; 
-
+	var DefaultPreview;
+	
 	/* Pixel Preview mode. */
-	PixelPreview; 
-
+	var PixelPreview;
+	
 	/* Overprint Preview Mode. */
-	OverprintPreview; 
-
-
+	var OverprintPreview;
+	
+	
 }

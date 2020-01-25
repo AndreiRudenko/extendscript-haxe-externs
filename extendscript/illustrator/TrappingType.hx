@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The trapping type. */
-@:native("TrappingType") extern enum TrappingType {
+@:native("TrappingType") @:enum extern enum abstract TrappingType(Int) { 
 	
 	/* Normal trapping type. */
-	NORMALTRAPPING; 
-
+	var NORMALTRAPPING;
+	
 	/* Transparent trapping type. */
-	TRANSPARENT; 
-
+	var TRANSPARENT;
+	
 	/* Opaque trapping type. */
-	OPAQUE; 
-
+	var OPAQUE;
+	
 	/* Ignore opaque trapping type. */
-	IGNOREOPAQUE; 
-
-
+	var IGNOREOPAQUE;
+	
+	
 }

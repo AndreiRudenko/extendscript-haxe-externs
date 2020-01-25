@@ -1,19 +1,19 @@
 package extendscript.photoshop;
 
 /* The type of lens. */
-@:native("LensType") extern enum LensType {
+@:native("LensType") @:enum extern enum abstract LensType(Int) { 
 	
 	/* 50-300mm Zoom. */
-	ZOOMLENS; 
-
+	var ZOOMLENS;
+	
 	/* 35mm Prime. */
-	PRIME35; 
-
+	var PRIME35;
+	
 	/* 105mm Prime. */
-	PRIME105; 
-
+	var PRIME105;
+	
 	/* Movie Prime. */
-	MOVIEPRIME; 
-
-
+	var MOVIEPRIME;
+	
+	
 }

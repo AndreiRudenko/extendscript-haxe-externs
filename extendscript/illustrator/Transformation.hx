@@ -1,37 +1,37 @@
 package extendscript.illustrator;
 
 /* The transformation type. */
-@:native("Transformation") extern enum Transformation {
+@:native("Transformation") @:enum extern enum abstract Transformation(Int) { 
 	
 	/* Transform relative to the illustration's page origin. */
-	DOCUMENTORIGIN; 
-
+	var DOCUMENTORIGIN;
+	
 	/* Transform relative to the object's top left corner. */
-	TOPLEFT; 
-
+	var TOPLEFT;
+	
 	/* Transform relative to the object's left edge. */
-	LEFT; 
-
+	var LEFT;
+	
 	/* Transform relative to the object's bottom left corner. */
-	BOTTOMLEFT; 
-
+	var BOTTOMLEFT;
+	
 	/* Transform relative to the object's top edge. */
-	TOP; 
-
+	var TOP;
+	
 	/* Transform relative to the object's center. */
-	CENTER; 
-
+	var CENTER;
+	
 	/* Transform relative to the object's bottom edge. */
-	BOTTOM; 
-
+	var BOTTOM;
+	
 	/* Transform relative to the object's top right corner. */
-	TOPRIGHT; 
-
+	var TOPRIGHT;
+	
 	/* Transform relative to the object's right edge. */
-	RIGHT; 
-
+	var RIGHT;
+	
 	/* Transform relative to the object's bottom right corner. */
-	BOTTOMRIGHT; 
-
-
+	var BOTTOMRIGHT;
+	
+	
 }

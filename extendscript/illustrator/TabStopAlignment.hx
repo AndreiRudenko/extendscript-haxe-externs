@@ -1,19 +1,19 @@
 package extendscript.illustrator;
 
 /* The tab alignment. */
-@:native("TabStopAlignment") extern enum TabStopAlignment {
+@:native("TabStopAlignment") @:enum extern enum abstract TabStopAlignment(Int) { 
 	
-	/* null */
-	Left; 
-
-	/* null */
-	Center; 
-
-	/* null */
-	Right; 
-
-	/* null */
-	Decimal; 
-
-
+	/* */
+	var Left;
+	
+	/* */
+	var Center;
+	
+	/* */
+	var Right;
+	
+	/* */
+	var Decimal;
+	
+	
 }

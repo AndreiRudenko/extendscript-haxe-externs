@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The artwork layers/objects to be printed. */
-@:native("PrintArtworkDesignation") extern enum PrintArtworkDesignation {
+@:native("PrintArtworkDesignation") @:enum extern enum abstract PrintArtworkDesignation(Int) { 
 	
 	/* Print visible printable layers. */
-	VISIBLEPRINTABLELAYERS; 
-
+	var VISIBLEPRINTABLELAYERS;
+	
 	/* Print visible layers. */
-	VISIBLELAYERS; 
-
+	var VISIBLELAYERS;
+	
 	/* Print all layers. */
-	ALLLAYERS; 
-
-
+	var ALLLAYERS;
+	
+	
 }

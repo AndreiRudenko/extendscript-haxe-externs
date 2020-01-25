@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* null */
-@:native("BlendAnimationType") extern enum BlendAnimationType {
+@:native("BlendAnimationType") @:enum extern enum abstract BlendAnimationType(Int) { 
 	
 	/* No blend animation. */
-	NOBLENDANIMATION; 
-
-	/* null */
-	INSEQUENCE; 
-
-	/* null */
-	INBUILD; 
-
-
+	var NOBLENDANIMATION;
+	
+	/* */
+	var INSEQUENCE;
+	
+	/* */
+	var INBUILD;
+	
+	
 }

@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The method to use for smart blurring. */
-@:native("SmartBlurMode") extern enum SmartBlurMode {
+@:native("SmartBlurMode") @:enum extern enum abstract SmartBlurMode(Int) { 
 	
 	/* Blur is applied to entire image. */
-	NORMAL; 
-
+	var NORMAL;
+	
 	/* Blur is applied only to edges of color transitions. */
-	EDGEONLY; 
-
+	var EDGEONLY;
+	
 	/* Blur is applied only to edges of color transitions. */
-	OVERLAYEDGE; 
-
-
+	var OVERLAYEDGE;
+	
+	
 }

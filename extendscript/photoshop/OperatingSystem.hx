@@ -1,13 +1,13 @@
 package extendscript.photoshop;
 
 /* The operating system. */
-@:native("OperatingSystem") extern enum OperatingSystem {
+@:native("OperatingSystem") @:enum extern enum abstract OperatingSystem(Int) { 
 	
 	/* Mac OS/2 operating system. */
-	OS2; 
-
+	var OS2;
+	
 	/* Windows operating system. */
-	WINDOWS; 
-
-
+	var WINDOWS;
+	
+	
 }

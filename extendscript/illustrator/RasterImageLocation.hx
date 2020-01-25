@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* Decide where the raster images will be stored. */
-@:native("RasterImageLocation") extern enum RasterImageLocation {
+@:native("RasterImageLocation") @:enum extern enum abstract RasterImageLocation(Int) { 
 	
 	/* Embed the raster images in the svg file. */
-	EMBED; 
-
-	/* null */
-	LINK; 
-
-	/* null */
-	PRESERVE; 
-
-
+	var EMBED;
+	
+	/* */
+	var LINK;
+	
+	/* */
+	var PRESERVE;
+	
+	
 }

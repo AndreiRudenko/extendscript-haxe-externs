@@ -1,22 +1,22 @@
 package extendscript.illustrator;
 
 /* The artwork printing orientation. */
-@:native("PrintOrientation") extern enum PrintOrientation {
+@:native("PrintOrientation") @:enum extern enum abstract PrintOrientation(Int) { 
 	
 	/* Portrait. */
-	PORTRAIT; 
-
+	var PORTRAIT;
+	
 	/* Landscape. */
-	LANDSCAPE; 
-
+	var LANDSCAPE;
+	
 	/* Reverse portrait. */
-	REVERSEPORTRAIT; 
-
+	var REVERSEPORTRAIT;
+	
 	/* Reverse landscape. */
-	REVERSELANDSCAPE; 
-
+	var REVERSELANDSCAPE;
+	
 	/* Auto Rotate. */
-	AUTOROTATE; 
-
-
+	var AUTOROTATE;
+	
+	
 }

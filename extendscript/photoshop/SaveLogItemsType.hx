@@ -1,16 +1,16 @@
 package extendscript.photoshop;
 
 /* The location of history log data. */
-@:native("SaveLogItemsType") extern enum SaveLogItemsType {
+@:native("SaveLogItemsType") @:enum extern enum abstract SaveLogItemsType(Int) { 
 	
 	/* Save history log in file metadata. */
-	METADATA; 
-
+	var METADATA;
+	
 	/* Save history log in a text file. */
-	LOGFILE; 
-
+	var LOGFILE;
+	
 	/* Save history log in file metadata and a text file. */
-	LOGFILEANDMETADATA; 
-
-
+	var LOGFILEANDMETADATA;
+	
+	
 }

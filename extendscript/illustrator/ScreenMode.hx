@@ -1,16 +1,16 @@
 package extendscript.illustrator;
 
 /* The screen mode. */
-@:native("ScreenMode") extern enum ScreenMode {
+@:native("ScreenMode") @:enum extern enum abstract ScreenMode(Int) { 
 	
 	/* Display multiple windows. */
-	MULTIWINDOW; 
-
+	var MULTIWINDOW;
+	
 	/* Full screen with menu bar. */
-	DESKTOP; 
-
+	var DESKTOP;
+	
 	/* Full screen without menu bar. */
-	FULLSCREEN; 
-
-
+	var FULLSCREEN;
+	
+	
 }

@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* Byte Order of TIFF file. */
-@:native("TIFFByteOrder") extern enum TIFFByteOrder {
+@:native("TIFFByteOrder") @:enum extern enum abstract TIFFByteOrder(Int) { 
 	
-	/* null */
-	IBMPC; 
-
-	/* null */
-	MACINTOSH; 
-
-
+	/* */
+	var IBMPC;
+	
+	/* */
+	var MACINTOSH;
+	
+	
 }

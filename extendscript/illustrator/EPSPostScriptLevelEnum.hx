@@ -1,13 +1,13 @@
 package extendscript.illustrator;
 
 /* The PostScript levels available when saving EPS files. */
-@:native("EPSPostScriptLevelEnum") extern enum EPSPostScriptLevelEnum {
+@:native("EPSPostScriptLevelEnum") @:enum extern enum abstract EPSPostScriptLevelEnum(Int) { 
 	
 	/* PostScript Level 2. */
-	LEVEL2; 
-
+	var LEVEL2;
+	
 	/* PostScript Level 3. */
-	LEVEL3; 
-
-
+	var LEVEL3;
+	
+	
 }
